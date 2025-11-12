@@ -1,0 +1,49 @@
+2025-11-11 22:01:10,920 - candidate.test_01 - INFO - Starting upload for session test_01-660a627382044fbeb550096adf8bb62a
+2025-11-11 22:01:10,924 - candidate.test_01 - DEBUG - Metadata for test_01-660a627382044fbeb550096adf8bb62a: {'candidate_name': 'Test 01', 'interview_completed': False, 'report_generated': False, 'report_filename': ''}
+2025-11-11 22:01:10,924 - candidate.test_01 - INFO - 🔹 Starting vectorisation for session test_01-660a627382044fbeb550096adf8bb62a …
+2025-11-11 22:01:10,964 - candidate.test_01 - ERROR - ❌ Index creation failed for session test_01-660a627382044fbeb550096adf8bb62a
+Traceback (most recent call last):
+  File "D:\os-files\Downloads\project-interview-chatbot\backend\src\core\data_preprocessing.py", line 21, in safe_convert
+    result = converter.convert(file_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\docling\document_converter.py", line 237, in convert
+    return next(all_res)
+           ^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\docling\document_converter.py", line 260, in convert_all
+    for conv_res in conv_res_iter:
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\docling\document_converter.py", line 332, in _convert
+    for item in map(
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\docling\document_converter.py", line 383, in _process_document
+    raise ConversionError(error_message)
+docling.exceptions.ConversionError: File format not allowed: job_description.txt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\os-files\Downloads\project-interview-chatbot\backend\main.py", line 223, in upload_files
+    await loop.run_in_executor(
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\os-files\Downloads\project-interview-chatbot\backend\src\core\data_preprocessing.py", line 127, in process_and_vectorize
+    text = safe_convert(file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\os-files\Downloads\project-interview-chatbot\backend\src\core\data_preprocessing.py", line 32, in safe_convert
+    raise Exception(f"File conversion error: {str(e)}")
+Exception: File conversion error: File format not allowed: job_description.txt
+2025-11-11 22:03:56,722 - candidate.test_01 - INFO - Starting upload for session test_01-943eb8ff8e984f139e5b51e49d7efe5e
+2025-11-11 22:03:56,724 - candidate.test_01 - DEBUG - Metadata for test_01-943eb8ff8e984f139e5b51e49d7efe5e: {'candidate_name': 'Test 01', 'interview_completed': False, 'report_generated': False, 'report_filename': ''}
+2025-11-11 22:03:56,724 - candidate.test_01 - INFO - 🔹 Starting vectorisation for session test_01-943eb8ff8e984f139e5b51e49d7efe5e …
+2025-11-11 22:05:35,467 - candidate.test_01 - INFO - ✅ Vectorisation finished for session test_01-943eb8ff8e984f139e5b51e49d7efe5e
+2025-11-11 22:07:09,813 - candidate.test_01 - INFO - Creating interview bot for test_01-943eb8ff8e984f139e5b51e49d7efe5e
+2025-11-11 22:07:12,420 - candidate.test_01 - WARNING - 🔌 Client disconnected
+2025-11-11 22:07:15,186 - candidate.test_01 - INFO - Creating interview bot for test_01-943eb8ff8e984f139e5b51e49d7efe5e
+2025-11-11 22:07:17,847 - candidate.test_01 - WARNING - 🔌 Client disconnected
+2025-11-11 22:07:21,840 - candidate.test_01 - INFO - Creating interview bot for test_01-943eb8ff8e984f139e5b51e49d7efe5e
+2025-11-11 22:07:24,827 - candidate.test_01 - WARNING - 🔌 Client disconnected

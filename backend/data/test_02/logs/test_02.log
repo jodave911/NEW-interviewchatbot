@@ -1,0 +1,87 @@
+2025-11-11 23:11:23,839 - candidate.test_02 - INFO - Starting upload for session test_02-c57c351c642b4dc597bc88079e036453
+2025-11-11 23:11:23,842 - candidate.test_02 - DEBUG - Metadata for test_02-c57c351c642b4dc597bc88079e036453: {'candidate_name': 'Test 02', 'interview_duration': 5, 'interview_completed': False, 'report_generated': False, 'report_filename': ''}
+2025-11-11 23:11:23,842 - candidate.test_02 - INFO - 🔹 Starting vectorisation for session test_02-c57c351c642b4dc597bc88079e036453 …
+2025-11-11 23:11:32,959 - candidate.test_02 - ERROR - ❌ Index creation failed for session test_02-c57c351c642b4dc597bc88079e036453
+Traceback (most recent call last):
+  File "D:\os-files\Downloads\project-interview-chatbot\backend\main.py", line 219, in upload_files
+    await loop.run_in_executor(
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\os-files\Downloads\project-interview-chatbot\backend\src\core\data_preprocessing.py", line 132, in process_and_vectorize
+    structured_data = extract_data(text, schema, doc_type)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\os-files\Downloads\project-interview-chatbot\backend\src\core\data_preprocessing.py", line 78, in extract_data
+    result = chain.invoke({
+             ^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\base.py", line 3090, in invoke
+    input_ = context.run(step.invoke, input_, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\base.py", line 4812, in invoke
+    return self._call_with_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\base.py", line 2021, in _call_with_config
+    context.run(
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\config.py", line 428, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\base.py", line 4669, in _invoke
+    output = call_func_with_variable_args(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\config.py", line 428, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_large_language_model() takes 0 positional arguments but 1 was given
+2025-11-11 23:12:21,945 - candidate.test_02 - INFO - Starting upload for session test_02-e1747aebfef745769855737ff6b096c5
+2025-11-11 23:12:21,947 - candidate.test_02 - DEBUG - Metadata for test_02-e1747aebfef745769855737ff6b096c5: {'candidate_name': 'Test 02', 'interview_duration': 5, 'interview_completed': False, 'report_generated': False, 'report_filename': ''}
+2025-11-11 23:12:21,948 - candidate.test_02 - INFO - 🔹 Starting vectorisation for session test_02-e1747aebfef745769855737ff6b096c5 …
+2025-11-11 23:12:26,917 - candidate.test_02 - ERROR - ❌ Index creation failed for session test_02-e1747aebfef745769855737ff6b096c5
+Traceback (most recent call last):
+  File "D:\os-files\Downloads\project-interview-chatbot\backend\main.py", line 219, in upload_files
+    await loop.run_in_executor(
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\os-files\Downloads\project-interview-chatbot\backend\src\core\data_preprocessing.py", line 132, in process_and_vectorize
+    structured_data = extract_data(text, schema, doc_type)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\os-files\Downloads\project-interview-chatbot\backend\src\core\data_preprocessing.py", line 78, in extract_data
+    result = chain.invoke({
+             ^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\base.py", line 3090, in invoke
+    input_ = context.run(step.invoke, input_, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\base.py", line 4812, in invoke
+    return self._call_with_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\base.py", line 2021, in _call_with_config
+    context.run(
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\config.py", line 428, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\base.py", line 4669, in _invoke
+    output = call_func_with_variable_args(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\config.py", line 428, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_large_language_model() takes 0 positional arguments but 1 was given
+2025-11-11 23:13:23,000 - candidate.test_02 - INFO - Starting upload for session test_02-055f424370fe407fa836906fadf816a2
+2025-11-11 23:13:23,004 - candidate.test_02 - DEBUG - Metadata for test_02-055f424370fe407fa836906fadf816a2: {'candidate_name': 'Test 02', 'interview_duration': 5, 'interview_completed': False, 'report_generated': False, 'report_filename': ''}
+2025-11-11 23:13:23,004 - candidate.test_02 - INFO - 🔹 Starting vectorisation for session test_02-055f424370fe407fa836906fadf816a2 …
+2025-11-11 23:14:19,116 - candidate.test_02 - INFO - ✅ Vectorisation finished for session test_02-055f424370fe407fa836906fadf816a2
+2025-11-11 23:14:25,504 - candidate.test_02 - INFO - Creating interview bot for test_02-055f424370fe407fa836906fadf816a2
+2025-11-11 23:16:04,633 - candidate.test_02 - INFO - Received answer: I dont knwo...
+2025-11-11 23:16:26,916 - candidate.test_02 - INFO - Received answer: Certainly! In my most recent role, I managed video...
+2025-11-11 23:16:52,696 - candidate.test_02 - INFO - Received answer: Certainly! While managing client projects in my pr...
+2025-11-11 23:17:20,603 - candidate.test_02 - INFO - Received answer: During a busy week managing client projects, I had...
+2025-11-11 23:17:50,640 - candidate.test_02 - INFO - Received answer: Absolutely! While I haven’t used a large-scale CRM...
+2025-11-11 23:18:26,908 - candidate.test_02 - INFO - Received answer: In a previous freelance project where we scaled cl...
+2025-11-11 23:18:55,024 - candidate.test_02 - INFO - Received answer: Absolutely! While managing client projects, a cust...
+2025-11-11 23:19:27,405 - candidate.test_02 - INFO - Received answer: Certainly! One client was upset because the first ...
+2025-11-11 23:19:47,543 - candidate.test_02 - INFO - Received answer: hi...
+2025-11-11 23:19:47,543 - candidate.test_02 - INFO - Interview finished for test_02-055f424370fe407fa836906fadf816a2
+2025-11-11 23:19:47,545 - candidate.test_02 - INFO - ✔️ Session test_02-055f424370fe407fa836906fadf816a2 marked as completed.
+2025-11-11 23:19:57,528 - candidate.test_02 - INFO - Generating report for test_02-055f424370fe407fa836906fadf816a2...
+2025-11-11 23:20:15,123 - candidate.test_02 - INFO - Report generation complete: D:\os-files\Downloads\project-interview-chatbot\backend\data\test_02\reports\test_02_1762883397_report.md
+2025-11-11 23:20:15,124 - candidate.test_02 - INFO - ✔️ Report generated and metadata updated for test_02-055f424370fe407fa836906fadf816a2

@@ -1,0 +1,10 @@
+[
+    {
+        "role": "bot",
+        "content": "Hello! Thank you for joining me today. Before we begin, please review the following guidelines:\n\n1. This is a secure interview environment designed to assess your skills fairly.\n2. Please ensure you're in a quiet environment with a stable internet connection.\n3. Have your resume and the job description handy for reference.\n4. Answer honestly and provide specific examples from your experience.\n5. If you need clarification on any question, please ask.\n\nLet's begin."
+    },
+    {
+        "role": "bot",
+        "content": "Do you hold a Bachelor's degree in Business Administration or a related field?"
+    }
+]

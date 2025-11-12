@@ -1,0 +1,4 @@
+2025-11-12 12:43:23,837 - candidate.test_03 - INFO - Starting upload for session test_03-bf21cbcea8de4c23a7df58df91005adb
+2025-11-12 12:43:23,853 - candidate.test_03 - DEBUG - Metadata for test_03-bf21cbcea8de4c23a7df58df91005adb: {'candidate_name': 'Test 03', 'interview_duration': 5, 'interview_completed': False, 'report_generated': False, 'report_filename': ''}
+2025-11-12 12:43:23,853 - candidate.test_03 - INFO - 🔹 Starting vectorisation for session test_03-bf21cbcea8de4c23a7df58df91005adb …
+2025-11-12 12:44:30,783 - candidate.test_03 - INFO - ✅ Vectorisation finished for session test_03-bf21cbcea8de4c23a7df58df91005adb

@@ -1,0 +1,1067 @@
+2025-11-11 22:01:10 - data_processor - INFO - 
+[Data Processor] --- Processing Job Description from D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_01-660a627382044fbeb550096adf8bb62a\job_description.txt ---
+2025-11-11 22:01:10 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-11 22:01:10 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_01-660a627382044fbeb550096adf8bb62a\job_description.txt...
+2025-11-11 22:01:10 - data_processor - WARNING - [Data Processor | safe_convert] Warning: Document conversion failed for D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_01-660a627382044fbeb550096adf8bb62a\job_description.txt. Error: File format not allowed: job_description.txt
+2025-11-11 22:01:10 - data_processor - ERROR - An unexpected error occured while processing D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_01-660a627382044fbeb550096adf8bb62a\job_description.txt
+Traceback (most recent call last):
+  File "D:\os-files\Downloads\project-interview-chatbot\backend\src\core\data_preprocessing.py", line 21, in safe_convert
+    result = converter.convert(file_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\docling\document_converter.py", line 237, in convert
+    return next(all_res)
+           ^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\docling\document_converter.py", line 260, in convert_all
+    for conv_res in conv_res_iter:
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\docling\document_converter.py", line 332, in _convert
+    for item in map(
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\docling\document_converter.py", line 383, in _process_document
+    raise ConversionError(error_message)
+docling.exceptions.ConversionError: File format not allowed: job_description.txt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\os-files\Downloads\project-interview-chatbot\backend\src\core\data_preprocessing.py", line 127, in process_and_vectorize
+    text = safe_convert(file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\os-files\Downloads\project-interview-chatbot\backend\src\core\data_preprocessing.py", line 32, in safe_convert
+    raise Exception(f"File conversion error: {str(e)}")
+Exception: File conversion error: File format not allowed: job_description.txt
+2025-11-11 22:03:56 - data_processor - INFO - 
+[Data Processor] --- Processing Job Description from D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_01-943eb8ff8e984f139e5b51e49d7efe5e\job_description.txt ---
+2025-11-11 22:03:56 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-11 22:03:56 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_01-943eb8ff8e984f139e5b51e49d7efe5e\job_description.txt...
+2025-11-11 22:05:05 - data_processor - INFO - [Data Processor | safe_convert] Document conversion complete for D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_01-943eb8ff8e984f139e5b51e49d7efe5e\job_description.txt
+2025-11-11 22:05:05 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_01-943eb8ff8e984f139e5b51e49d7efe5e\job_description.txt. 
+
+ Document Content ## JOB DESCRIPTION
+
+CASHIER
+
+Join Our Team at Eco Market: Where Every Day Brings New Opportunities!
+
+As a Cashier at Eco Market, you'll be the face of our store, providing exceptional service to our valued customers. Your responsibilities include processing transactions accurately and efficiently, maintaining a clean and organized checkout area, and assisting customers with inquiries and product recommendations. You'll also handle cash, credit, and debit card transactions while ensuring all payment procedures are followed correctly. Besides, you'll contribute to inventory management by scanning and bagging products quickly and carefully. You'll play a key role in upholding our company values, promoting our sustainable products, and ensuring a pleasant shopping experience for all.
+
+REQUIREMENTS
+
+• High school diploma or an equivalent qualification.
+
+• Previous experience in retail or customer service positions.
+
+• Strong attention to detail and accuracy in tasks and transactions.
+
+• Excellent communication and interpersonal skills for customer interactions.
+
+• Ability to handle cash accurately and operate a point-of-sale system.
+
+• Basic math skills to ensure correct handling of various transactions.
+
+• Flexibility to work different shifts, including weekends and holidays as needed.
+
+• Physical stamina to stand for extended periods and lift up to 15kg.
+
+Send your CV and portfolio to:
+
+career@ecomarket.com.
+2025-11-11 22:05:05 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-11 22:05:05 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 1427 characters
+2025-11-11 22:05:05 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Job Description...
+2025-11-11 22:05:10 - data_processor - INFO - [Data Processor | extract_data] Extraction complete.
+2025-11-11 22:05:10 - data_processor - INFO - [Structred Data Job Description]: 
+ {'job_title': 'Cashier', 'company': 'Eco Market', 'responsibilities': ['Provide exceptional service to customers', 'Process transactions accurately and efficiently', 'Maintain a clean and organized checkout area', 'Assist customers with inquiries and product recommendations', 'Handle cash, credit, and debit card transactions while following payment procedures', 'Contribute to inventory management by scanning and bagging products quickly and carefully', 'Uphold company values, promote sustainable products, and ensure a pleasant shopping experience'], 'required_qualifications': ['High school diploma or an equivalent qualification', 'Previous experience in retail or customer service positions', 'Strong attention to detail and accuracy in tasks and transactions', 'Excellent communication and interpersonal skills for customer interactions', 'Ability to handle cash accurately and operate a point-of-sale system', 'Basic math skills to ensure correct handling of various transactions', 'Flexibility to work different shifts, including weekends and holidays as needed', 'Physical stamina to stand for extended periods and lift up to 15kg'], 'preferred_qualifications': []}
+2025-11-11 22:05:10 - data_processor - INFO - [Data Processor | create_semantic_chunks] Created 3 semantic chunks for the Job Description.
+2025-11-11 22:05:10 - data_processor - INFO - [Semantic Chunks Job Description]: 
+ [Document(metadata={'category': 'overview', 'company': 'Eco Market', 'job_title': 'Cashier'}, page_content='Job Title: Cashier at Eco Market. Location: N/A. Company Summary:'), Document(metadata={'category': 'responsibilities', 'company': 'Eco Market', 'job_title': 'Cashier'}, page_content='Responsibilities: Provide exceptional service to customers Process transactions accurately and efficiently Maintain a clean and organized checkout area Assist customers with inquiries and product recommendations Handle cash, credit, and debit card transactions while following payment procedures Contribute to inventory management by scanning and bagging products quickly and carefully Uphold company values, promote sustainable products, and ensure a pleasant shopping experience'), Document(metadata={'category': 'required_qualifications', 'company': 'Eco Market', 'job_title': 'Cashier'}, page_content='Required Qualifications: High school diploma or an equivalent qualification Previous experience in retail or customer service positions Strong attention to detail and accuracy in tasks and transactions Excellent communication and interpersonal skills for customer interactions Ability to handle cash accurately and operate a point-of-sale system Basic math skills to ensure correct handling of various transactions Flexibility to work different shifts, including weekends and holidays as needed Physical stamina to stand for extended periods and lift up to 15kg')]
+2025-11-11 22:05:10 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Job Description...
+2025-11-11 22:05:20 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Job Description saved to 'D:\os-files\Downloads\project-interview-chatbot\backend\data\test_01\vector_store\test_01-943eb8ff8e984f139e5b51e49d7efe5e\faiss_jd_index'.
+2025-11-11 22:05:20 - data_processor - INFO - 
+[Data Processor] --- Processing Resume from D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_01-943eb8ff8e984f139e5b51e49d7efe5e\resume.txt ---
+2025-11-11 22:05:20 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-11 22:05:20 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_01-943eb8ff8e984f139e5b51e49d7efe5e\resume.txt...
+2025-11-11 22:05:23 - data_processor - INFO - [Data Processor | safe_convert] Document conversion complete for D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_01-943eb8ff8e984f139e5b51e49d7efe5e\resume.txt
+2025-11-11 22:05:23 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_01-943eb8ff8e984f139e5b51e49d7efe5e\resume.txt. 
+
+ Document Content ## DETAILS
+
+## ADDRESS
+
+1515 Pacific Ave Los Angeles, CA 90291 United States
+
+## PHONE
+
+3868683442
+
+## EMAIL
+
+email@email.com
+
+## PLACE OF BIRTH
+
+San Antonio
+
+DRIVING LICENSE
+
+Full
+
+## L I N K S
+
+LinkedIn
+
+Pinterest
+
+Resume Templates
+
+Build this template
+
+## S K I L L S
+
+Food preparation
+
+Kitchen maintenance
+
+Kitchen equipment operation
+
+Food sanitation
+
+Nutrition
+
+## HOBBIES
+
+Soccer, Rugby, Tennis
+
+## L A N G U A G E S
+
+English
+
+## JULIE MONROE
+
+NUTRITION CONSULTANT
+
+## PROFILE
+
+Talented Nutrition Consultant with three years of experience. Skilled in nutrition and food preparation and looking to deliver healthy, delicious meals at Woodacre Nursing Home. At 7-Star Senior Living, cheerfully cleaned kitchens and prepared three meals daily for 120+ residents. Received a promotion to head Nutrition Consultant within five months of hiring due to efficiency and interpersonal skills.
+
+## E M P L O Y M E N T   H I S T O R Y
+
+## Nutritional Consultant (Part-Time) , WIC
+
+Jan 2021 - Present
+
+Required to prescribe supplemental food packages tailored to clients' needs and nutrition status per USDA established WIC Program policy.
+
+- Provided nutrition education counseling on morbid obesity, high cholesterol, and diabetes for uninsured patients at the health center.
+- Performed nutrition assessments and WIC certifications.
+- Provided nutrition education counseling and assessed nutritional status for participants of the WIC program.
+- Certified and enrolled participants according to the WIC program and state regulatory guidelines.
+
+## Nutritional Consultant, DaVita
+
+Jan 2016 - Nov 2019
+
+Registered Nutrition Consultant/Educator responsible for educating, counseling, and supporting patients to make long-term behavior and lifestyle changes.
+
+- Worked with neurologists in the initiation and nitration of drugs related to anemia and secondary hyperparathyroidism.
+- Participated in clinical CQI monitoring programs, including osteodystrophy management, kinetics, anemia, and nutrition management.
+- Monitored laboratory indicators of bone mineral status and anemia in hemodialysis patients.
+- Registered Dietitian/Nutrition Consultant Provided nutrition educational support to help patients improve their health.
+
+## E D U C A T I O N
+
+## Master of Science in Dietary Education, Golden Valley University
+
+Golden Valley
+
+Jul 2020 - Jul 2021
+
+Bachelor of Science in Food Sciences, Wisconsin State University
+
+Madisonville
+
+Jan 2018 - Dec 2020
+
+Delmas
+
+Port Washington
+
+## Associates Degree in Nutrition, St. Louis University
+
+Jan 2015 - Oct 2017
+
+## COURSES
+
+## Certified Head Nutrition Consultant , Food Sciences Council
+
+Jul 2021 - Jul 2021
+
+## ACCOMPLISHMENTS
+
+- Decreased TPN usage through nutrition support team by 72% for a $42,000 annual cost savings.
+- Provided nutritional care to patients in a 650+ bed long-term and sub-acute care facility.
+- Supervised and evaluated a staff of 27 food production employees and three dietary managers.
+- Founded the 'Provide Eat Smart NY' educational programs via mass media, including displays and promotion of Eat Smart NY electronic platforms reaching over 32 000 school children..
+2025-11-11 22:05:23 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-11 22:05:23 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 3136 characters
+2025-11-11 22:05:23 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Resume...
+2025-11-11 22:05:35 - data_processor - INFO - [Data Processor | extract_data] Extraction complete.
+2025-11-11 22:05:35 - data_processor - INFO - [Structred Data Resume]: 
+ {'name': 'Julie Monroe', 'summary': 'Talented Nutrition Consultant with three years of experience. Skilled in nutrition and food preparation and looking to deliver healthy, delicious meals at Woodacre Nursing Home. At 7-Star Senior Living, cheerfully cleaned kitchens and prepared three meals daily for 120+ residents. Received a promotion to head Nutrition Consultant within five months of hiring due to efficiency and interpersonal skills.', 'work_experience': [{'role': 'Nutritional Consultant (Part-Time)', 'company': 'WIC', 'start_date': 'Jan 2021', 'end_date': 'Present', 'responsibilities': ['Provided nutrition education counseling on morbid obesity, high cholesterol, and diabetes for uninsured patients at the health center.', 'Performed nutrition assessments and WIC certifications.', 'Provided nutrition education counseling and assessed nutritional status for participants of the WIC program.', 'Certified and enrolled participants according to the WIC program and state regulatory guidelines.']}, {'role': 'Nutritional Consultant', 'company': 'DaVita', 'start_date': 'Jan 2016', 'end_date': 'Nov 2019', 'responsibilities': ['Worked with neurologists in the initiation and nitration of drugs related to anemia and secondary hyperparathyroidism.', 'Participated in clinical CQI monitoring programs, including osteodystrophy management, kinetics, anemia, and nutrition management.', 'Monitored laboratory indicators of bone mineral status and anemia in hemodialysis patients.', 'Registered Dietitian/Nutrition Consultant Provided nutrition educational support to help patients improve their health.']}], 'education': [{'degree': 'Master of Science in Dietary Education', 'institution': 'Golden Valley University', 'graduation_date': 'Jul 2021'}, {'degree': 'Bachelor of Science in Food Sciences', 'institution': 'Wisconsin State University', 'graduation_date': 'Dec 2020'}, {'degree': 'Associates Degree in Nutrition', 'institution': 'St. Louis University', 'graduation_date': 'Oct 2017'}], 'skills': ['Food preparation', 'Kitchen maintenance', 'Kitchen equipment operation', 'Food sanitation', 'Nutrition'], 'extras': ['Hobbies: Soccer, Rugby, Tennis', 'Languages: English', 'Certifications: Certified Head Nutrition Consultant, Food Sciences Council (Jul 2021)', "Accomplishments: Decreased TPN usage through nutrition support team by 72% for a $42,000 annual cost savings; Provided nutritional care to patients in a 650+ bed long-term and sub-acute care facility; Supervised and evaluated a staff of 27 food production employees and three dietary managers; Founded the 'Provide Eat Smart NY' educational programs via mass media, reaching over 32,000 school children."]}
+2025-11-11 22:05:35 - data_processor - INFO - [Data Processor | create_semantic_chunks] Created 7 semantic chunks for the Resume.
+2025-11-11 22:05:35 - data_processor - INFO - [Semantic Chunks Resume]: 
+ [Document(metadata={'category': 'summary', 'name': 'Julie Monroe'}, page_content='Summary: Talented Nutrition Consultant with three years of experience. Skilled in nutrition and food preparation and looking to deliver healthy, delicious meals at Woodacre Nursing Home. At 7-Star Senior Living, cheerfully cleaned kitchens and prepared three meals daily for 120+ residents. Received a promotion to head Nutrition Consultant within five months of hiring due to efficiency and interpersonal skills.'), Document(metadata={'category': 'work_experience', 'company': 'WIC', 'role': 'Nutritional Consultant (Part-Time)'}, page_content='Role: Nutritional Consultant (Part-Time) at WIC (Jan 2021 - Present). Responsibilities: Provided nutrition education counseling on morbid obesity, high cholesterol, and diabetes for uninsured patients at the health center. Performed nutrition assessments and WIC certifications. Provided nutrition education counseling and assessed nutritional status for participants of the WIC program. Certified and enrolled participants according to the WIC program and state regulatory guidelines.'), Document(metadata={'category': 'work_experience', 'company': 'DaVita', 'role': 'Nutritional Consultant'}, page_content='Role: Nutritional Consultant at DaVita (Jan 2016 - Nov 2019). Responsibilities: Worked with neurologists in the initiation and nitration of drugs related to anemia and secondary hyperparathyroidism. Participated in clinical CQI monitoring programs, including osteodystrophy management, kinetics, anemia, and nutrition management. Monitored laboratory indicators of bone mineral status and anemia in hemodialysis patients. Registered Dietitian/Nutrition Consultant Provided nutrition educational support to help patients improve their health.'), Document(metadata={'category': 'education', 'institution': 'Golden Valley University'}, page_content='Degree: Master of Science in Dietary Education from Golden Valley University (Graduated: Jul 2021).'), Document(metadata={'category': 'education', 'institution': 'Wisconsin State University'}, page_content='Degree: Bachelor of Science in Food Sciences from Wisconsin State University (Graduated: Dec 2020).'), Document(metadata={'category': 'education', 'institution': 'St. Louis University'}, page_content='Degree: Associates Degree in Nutrition from St. Louis University (Graduated: Oct 2017).'), Document(metadata={'category': 'skills'}, page_content='Skills: Food preparation, Kitchen maintenance, Kitchen equipment operation, Food sanitation, Nutrition')]
+2025-11-11 22:05:35 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Resume...
+2025-11-11 22:05:35 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Resume saved to 'D:\os-files\Downloads\project-interview-chatbot\backend\data\test_01\vector_store\test_01-943eb8ff8e984f139e5b51e49d7efe5e\faiss_resume_index'.
+2025-11-11 23:11:23 - data_processor - INFO - 
+[Data Processor] --- Processing Job Description from D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_02-c57c351c642b4dc597bc88079e036453\job_description.txt ---
+2025-11-11 23:11:23 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-11 23:11:23 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_02-c57c351c642b4dc597bc88079e036453\job_description.txt...
+2025-11-11 23:11:32 - data_processor - INFO - [Data Processor | safe_convert] Document conversion complete for D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_02-c57c351c642b4dc597bc88079e036453\job_description.txt
+2025-11-11 23:11:32 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_02-c57c351c642b4dc597bc88079e036453\job_description.txt. 
+
+ Document Content JOIN OUR TEAM OF CUSTOMER SERVICE CHAMPIONS
+
+At Bright Wave Solutions, we believe that great customer service starts with understanding and anticipating the needs of our clients and their customers. We leverage cutting-edge technology and proven methodologies to streamline support processes and resolve issues promptly. As a Customer Service Representative at Bright Wave Solutions, you will be at the forefront of our mission, providing exceptional support and ensuring customer satisfaction.Your role will involve addressing customer inquiries via phone, email, and chat, resolving complaints in a professional and timely manner, and processing orders and requests accurately. You will keep records of customer interactions, provide product or service information, and collaborate with other departments to resolve issues.
+
+## THE JOB ROLE INCLUDES
+
+Addressing customer inquiries via phone, email, and chat
+
+Resolving customer complaints in a professional and timely manner
+
+Processing orders, forms, applications, and requests
+
+Keeping records of customer interactions and transactions
+
+Providing product or service information to customers
+
+Collaborating with other departments to resolve customer issues
+
+Following up with customers to ensure satisfaction
+
+Maintaining a positive, empathetic, and professional attitude
+
+## THE IDEAL CANDIDATE SHOULD POSSESS
+
+Strong communication skills: Able to clearly convey information and empathize with customers.
+
+Proven experience in customer service: History of handling inquiries and resolving issues.
+
+Proficiency in customer service software: Comfortable with CRM tools and various platforms.
+
+A positive and empathetic attitude: Maintains positivity and shows empathy towards customers.
+
+We offer a competitive salary, comprehensive benefits package, and opportunities for career growth. You'll work in a supportive environment with a team that values excellence and customer satisfaction.
+
+Please send your applications to career@brightwavesolutions.com.The deadline for submitting applications is 06/22/2025..
+2025-11-11 23:11:32 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-11 23:11:32 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 2065 characters
+2025-11-11 23:11:32 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Job Description...
+2025-11-11 23:11:32 - data_processor - ERROR - An unexpected error occured while processing D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_02-c57c351c642b4dc597bc88079e036453\job_description.txt
+Traceback (most recent call last):
+  File "D:\os-files\Downloads\project-interview-chatbot\backend\src\core\data_preprocessing.py", line 132, in process_and_vectorize
+    structured_data = extract_data(text, schema, doc_type)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\os-files\Downloads\project-interview-chatbot\backend\src\core\data_preprocessing.py", line 78, in extract_data
+    result = chain.invoke({
+             ^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\base.py", line 3090, in invoke
+    input_ = context.run(step.invoke, input_, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\base.py", line 4812, in invoke
+    return self._call_with_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\base.py", line 2021, in _call_with_config
+    context.run(
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\config.py", line 428, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\base.py", line 4669, in _invoke
+    output = call_func_with_variable_args(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\config.py", line 428, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_large_language_model() takes 0 positional arguments but 1 was given
+2025-11-11 23:12:21 - data_processor - INFO - 
+[Data Processor] --- Processing Job Description from D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_02-e1747aebfef745769855737ff6b096c5\job_description.txt ---
+2025-11-11 23:12:21 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-11 23:12:21 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_02-e1747aebfef745769855737ff6b096c5\job_description.txt...
+2025-11-11 23:12:26 - data_processor - INFO - [Data Processor | safe_convert] Document conversion complete for D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_02-e1747aebfef745769855737ff6b096c5\job_description.txt
+2025-11-11 23:12:26 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_02-e1747aebfef745769855737ff6b096c5\job_description.txt. 
+
+ Document Content JOIN OUR TEAM OF CUSTOMER SERVICE CHAMPIONS
+
+At Bright Wave Solutions, we believe that great customer service starts with understanding and anticipating the needs of our clients and their customers. We leverage cutting-edge technology and proven methodologies to streamline support processes and resolve issues promptly. As a Customer Service Representative at Bright Wave Solutions, you will be at the forefront of our mission, providing exceptional support and ensuring customer satisfaction.Your role will involve addressing customer inquiries via phone, email, and chat, resolving complaints in a professional and timely manner, and processing orders and requests accurately. You will keep records of customer interactions, provide product or service information, and collaborate with other departments to resolve issues.
+
+## THE JOB ROLE INCLUDES
+
+Addressing customer inquiries via phone, email, and chat
+
+Resolving customer complaints in a professional and timely manner
+
+Processing orders, forms, applications, and requests
+
+Keeping records of customer interactions and transactions
+
+Providing product or service information to customers
+
+Collaborating with other departments to resolve customer issues
+
+Following up with customers to ensure satisfaction
+
+Maintaining a positive, empathetic, and professional attitude
+
+## THE IDEAL CANDIDATE SHOULD POSSESS
+
+Strong communication skills: Able to clearly convey information and empathize with customers.
+
+Proven experience in customer service: History of handling inquiries and resolving issues.
+
+Proficiency in customer service software: Comfortable with CRM tools and various platforms.
+
+A positive and empathetic attitude: Maintains positivity and shows empathy towards customers.
+
+We offer a competitive salary, comprehensive benefits package, and opportunities for career growth. You'll work in a supportive environment with a team that values excellence and customer satisfaction.
+
+Please send your applications to career@brightwavesolutions.com.The deadline for submitting applications is 06/22/2025..
+2025-11-11 23:12:26 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-11 23:12:26 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 2065 characters
+2025-11-11 23:12:26 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Job Description...
+2025-11-11 23:12:26 - data_processor - ERROR - An unexpected error occured while processing D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_02-e1747aebfef745769855737ff6b096c5\job_description.txt
+Traceback (most recent call last):
+  File "D:\os-files\Downloads\project-interview-chatbot\backend\src\core\data_preprocessing.py", line 132, in process_and_vectorize
+    structured_data = extract_data(text, schema, doc_type)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\os-files\Downloads\project-interview-chatbot\backend\src\core\data_preprocessing.py", line 78, in extract_data
+    result = chain.invoke({
+             ^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\base.py", line 3090, in invoke
+    input_ = context.run(step.invoke, input_, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\base.py", line 4812, in invoke
+    return self._call_with_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\base.py", line 2021, in _call_with_config
+    context.run(
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\config.py", line 428, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\base.py", line 4669, in _invoke
+    output = call_func_with_variable_args(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\runnables\config.py", line 428, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_large_language_model() takes 0 positional arguments but 1 was given
+2025-11-11 23:13:23 - data_processor - INFO - 
+[Data Processor] --- Processing Job Description from D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_02-055f424370fe407fa836906fadf816a2\job_description.txt ---
+2025-11-11 23:13:23 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-11 23:13:23 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_02-055f424370fe407fa836906fadf816a2\job_description.txt...
+2025-11-11 23:13:28 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_02-055f424370fe407fa836906fadf816a2\job_description.txt.
+2025-11-11 23:13:28 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-11 23:13:28 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 2065 characters
+2025-11-11 23:13:28 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Job Description...
+2025-11-11 23:13:34 - data_processor - INFO - [Data Processor | extract_data] Extraction complete.
+2025-11-11 23:13:34 - data_processor - INFO - [Structred Data Job Description]: 
+ {
+  "job_title": "Customer Service Representative",
+  "company": "Bright Wave Solutions",
+  "location": "",
+  "company_summary": "Bright Wave Solutions focuses on delivering exceptional customer service by leveraging cutting\u2011edge technology and proven methodologies to streamline support processes and resolve issues promptly.",
+  "responsibilities": [
+    "Address customer inquiries via phone, email, and chat",
+    "Resolve customer complaints in a professional and timely manner",
+    "Process orders, forms, applications, and requests",
+    "Keep records of customer interactions and transactions",
+    "Provide product or service information to customers",
+    "Collaborate with other departments to resolve customer issues",
+    "Follow up with customers to ensure satisfaction",
+    "Maintain a positive, empathetic, and professional attitude"
+  ],
+  "required_qualifications": [
+    "Strong communication skills: able to clearly convey information and empathize with customers",
+    "Proven experience in customer service: history of handling inquiries and resolving issues",
+    "Proficiency in customer service software: comfortable with CRM tools and various platforms",
+    "A positive and empathetic attitude: maintains positivity and shows empathy towards customers"
+  ],
+  "preferred_qualifications": []
+}
+2025-11-11 23:13:34 - data_processor - INFO - [Data Processor | create_semantic_chunks] Created 3 semantic chunks for the Job Description.
+2025-11-11 23:13:34 - data_processor - DEBUG - [Semantic Chunks Job Description]: 
+ [Document(metadata={'category': 'overview', 'company': 'Bright Wave Solutions', 'job_title': 'Customer Service Representative'}, page_content='Job Title: Customer Service Representative at Bright Wave Solutions. Location: . Company Summary: Bright Wave Solutions focuses on delivering exceptional customer service by leveraging cutting‑edge technology and proven methodologies to streamline support processes and resolve issues promptly.'), Document(metadata={'category': 'responsibilities', 'company': 'Bright Wave Solutions', 'job_title': 'Customer Service Representative'}, page_content='Key Responsibilities: Address customer inquiries via phone, email, and chat Resolve customer complaints in a professional and timely manner Process orders, forms, applications, and requests Keep records of customer interactions and transactions Provide product or service information to customers Collaborate with other departments to resolve customer issues Follow up with customers to ensure satisfaction Maintain a positive, empathetic, and professional attitude'), Document(metadata={'category': 'required_qualifications', 'company': 'Bright Wave Solutions', 'job_title': 'Customer Service Representative'}, page_content='Required Qualifications: Strong communication skills: able to clearly convey information and empathize with customers Proven experience in customer service: history of handling inquiries and resolving issues Proficiency in customer service software: comfortable with CRM tools and various platforms A positive and empathetic attitude: maintains positivity and shows empathy towards customers')]
+2025-11-11 23:13:34 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Job Description...
+2025-11-11 23:13:35 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Job Description saved to 'D:\os-files\Downloads\project-interview-chatbot\backend\data\test_02\vector_store\test_02-055f424370fe407fa836906fadf816a2\faiss_jd_index'.
+2025-11-11 23:13:35 - data_processor - INFO - 
+[Data Processor] --- Processing Resume from D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_02-055f424370fe407fa836906fadf816a2\resume.txt ---
+2025-11-11 23:13:35 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-11 23:13:35 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_02-055f424370fe407fa836906fadf816a2\resume.txt...
+2025-11-11 23:14:04 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for D:\os-files\Downloads\project-interview-chatbot\backend\uploads\test_02-055f424370fe407fa836906fadf816a2\resume.txt.
+2025-11-11 23:14:04 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-11 23:14:04 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 3211 characters
+2025-11-11 23:14:04 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Resume...
+2025-11-11 23:14:18 - data_processor - INFO - [Data Processor | extract_data] Extraction complete.
+2025-11-11 23:14:18 - data_processor - INFO - [Structred Data Resume]: 
+ {
+  "name": "Michelle Lopez",
+  "summary": "Expert Fashion Designer with 11+ years' experience in women's high-end shoes. Launched product lines for Chanel and Gucci. Designs showcased in Elle and Vogue. Attained recognition of top seller fashionista in 2017.",
+  "work_experience": [
+    {
+      "role": "Senior Fashion Designer",
+      "company": "Escada, Milan",
+      "start_date": "January 2017",
+      "end_date": "July 2021",
+      "responsibilities": [
+        "Designed attractive fashion items that coincided with the brand's look.",
+        "Ran the whole product design process, from primary market research, mood board development to sketching and design to producing the finished product.",
+        "Contributed to the conceptual development of directional product lines, which included delivering original concept pitches.",
+        "Supervised technical designs of all products from concept design to manufacturing, including trim and fabric selection, meeting and choosing from vendors, etc."
+      ]
+    },
+    {
+      "role": "Associate Fashion Designer",
+      "company": "Dior Homme, New York",
+      "start_date": "January 2014",
+      "end_date": "December 2018",
+      "responsibilities": [
+        "Created seasonal products which focused on style, fabric, and fit.",
+        "Leveraged processes to predict customers' needs in order to surpass customer expectations and react punctually to their requirements.",
+        "Developed and upheld effective relations with eight vital partners.",
+        "Worked together and followed up with vendors regarding deliverables and main partners throughout the whole design process, including preproduction, merchandising, and product development."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Fashion Design",
+      "institution": "University of Illinois, Chicago",
+      "graduation_date": "Present"
+    },
+    {
+      "degree": "Adobe Certified Expert",
+      "institution": "Adobe",
+      "graduation_date": "Present"
+    },
+    {
+      "degree": "Associates Degree in Fashion Design",
+      "institution": "University of Southern California, San Jacinto",
+      "graduation_date": "June 2017"
+    }
+  ],
+  "skills": [
+    "Adobe Illustrator",
+    "Hand Drafting",
+    "Fabric",
+    "Fashion Design",
+    "Design Patterns"
+  ],
+  "extras": [
+    "Accomplishment: Developed a men's winter collection renowned by Vogue's and Marie Claire's editorial teams for its Art Nouveau style, boosting sales by 46%.",
+    "Accomplishment: Created a highly admired women's summer collection that increased revenue by 38% compared to last year.",
+    "Accomplishment: Managed a team of 6 designers to create 155 SKUs each month for a children's apparel company.",
+    "Accomplishment: Enhanced the company's main designing platform from 6 to 4, resulting in cost-savings of $67,000 per SKU due to scale efficiencies.",
+    "Languages: English (Native speaker), Italian (Native speaker)",
+    "Hobbies: Art, Rugby, Cricket"
+  ]
+}
+2025-11-11 23:14:18 - data_processor - INFO - [Data Processor | create_semantic_chunks] Created 7 semantic chunks for the Resume.
+2025-11-11 23:14:18 - data_processor - DEBUG - [Semantic Chunks Resume]: 
+ [Document(metadata={'category': 'summary', 'name': 'Michelle Lopez'}, page_content="Candidate Name: Michelle Lopez. Summary: Expert Fashion Designer with 11+ years' experience in women's high-end shoes. Launched product lines for Chanel and Gucci. Designs showcased in Elle and Vogue. Attained recognition of top seller fashionista in 2017."), Document(metadata={'category': 'work_experience', 'company': 'Escada, Milan', 'role': 'Senior Fashion Designer', 'name': 'Michelle Lopez'}, page_content="Role: Senior Fashion Designer at Escada, Milan (January 2017 - July 2021). Responsibilities: Designed attractive fashion items that coincided with the brand's look. Ran the whole product design process, from primary market research, mood board development to sketching and design to producing the finished product. Contributed to the conceptual development of directional product lines, which included delivering original concept pitches. Supervised technical designs of all products from concept design to manufacturing, including trim and fabric selection, meeting and choosing from vendors, etc."), Document(metadata={'category': 'work_experience', 'company': 'Dior Homme, New York', 'role': 'Associate Fashion Designer', 'name': 'Michelle Lopez'}, page_content="Role: Associate Fashion Designer at Dior Homme, New York (January 2014 - December 2018). Responsibilities: Created seasonal products which focused on style, fabric, and fit. Leveraged processes to predict customers' needs in order to surpass customer expectations and react punctually to their requirements. Developed and upheld effective relations with eight vital partners. Worked together and followed up with vendors regarding deliverables and main partners throughout the whole design process, including preproduction, merchandising, and product development."), Document(metadata={'category': 'education', 'institution': 'University of Illinois, Chicago', 'name': 'Michelle Lopez'}, page_content='Degree: Bachelor of Arts in Fashion Design from University of Illinois, Chicago (Graduated: Present).'), Document(metadata={'category': 'education', 'institution': 'Adobe', 'name': 'Michelle Lopez'}, page_content='Degree: Adobe Certified Expert from Adobe (Graduated: Present).'), Document(metadata={'category': 'education', 'institution': 'University of Southern California, San Jacinto', 'name': 'Michelle Lopez'}, page_content='Degree: Associates Degree in Fashion Design from University of Southern California, San Jacinto (Graduated: June 2017).'), Document(metadata={'category': 'skills', 'name': 'Michelle Lopez'}, page_content='Skills: Adobe Illustrator, Hand Drafting, Fabric, Fashion Design, Design Patterns')]
+2025-11-11 23:14:18 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Resume...
+2025-11-11 23:14:19 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Resume saved to 'D:\os-files\Downloads\project-interview-chatbot\backend\data\test_02\vector_store\test_02-055f424370fe407fa836906fadf816a2\faiss_resume_index'.
+2025-11-12 12:43:23 - data_processor - INFO - 
+[Data Processor] --- Processing Job Description from C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_03-bf21cbcea8de4c23a7df58df91005adb\job_description.txt ---
+2025-11-12 12:43:23 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-12 12:43:23 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_03-bf21cbcea8de4c23a7df58df91005adb\job_description.txt...
+2025-11-12 12:43:30 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_03-bf21cbcea8de4c23a7df58df91005adb\job_description.txt.
+2025-11-12 12:43:30 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-12 12:43:30 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 1427 characters
+2025-11-12 12:43:30 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Job Description...
+2025-11-12 12:43:46 - data_processor - INFO - [Data Processor | extract_data] Extraction complete.
+2025-11-12 12:43:46 - data_processor - INFO - [Structred Data Job Description]: 
+ {
+  "job_title": "Cashier",
+  "company": "Eco Market",
+  "location": "Not specified",
+  "company_summary": "Eco Market is a retail store that promotes sustainable products and values exceptional customer service.",
+  "responsibilities": [
+    "Process transactions accurately and efficiently",
+    "Maintain a clean and organized checkout area",
+    "Assist customers with inquiries and product recommendations",
+    "Handle cash, credit, and debit card transactions while ensuring all payment procedures are followed correctly",
+    "Contribute to inventory management by scanning and bagging products quickly and carefully",
+    "Uphold company values and promote sustainable products",
+    "Ensure a pleasant shopping experience for all"
+  ],
+  "required_qualifications": [
+    "High school diploma or an equivalent qualification",
+    "Previous experience in retail or customer service positions",
+    "Strong attention to detail and accuracy in tasks and transactions",
+    "Excellent communication and interpersonal skills for customer interactions",
+    "Ability to handle cash accurately and operate a point-of-sale system",
+    "Basic math skills to ensure correct handling of various transactions",
+    "Flexibility to work different shifts, including weekends and holidays as needed",
+    "Physical stamina to stand for extended periods and lift up to 15kg"
+  ],
+  "preferred_qualifications": []
+}
+2025-11-12 12:43:46 - data_processor - INFO - [Data Processor | create_semantic_chunks] Created 3 semantic chunks for the Job Description.
+2025-11-12 12:43:46 - data_processor - DEBUG - [Semantic Chunks Job Description]: 
+ [Document(metadata={'category': 'overview', 'company': 'Eco Market', 'job_title': 'Cashier'}, page_content='Job Title: Cashier at Eco Market. Location: Not specified. Company Summary: Eco Market is a retail store that promotes sustainable products and values exceptional customer service.'), Document(metadata={'category': 'responsibilities', 'company': 'Eco Market', 'job_title': 'Cashier'}, page_content='Key Responsibilities: Process transactions accurately and efficiently Maintain a clean and organized checkout area Assist customers with inquiries and product recommendations Handle cash, credit, and debit card transactions while ensuring all payment procedures are followed correctly Contribute to inventory management by scanning and bagging products quickly and carefully Uphold company values and promote sustainable products Ensure a pleasant shopping experience for all'), Document(metadata={'category': 'required_qualifications', 'company': 'Eco Market', 'job_title': 'Cashier'}, page_content='Required Qualifications: High school diploma or an equivalent qualification Previous experience in retail or customer service positions Strong attention to detail and accuracy in tasks and transactions Excellent communication and interpersonal skills for customer interactions Ability to handle cash accurately and operate a point-of-sale system Basic math skills to ensure correct handling of various transactions Flexibility to work different shifts, including weekends and holidays as needed Physical stamina to stand for extended periods and lift up to 15kg')]
+2025-11-12 12:43:46 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Job Description...
+2025-11-12 12:43:48 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Job Description saved to 'C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\data\test_03\vector_store\test_03-bf21cbcea8de4c23a7df58df91005adb\faiss_jd_index'.
+2025-11-12 12:43:48 - data_processor - INFO - 
+[Data Processor] --- Processing Resume from C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_03-bf21cbcea8de4c23a7df58df91005adb\resume.txt ---
+2025-11-12 12:43:48 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-12 12:43:48 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_03-bf21cbcea8de4c23a7df58df91005adb\resume.txt...
+2025-11-12 12:44:18 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_03-bf21cbcea8de4c23a7df58df91005adb\resume.txt.
+2025-11-12 12:44:18 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-12 12:44:18 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 3211 characters
+2025-11-12 12:44:18 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Resume...
+2025-11-12 12:44:30 - data_processor - INFO - [Data Processor | extract_data] Extraction complete.
+2025-11-12 12:44:30 - data_processor - INFO - [Structred Data Resume]: 
+ {
+  "name": "Michelle Lopez",
+  "summary": "Expert Fashion Designer with 11+ years' experience in women's high-end shoes. Launched product lines for Chanel and Gucci. Designs showcased in Elle and Vogue. Attained recognition of top seller fashionista in 2017.",
+  "work_experience": [
+    {
+      "role": "Senior Fashion Designer",
+      "company": "Escada, Milan",
+      "start_date": "January 2017",
+      "end_date": "July 2021",
+      "responsibilities": [
+        "Designed attractive fashion items that coincided with the brand's look.",
+        "Ran the whole product design process, from primary market research, mood board development to sketching and design to producing the finished product.",
+        "Contributed to the conceptual development of directional product lines, which included delivering original concept pitches.",
+        "Supervised technical designs of all products from concept design to manufacturing, including trim and fabric selection, meeting and choosing from vendors, etc."
+      ]
+    },
+    {
+      "role": "Associate Fashion Designer",
+      "company": "Dior Homme, New York",
+      "start_date": "January 2014",
+      "end_date": "December 2018",
+      "responsibilities": [
+        "Produced commercial designs reflecting the abstract direction and business strategy of the company.",
+        "Created seasonal products which focused on style, fabric, and fit.",
+        "Leveraged processes to predict customers' needs in order to surpass customer expectations and react punctually to their requirements.",
+        "Developed and upheld effective relations with eight vital partners.",
+        "Worked together and followed up with vendors regarding deliverables and main partners throughout the whole design process, including preproduction, merchandising, and product development."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Fashion Design",
+      "institution": "University of Illinois, Chicago",
+      "graduation_date": "Present"
+    },
+    {
+      "degree": "Associates Degree in Fashion Design",
+      "institution": "University of Southern California, San Jacinto",
+      "graduation_date": "June 2017"
+    }
+  ],
+  "skills": [
+    "Adobe Illustrator",
+    "Hand Drafting",
+    "Fabric",
+    "Fashion Design",
+    "Design Patterns"
+  ],
+  "extras": [
+    "Art, Rugby, Cricket",
+    "English Native speaker",
+    "Italian Native speaker"
+  ]
+}
+2025-11-12 12:44:30 - data_processor - INFO - [Data Processor | create_semantic_chunks] Created 6 semantic chunks for the Resume.
+2025-11-12 12:44:30 - data_processor - DEBUG - [Semantic Chunks Resume]: 
+ [Document(metadata={'category': 'summary', 'name': 'Michelle Lopez'}, page_content="Candidate Name: Michelle Lopez. Summary: Expert Fashion Designer with 11+ years' experience in women's high-end shoes. Launched product lines for Chanel and Gucci. Designs showcased in Elle and Vogue. Attained recognition of top seller fashionista in 2017."), Document(metadata={'category': 'work_experience', 'company': 'Escada, Milan', 'role': 'Senior Fashion Designer', 'name': 'Michelle Lopez'}, page_content="Role: Senior Fashion Designer at Escada, Milan (January 2017 - July 2021). Responsibilities: Designed attractive fashion items that coincided with the brand's look. Ran the whole product design process, from primary market research, mood board development to sketching and design to producing the finished product. Contributed to the conceptual development of directional product lines, which included delivering original concept pitches. Supervised technical designs of all products from concept design to manufacturing, including trim and fabric selection, meeting and choosing from vendors, etc."), Document(metadata={'category': 'work_experience', 'company': 'Dior Homme, New York', 'role': 'Associate Fashion Designer', 'name': 'Michelle Lopez'}, page_content="Role: Associate Fashion Designer at Dior Homme, New York (January 2014 - December 2018). Responsibilities: Produced commercial designs reflecting the abstract direction and business strategy of the company. Created seasonal products which focused on style, fabric, and fit. Leveraged processes to predict customers' needs in order to surpass customer expectations and react punctually to their requirements. Developed and upheld effective relations with eight vital partners. Worked together and followed up with vendors regarding deliverables and main partners throughout the whole design process, including preproduction, merchandising, and product development."), Document(metadata={'category': 'education', 'institution': 'University of Illinois, Chicago', 'name': 'Michelle Lopez'}, page_content='Degree: Bachelor of Arts in Fashion Design from University of Illinois, Chicago (Graduated: Present).'), Document(metadata={'category': 'education', 'institution': 'University of Southern California, San Jacinto', 'name': 'Michelle Lopez'}, page_content='Degree: Associates Degree in Fashion Design from University of Southern California, San Jacinto (Graduated: June 2017).'), Document(metadata={'category': 'skills', 'name': 'Michelle Lopez'}, page_content='Skills: Adobe Illustrator, Hand Drafting, Fabric, Fashion Design, Design Patterns')]
+2025-11-12 12:44:30 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Resume...
+2025-11-12 12:44:30 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Resume saved to 'C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\data\test_03\vector_store\test_03-bf21cbcea8de4c23a7df58df91005adb\faiss_resume_index'.
+2025-11-12 14:29:59 - data_processor - INFO - 
+[Data Processor] --- Processing Job Description from C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_04-5d60c0aece3b4a12b19457794cd3bfd7\job_description.txt ---
+2025-11-12 14:29:59 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-12 14:29:59 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_04-5d60c0aece3b4a12b19457794cd3bfd7\job_description.txt...
+2025-11-12 14:30:06 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_04-5d60c0aece3b4a12b19457794cd3bfd7\job_description.txt.
+2025-11-12 14:30:06 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-12 14:30:06 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 1953 characters
+2025-11-12 14:30:06 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Job Description...
+2025-11-12 14:30:22 - data_processor - INFO - [Data Processor | extract_data] Extraction complete.
+2025-11-12 14:30:22 - data_processor - INFO - [Structred Data Job Description]: 
+ {
+  "job_title": "Office Manager",
+  "company": "Global Management",
+  "location": "Brightview, Colorado",
+  "company_summary": "Global Management is a dynamic company that values a friendly and inclusive work environment, offering competitive benefits and opportunities for professional development.",
+  "responsibilities": [
+    "Oversee daily office operations and procedures, ensuring everything runs smoothly and efficiently.",
+    "Manage office supplies inventory and place orders as needed.",
+    "Coordinate and schedule meetings and appointments.",
+    "Ensure the office is clean, organized, and efficient.",
+    "Support the HR department with recruitment processes and onboarding.",
+    "Handle correspondence, complaints, and queries.",
+    "Liaise with facility management vendors."
+  ],
+  "required_qualifications": [
+    "Bachelor's degree in Business Administration or a related field.",
+    "Excellent time management skills and ability to multitask and prioritize work.",
+    "Knowledge of office administration responsibilities, systems, and procedures.",
+    "Proficiency in MS Office (MS Excel and MS Outlook, in particular)."
+  ],
+  "preferred_qualifications": []
+}
+2025-11-12 14:30:22 - data_processor - INFO - [Data Processor | create_semantic_chunks] Created 3 semantic chunks for the Job Description.
+2025-11-12 14:30:22 - data_processor - DEBUG - [Semantic Chunks Job Description]: 
+ [Document(metadata={'category': 'overview', 'company': 'Global Management', 'job_title': 'Office Manager'}, page_content='Job Title: Office Manager at Global Management. Location: Brightview, Colorado. Company Summary: Global Management is a dynamic company that values a friendly and inclusive work environment, offering competitive benefits and opportunities for professional development.'), Document(metadata={'category': 'responsibilities', 'company': 'Global Management', 'job_title': 'Office Manager'}, page_content='Key Responsibilities: Oversee daily office operations and procedures, ensuring everything runs smoothly and efficiently. Manage office supplies inventory and place orders as needed. Coordinate and schedule meetings and appointments. Ensure the office is clean, organized, and efficient. Support the HR department with recruitment processes and onboarding. Handle correspondence, complaints, and queries. Liaise with facility management vendors.'), Document(metadata={'category': 'required_qualifications', 'company': 'Global Management', 'job_title': 'Office Manager'}, page_content="Required Qualifications: Bachelor's degree in Business Administration or a related field. Excellent time management skills and ability to multitask and prioritize work. Knowledge of office administration responsibilities, systems, and procedures. Proficiency in MS Office (MS Excel and MS Outlook, in particular).")]
+2025-11-12 14:30:22 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Job Description...
+2025-11-12 14:30:24 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Job Description saved to 'C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\data\test_04\vector_store\test_04-5d60c0aece3b4a12b19457794cd3bfd7\faiss_jd_index'.
+2025-11-12 14:30:24 - data_processor - INFO - 
+[Data Processor] --- Processing Resume from C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_04-5d60c0aece3b4a12b19457794cd3bfd7\resume.txt ---
+2025-11-12 14:30:24 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-12 14:30:24 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_04-5d60c0aece3b4a12b19457794cd3bfd7\resume.txt...
+2025-11-12 14:30:29 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_04-5d60c0aece3b4a12b19457794cd3bfd7\resume.txt.
+2025-11-12 14:30:29 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-12 14:30:29 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 3136 characters
+2025-11-12 14:30:29 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Resume...
+2025-11-12 14:30:44 - data_processor - INFO - [Data Processor | extract_data] Extraction complete.
+2025-11-12 14:30:44 - data_processor - INFO - [Structred Data Resume]: 
+ {
+  "name": "Julie Monroe",
+  "summary": "Talented Nutrition Consultant with three years of experience. Skilled in nutrition and food preparation and looking to deliver healthy, delicious meals at Woodacre Nursing Home. At 7-Star Senior Living, cheerfully cleaned kitchens and prepared three meals daily for 120+ residents. Received a promotion to head Nutrition Consultant within five months of hiring due to efficiency and interpersonal skills.",
+  "work_experience": [
+    {
+      "role": "Nutritional Consultant (Part-Time)",
+      "company": "WIC",
+      "start_date": "Jan 2021",
+      "end_date": "Present",
+      "responsibilities": [
+        "Provided nutrition education counseling on morbid obesity, high cholesterol, and diabetes for uninsured patients at the health center.",
+        "Performed nutrition assessments and WIC certifications.",
+        "Provided nutrition education counseling and assessed nutritional status for participants of the WIC program.",
+        "Certified and enrolled participants according to the WIC program and state regulatory guidelines."
+      ]
+    },
+    {
+      "role": "Nutritional Consultant",
+      "company": "DaVita",
+      "start_date": "Jan 2016",
+      "end_date": "Nov 2019",
+      "responsibilities": [
+        "Worked with neurologists in the initiation and nitration of drugs related to anemia and secondary hyperparathyroidism.",
+        "Participated in clinical CQI monitoring programs, including osteodystrophy management, kinetics, anemia, and nutrition management.",
+        "Monitored laboratory indicators of bone mineral status and anemia in hemodialysis patients.",
+        "Registered Dietitian/Nutrition Consultant Provided nutrition educational support to help patients improve their health."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Dietary Education",
+      "institution": "Golden Valley University",
+      "graduation_date": "Jul 2021"
+    },
+    {
+      "degree": "Bachelor of Science in Food Sciences",
+      "institution": "Wisconsin State University",
+      "graduation_date": "Dec 2020"
+    },
+    {
+      "degree": "Associates Degree in Nutrition",
+      "institution": "St. Louis University",
+      "graduation_date": "Oct 2017"
+    }
+  ],
+  "skills": [
+    "Food preparation",
+    "Kitchen maintenance",
+    "Kitchen equipment operation",
+    "Food sanitation",
+    "Nutrition"
+  ],
+  "extras": [
+    "Soccer",
+    "Rugby",
+    "Tennis",
+    "English",
+    "LinkedIn",
+    "Pinterest",
+    "Resume Templates"
+  ]
+}
+2025-11-12 14:30:44 - data_processor - INFO - [Data Processor | create_semantic_chunks] Created 7 semantic chunks for the Resume.
+2025-11-12 14:30:44 - data_processor - DEBUG - [Semantic Chunks Resume]: 
+ [Document(metadata={'category': 'summary', 'name': 'Julie Monroe'}, page_content='Candidate Name: Julie Monroe. Summary: Talented Nutrition Consultant with three years of experience. Skilled in nutrition and food preparation and looking to deliver healthy, delicious meals at Woodacre Nursing Home. At 7-Star Senior Living, cheerfully cleaned kitchens and prepared three meals daily for 120+ residents. Received a promotion to head Nutrition Consultant within five months of hiring due to efficiency and interpersonal skills.'), Document(metadata={'category': 'work_experience', 'company': 'WIC', 'role': 'Nutritional Consultant (Part-Time)', 'name': 'Julie Monroe'}, page_content='Role: Nutritional Consultant (Part-Time) at WIC (Jan 2021 - Present). Responsibilities: Provided nutrition education counseling on morbid obesity, high cholesterol, and diabetes for uninsured patients at the health center. Performed nutrition assessments and WIC certifications. Provided nutrition education counseling and assessed nutritional status for participants of the WIC program. Certified and enrolled participants according to the WIC program and state regulatory guidelines.'), Document(metadata={'category': 'work_experience', 'company': 'DaVita', 'role': 'Nutritional Consultant', 'name': 'Julie Monroe'}, page_content='Role: Nutritional Consultant at DaVita (Jan 2016 - Nov 2019). Responsibilities: Worked with neurologists in the initiation and nitration of drugs related to anemia and secondary hyperparathyroidism. Participated in clinical CQI monitoring programs, including osteodystrophy management, kinetics, anemia, and nutrition management. Monitored laboratory indicators of bone mineral status and anemia in hemodialysis patients. Registered Dietitian/Nutrition Consultant Provided nutrition educational support to help patients improve their health.'), Document(metadata={'category': 'education', 'institution': 'Golden Valley University', 'name': 'Julie Monroe'}, page_content='Degree: Master of Science in Dietary Education from Golden Valley University (Graduated: Jul 2021).'), Document(metadata={'category': 'education', 'institution': 'Wisconsin State University', 'name': 'Julie Monroe'}, page_content='Degree: Bachelor of Science in Food Sciences from Wisconsin State University (Graduated: Dec 2020).'), Document(metadata={'category': 'education', 'institution': 'St. Louis University', 'name': 'Julie Monroe'}, page_content='Degree: Associates Degree in Nutrition from St. Louis University (Graduated: Oct 2017).'), Document(metadata={'category': 'skills', 'name': 'Julie Monroe'}, page_content='Skills: Food preparation, Kitchen maintenance, Kitchen equipment operation, Food sanitation, Nutrition')]
+2025-11-12 14:30:44 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Resume...
+2025-11-12 14:30:44 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Resume saved to 'C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\data\test_04\vector_store\test_04-5d60c0aece3b4a12b19457794cd3bfd7\faiss_resume_index'.
+2025-11-12 15:24:52 - data_processor - INFO - 
+[Data Processor] --- Processing Job Description from C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\alexandra_menon-0d993bbbde304b5b97eeb93d5d5cc01c\job_description.txt ---
+2025-11-12 15:24:52 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-12 15:24:52 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\alexandra_menon-0d993bbbde304b5b97eeb93d5d5cc01c\job_description.txt...
+2025-11-12 15:25:00 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\alexandra_menon-0d993bbbde304b5b97eeb93d5d5cc01c\job_description.txt.
+2025-11-12 15:25:00 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-12 15:25:00 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 3805 characters
+2025-11-12 15:25:00 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Job Description...
+2025-11-12 15:25:22 - data_processor - INFO - [Data Processor | extract_data] Extraction complete.
+2025-11-12 15:25:22 - data_processor - INFO - [Structred Data Job Description]: 
+ {
+  "job_title": "Graphic Designer",
+  "company": "NovaSynth Labs",
+  "location": "Kollam, Kerala, India (Hybrid/Remote options available)",
+  "company_summary": "Dynamic creative studio and product lab in Thiruvalla, blending tradition with emerging tech, building digital experiences that inspire, inform, and engage.",
+  "responsibilities": [
+    "Conceptualize and create visually striking designs for websites, mobile apps, social media, email campaigns, presentations, brochures, and brand collateral.",
+    "Develop and maintain consistent brand guidelines, including typography, color palettes, and visual tone across all platforms.",
+    "Collaborate with cross-functional teams to translate product requirements and marketing goals into intuitive and aesthetically compelling visuals.",
+    "Design user-centered interfaces and assets that align with UX best practices and accessibility standards.",
+    "Iterate on designs based on feedback, user testing, and performance metrics.",
+    "Stay current with design trends, tools, and emerging visual technologies (including AI-assisted design workflows).",
+    "Prepare production-ready files for print and digital use, ensuring quality and technical accuracy.",
+    "Present and articulate design concepts clearly to both creative and non-creative stakeholders."
+  ],
+  "required_qualifications": [
+    "Bachelor's degree in Graphic Design, Visual Communication, or a related field (or equivalent practical experience).",
+    "2+ years of professional experience in graphic or digital design (agency, in-house, or freelance).",
+    "Proficiency in industry-standard design tools: Adobe Creative Suite (Photoshop, Illustrator, InDesign), Figma, and/or Sketch.",
+    "Strong portfolio showcasing a range of work: branding, UI/UX elements, digital marketing assets, and layout design.",
+    "Solid understanding of typography, color theory, composition, and visual hierarchy.",
+    "Experience designing for both digital (web, mobile, social) and print media."
+  ],
+  "preferred_qualifications": [
+    "Basic familiarity with HTML/CSS or design-to-development handoff processes.",
+    "Awareness of generative design tools (e.g., Adobe Firefly, Canva AI, or Figma plugins)."
+  ]
+}
+2025-11-12 15:25:22 - data_processor - INFO - [Data Processor | create_semantic_chunks] Created 4 semantic chunks for the Job Description.
+2025-11-12 15:25:22 - data_processor - DEBUG - [Semantic Chunks Job Description]: 
+ [Document(metadata={'category': 'overview', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content='Job Title: Graphic Designer at NovaSynth Labs. Location: Kollam, Kerala, India (Hybrid/Remote options available). Company Summary: Dynamic creative studio and product lab in Thiruvalla, blending tradition with emerging tech, building digital experiences that inspire, inform, and engage.'), Document(metadata={'category': 'responsibilities', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content='Key Responsibilities: Conceptualize and create visually striking designs for websites, mobile apps, social media, email campaigns, presentations, brochures, and brand collateral. Develop and maintain consistent brand guidelines, including typography, color palettes, and visual tone across all platforms. Collaborate with cross-functional teams to translate product requirements and marketing goals into intuitive and aesthetically compelling visuals. Design user-centered interfaces and assets that align with UX best practices and accessibility standards. Iterate on designs based on feedback, user testing, and performance metrics. Stay current with design trends, tools, and emerging visual technologies (including AI-assisted design workflows). Prepare production-ready files for print and digital use, ensuring quality and technical accuracy. Present and articulate design concepts clearly to both creative and non-creative stakeholders.'), Document(metadata={'category': 'required_qualifications', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content="Required Qualifications: Bachelor's degree in Graphic Design, Visual Communication, or a related field (or equivalent practical experience). 2+ years of professional experience in graphic or digital design (agency, in-house, or freelance). Proficiency in industry-standard design tools: Adobe Creative Suite (Photoshop, Illustrator, InDesign), Figma, and/or Sketch. Strong portfolio showcasing a range of work: branding, UI/UX elements, digital marketing assets, and layout design. Solid understanding of typography, color theory, composition, and visual hierarchy. Experience designing for both digital (web, mobile, social) and print media."), Document(metadata={'category': 'preferred_qualifications', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content='Preferred Qualifications: Basic familiarity with HTML/CSS or design-to-development handoff processes. Awareness of generative design tools (e.g., Adobe Firefly, Canva AI, or Figma plugins).')]
+2025-11-12 15:25:22 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Job Description...
+2025-11-12 15:25:25 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Job Description saved to 'C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\data\alexandra_menon\vector_store\alexandra_menon-0d993bbbde304b5b97eeb93d5d5cc01c\faiss_jd_index'.
+2025-11-12 15:25:25 - data_processor - INFO - 
+[Data Processor] --- Processing Resume from C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\alexandra_menon-0d993bbbde304b5b97eeb93d5d5cc01c\resume.txt ---
+2025-11-12 15:25:25 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-12 15:25:25 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\alexandra_menon-0d993bbbde304b5b97eeb93d5d5cc01c\resume.txt...
+2025-11-12 15:25:29 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\alexandra_menon-0d993bbbde304b5b97eeb93d5d5cc01c\resume.txt.
+2025-11-12 15:25:29 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-12 15:25:29 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 2140 characters
+2025-11-12 15:25:29 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Resume...
+2025-11-12 15:25:42 - data_processor - INFO - [Data Processor | extract_data] Extraction complete.
+2025-11-12 15:25:42 - data_processor - INFO - [Structred Data Resume]: 
+ {
+  "name": "ALEXANDRA MENON",
+  "summary": "Senior Graphic Designer | Brand & Digital Specialist. 15+ years of experience crafting iconic visual identities, digital experiences, and cross-platform brand systems for global tech, cultural, and lifestyle brands.",
+  "work_experience": [
+    {
+      "role": "Senior Designer",
+      "company": "NovaSynth Labs",
+      "start_date": "2021",
+      "end_date": "Present",
+      "responsibilities": [
+        "Spearheaded end-to-end visual identity for AI-powered content platform, merging Kerala heritage motifs with futuristic design language; adopted by 200K+ users.",
+        "Developed modular design system ensuring brand consistency across web, mobile, SaaS UI, and social-reducing design-dev handoff time by 35%.",
+        "Collaborated with AI research team to visualize model behavior through intuitive, brand-aligned UI components (e.g., 'Creative Spectrum' explainer tool)."
+      ]
+    },
+    {
+      "role": "Senior Designer",
+      "company": "Lumina Creative Studio",
+      "start_date": "2017",
+      "end_date": "2021",
+      "responsibilities": [
+        "Led rebranding for 12+ clients in fintech, wellness, and sustainability sectors; projects featured in Communication Arts and AIGA 365.",
+        "Pioneered motion design integration into static brand guidelines, enhancing digital storytelling for social and web.",
+        "Mentored 5 junior designers; established studio's first design ops workflow using Figma and zeroheight."
+      ]
+    },
+    {
+      "role": "Graphic Designer",
+      "company": "TerraForm Brands",
+      "start_date": "2014",
+      "end_date": "2017",
+      "responsibilities": [
+        "Designed packaging, environmental graphics, and campaign assets for eco-conscious CPG brands.",
+        "Created award-winning label system for organic tea line, driving 28% shelf-impact increase."
+      ]
+    },
+    {
+      "role": "Visual Designer",
+      "company": "Verve Interactive",
+      "start_date": "2010",
+      "end_date": "2014",
+      "responsibilities": [
+        "Built UI/UX and visual language for SaaS and mobile apps in health tech and education.",
+        "Collaborated with developers to implement responsive design systems pre-dating modern frameworks."
+      ]
+    }
+  ],
+  "education": [],
+  "skills": [
+    "Brand Strategy",
+    "Visual Identity",
+    "Design Systems",
+    "Figma",
+    "Adobe Creative Suite",
+    "Motion Graphics (After Effects)",
+    "UI/UX",
+    "Typography",
+    "Cross-Cultural Design",
+    "Client Workshops",
+    "AIAssisted Design Tools"
+  ]
+}
+2025-11-12 15:25:42 - data_processor - INFO - [Data Processor | create_semantic_chunks] Created 6 semantic chunks for the Resume.
+2025-11-12 15:25:42 - data_processor - DEBUG - [Semantic Chunks Resume]: 
+ [Document(metadata={'category': 'summary', 'name': 'ALEXANDRA MENON'}, page_content='Candidate Name: ALEXANDRA MENON. Summary: Senior Graphic Designer | Brand & Digital Specialist. 15+ years of experience crafting iconic visual identities, digital experiences, and cross-platform brand systems for global tech, cultural, and lifestyle brands.'), Document(metadata={'category': 'work_experience', 'company': 'NovaSynth Labs', 'role': 'Senior Designer', 'name': 'ALEXANDRA MENON'}, page_content="Role: Senior Designer at NovaSynth Labs (2021 - Present). Responsibilities: Spearheaded end-to-end visual identity for AI-powered content platform, merging Kerala heritage motifs with futuristic design language; adopted by 200K+ users. Developed modular design system ensuring brand consistency across web, mobile, SaaS UI, and social-reducing design-dev handoff time by 35%. Collaborated with AI research team to visualize model behavior through intuitive, brand-aligned UI components (e.g., 'Creative Spectrum' explainer tool)."), Document(metadata={'category': 'work_experience', 'company': 'Lumina Creative Studio', 'role': 'Senior Designer', 'name': 'ALEXANDRA MENON'}, page_content="Role: Senior Designer at Lumina Creative Studio (2017 - 2021). Responsibilities: Led rebranding for 12+ clients in fintech, wellness, and sustainability sectors; projects featured in Communication Arts and AIGA 365. Pioneered motion design integration into static brand guidelines, enhancing digital storytelling for social and web. Mentored 5 junior designers; established studio's first design ops workflow using Figma and zeroheight."), Document(metadata={'category': 'work_experience', 'company': 'TerraForm Brands', 'role': 'Graphic Designer', 'name': 'ALEXANDRA MENON'}, page_content='Role: Graphic Designer at TerraForm Brands (2014 - 2017). Responsibilities: Designed packaging, environmental graphics, and campaign assets for eco-conscious CPG brands. Created award-winning label system for organic tea line, driving 28% shelf-impact increase.'), Document(metadata={'category': 'work_experience', 'company': 'Verve Interactive', 'role': 'Visual Designer', 'name': 'ALEXANDRA MENON'}, page_content='Role: Visual Designer at Verve Interactive (2010 - 2014). Responsibilities: Built UI/UX and visual language for SaaS and mobile apps in health tech and education. Collaborated with developers to implement responsive design systems pre-dating modern frameworks.'), Document(metadata={'category': 'skills', 'name': 'ALEXANDRA MENON'}, page_content='Skills: Brand Strategy, Visual Identity, Design Systems, Figma, Adobe Creative Suite, Motion Graphics (After Effects), UI/UX, Typography, Cross-Cultural Design, Client Workshops, AIAssisted Design Tools')]
+2025-11-12 15:25:42 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Resume...
+2025-11-12 15:25:42 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Resume saved to 'C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\data\alexandra_menon\vector_store\alexandra_menon-0d993bbbde304b5b97eeb93d5d5cc01c\faiss_resume_index'.
+2025-11-12 16:56:52 - data_processor - INFO - 
+[Data Processor] --- Processing Job Description from C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\alexandra_menon_01-d4cf12d63cb04451ac31bbcf8e00f735\job_description.txt ---
+2025-11-12 16:56:52 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-12 16:56:52 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\alexandra_menon_01-d4cf12d63cb04451ac31bbcf8e00f735\job_description.txt...
+2025-11-12 16:57:01 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\alexandra_menon_01-d4cf12d63cb04451ac31bbcf8e00f735\job_description.txt.
+2025-11-12 16:57:01 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-12 16:57:01 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 3805 characters
+2025-11-12 16:57:01 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Job Description...
+2025-11-12 16:57:15 - data_processor - INFO - [Data Processor | extract_data] Extraction complete.
+2025-11-12 16:57:15 - data_processor - INFO - [Structred Data Job Description]: 
+ {
+  "job_title": "Graphic Designer",
+  "company": "NovaSynth Labs",
+  "location": "Kollam, Kerala, India (Hybrid/Remote options available)",
+  "company_summary": "At NovaSynth Labs, we believe great ideas deserve beautiful expression. Based in Thiruvalla\u2014a vibrant town blending tradition with emerging tech\u2014we're a dynamic creative studio and product lab building digital experiences that inspire, inform, and engage. From AI-powered content tools to immersive brand ecosystems, our work sits at the intersection of design, storytelling, and innovation.",
+  "responsibilities": [
+    "Conceptualize and create visually striking designs for websites, mobile apps, social media, email campaigns, presentations, brochures, and brand collateral.",
+    "Develop and maintain consistent brand guidelines, including typography, color palettes, and visual tone across all platforms.",
+    "Collaborate with cross-functional teams to translate product requirements and marketing goals into intuitive and aesthetically compelling visuals.",
+    "Design user-centered interfaces and assets that align with UX best practices and accessibility standards.",
+    "Iterate on designs based on feedback, user testing, and performance metrics.",
+    "Stay current with design trends, tools, and emerging visual technologies (including AI-assisted design workflows).",
+    "Prepare production-ready files for print and digital use, ensuring quality and technical accuracy.",
+    "Present and articulate design concepts clearly to both creative and non-creative stakeholders."
+  ],
+  "required_qualifications": [
+    "Bachelor's degree in Graphic Design, Visual Communication, or a related field (or equivalent practical experience).",
+    "2+ years of professional experience in graphic or digital design (agency, in-house, or freelance).",
+    "Proficiency in industry-standard design tools: Adobe Creative Suite (Photoshop, Illustrator, InDesign), Figma, and/or Sketch.",
+    "Strong portfolio showcasing a range of work: branding, UI/UX elements, digital marketing assets, and layout design.",
+    "Solid understanding of typography, color theory, composition, and visual hierarchy.",
+    "Experience designing for both digital (web, mobile, social) and print media.",
+    "Excellent communication skills and ability to accept and integrate feedback constructively.",
+    "Self-motivated, detail-oriented, and able to manage multiple projects under deadlines."
+  ],
+  "preferred_qualifications": [
+    "Basic familiarity with HTML/CSS or design-to-development handoff processes.",
+    "Awareness of generative design tools (e.g., Adobe Firefly, Canva AI, or Figma plugins)."
+  ]
+}
+2025-11-12 16:57:15 - data_processor - INFO - [Data Processor | create_semantic_chunks] Created 4 semantic chunks for the Job Description.
+2025-11-12 16:57:15 - data_processor - DEBUG - [Semantic Chunks Job Description]: 
+ [Document(metadata={'category': 'overview', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content="Job Title: Graphic Designer at NovaSynth Labs. Location: Kollam, Kerala, India (Hybrid/Remote options available). Company Summary: At NovaSynth Labs, we believe great ideas deserve beautiful expression. Based in Thiruvalla—a vibrant town blending tradition with emerging tech—we're a dynamic creative studio and product lab building digital experiences that inspire, inform, and engage. From AI-powered content tools to immersive brand ecosystems, our work sits at the intersection of design, storytelling, and innovation."), Document(metadata={'category': 'responsibilities', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content='Key Responsibilities: Conceptualize and create visually striking designs for websites, mobile apps, social media, email campaigns, presentations, brochures, and brand collateral. Develop and maintain consistent brand guidelines, including typography, color palettes, and visual tone across all platforms. Collaborate with cross-functional teams to translate product requirements and marketing goals into intuitive and aesthetically compelling visuals. Design user-centered interfaces and assets that align with UX best practices and accessibility standards. Iterate on designs based on feedback, user testing, and performance metrics. Stay current with design trends, tools, and emerging visual technologies (including AI-assisted design workflows). Prepare production-ready files for print and digital use, ensuring quality and technical accuracy. Present and articulate design concepts clearly to both creative and non-creative stakeholders.'), Document(metadata={'category': 'required_qualifications', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content="Required Qualifications: Bachelor's degree in Graphic Design, Visual Communication, or a related field (or equivalent practical experience). 2+ years of professional experience in graphic or digital design (agency, in-house, or freelance). Proficiency in industry-standard design tools: Adobe Creative Suite (Photoshop, Illustrator, InDesign), Figma, and/or Sketch. Strong portfolio showcasing a range of work: branding, UI/UX elements, digital marketing assets, and layout design. Solid understanding of typography, color theory, composition, and visual hierarchy. Experience designing for both digital (web, mobile, social) and print media. Excellent communication skills and ability to accept and integrate feedback constructively. Self-motivated, detail-oriented, and able to manage multiple projects under deadlines."), Document(metadata={'category': 'preferred_qualifications', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content='Preferred Qualifications: Basic familiarity with HTML/CSS or design-to-development handoff processes. Awareness of generative design tools (e.g., Adobe Firefly, Canva AI, or Figma plugins).')]
+2025-11-12 16:57:15 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Job Description...
+2025-11-12 16:57:17 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Job Description saved to 'C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\data\alexandra_menon_01\vector_store\alexandra_menon_01-d4cf12d63cb04451ac31bbcf8e00f735\faiss_jd_index'.
+2025-11-12 16:57:17 - data_processor - INFO - 
+[Data Processor] --- Processing Resume from C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\alexandra_menon_01-d4cf12d63cb04451ac31bbcf8e00f735\resume.txt ---
+2025-11-12 16:57:17 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-12 16:57:17 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\alexandra_menon_01-d4cf12d63cb04451ac31bbcf8e00f735\resume.txt...
+2025-11-12 16:57:21 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\alexandra_menon_01-d4cf12d63cb04451ac31bbcf8e00f735\resume.txt.
+2025-11-12 16:57:21 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-12 16:57:21 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 2140 characters
+2025-11-12 16:57:21 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Resume...
+2025-11-12 16:57:34 - data_processor - INFO - [Data Processor | extract_data] Extraction complete.
+2025-11-12 16:57:34 - data_processor - INFO - [Structred Data Resume]: 
+ {
+  "name": "ALEXANDRA MENON",
+  "summary": "Senior Graphic Designer | Brand & Digital Specialist with 15+ years of experience crafting iconic visual identities, digital experiences, and cross-platform brand systems for global tech, cultural, and lifestyle brands.",
+  "work_experience": [
+    {
+      "role": "Senior Designer",
+      "company": "NovaSynth Labs",
+      "start_date": "2021",
+      "end_date": "Present",
+      "responsibilities": [
+        "Spearheaded end-to-end visual identity for AI-powered content platform, merging Kerala heritage motifs with futuristic design language; adopted by 200K+ users.",
+        "Developed modular design system ensuring brand consistency across web, mobile, SaaS UI, and social-reducing design-dev handoff time by 35%.",
+        "Collaborated with AI research team to visualize model behavior through intuitive, brand-aligned UI components (e.g., 'Creative Spectrum' explainer tool)."
+      ]
+    },
+    {
+      "role": "Senior Designer",
+      "company": "Lumina Creative Studio",
+      "start_date": "2017",
+      "end_date": "2021",
+      "responsibilities": [
+        "Led rebranding for 12+ clients in fintech, wellness, and sustainability sectors; projects featured in Communication Arts and AIGA 365.",
+        "Pioneered motion design integration into static brand guidelines, enhancing digital storytelling for social and web.",
+        "Mentored 5 junior designers; established studio's first design ops workflow using Figma and zeroheight."
+      ]
+    },
+    {
+      "role": "Graphic Designer",
+      "company": "TerraForm Brands",
+      "start_date": "2014",
+      "end_date": "2017",
+      "responsibilities": [
+        "Designed packaging, environmental graphics, and campaign assets for eco-conscious CPG brands.",
+        "Created award-winning label system for organic tea line, driving 28% shelf-impact increase."
+      ]
+    },
+    {
+      "role": "Visual Designer",
+      "company": "Verve Interactive",
+      "start_date": "2010",
+      "end_date": "2014",
+      "responsibilities": [
+        "Built UI/UX and visual language for SaaS and mobile apps in health tech and education.",
+        "Collaborated with developers to implement responsive design systems pre-dating modern frameworks."
+      ]
+    }
+  ],
+  "education": [],
+  "skills": [
+    "Brand Strategy",
+    "Visual Identity",
+    "Design Systems",
+    "Figma",
+    "Adobe Creative Suite",
+    "Motion Graphics (After Effects)",
+    "UI/UX",
+    "Typography",
+    "Cross-Cultural Design",
+    "Client Workshops",
+    "AIAssisted Design Tools"
+  ],
+  "extras": []
+}
+2025-11-12 16:57:34 - data_processor - INFO - [Data Processor | create_semantic_chunks] Created 6 semantic chunks for the Resume.
+2025-11-12 16:57:34 - data_processor - DEBUG - [Semantic Chunks Resume]: 
+ [Document(metadata={'category': 'summary', 'name': 'ALEXANDRA MENON'}, page_content='Candidate Name: ALEXANDRA MENON. Summary: Senior Graphic Designer | Brand & Digital Specialist with 15+ years of experience crafting iconic visual identities, digital experiences, and cross-platform brand systems for global tech, cultural, and lifestyle brands.'), Document(metadata={'category': 'work_experience', 'company': 'NovaSynth Labs', 'role': 'Senior Designer', 'name': 'ALEXANDRA MENON'}, page_content="Role: Senior Designer at NovaSynth Labs (2021 - Present). Responsibilities: Spearheaded end-to-end visual identity for AI-powered content platform, merging Kerala heritage motifs with futuristic design language; adopted by 200K+ users. Developed modular design system ensuring brand consistency across web, mobile, SaaS UI, and social-reducing design-dev handoff time by 35%. Collaborated with AI research team to visualize model behavior through intuitive, brand-aligned UI components (e.g., 'Creative Spectrum' explainer tool)."), Document(metadata={'category': 'work_experience', 'company': 'Lumina Creative Studio', 'role': 'Senior Designer', 'name': 'ALEXANDRA MENON'}, page_content="Role: Senior Designer at Lumina Creative Studio (2017 - 2021). Responsibilities: Led rebranding for 12+ clients in fintech, wellness, and sustainability sectors; projects featured in Communication Arts and AIGA 365. Pioneered motion design integration into static brand guidelines, enhancing digital storytelling for social and web. Mentored 5 junior designers; established studio's first design ops workflow using Figma and zeroheight."), Document(metadata={'category': 'work_experience', 'company': 'TerraForm Brands', 'role': 'Graphic Designer', 'name': 'ALEXANDRA MENON'}, page_content='Role: Graphic Designer at TerraForm Brands (2014 - 2017). Responsibilities: Designed packaging, environmental graphics, and campaign assets for eco-conscious CPG brands. Created award-winning label system for organic tea line, driving 28% shelf-impact increase.'), Document(metadata={'category': 'work_experience', 'company': 'Verve Interactive', 'role': 'Visual Designer', 'name': 'ALEXANDRA MENON'}, page_content='Role: Visual Designer at Verve Interactive (2010 - 2014). Responsibilities: Built UI/UX and visual language for SaaS and mobile apps in health tech and education. Collaborated with developers to implement responsive design systems pre-dating modern frameworks.'), Document(metadata={'category': 'skills', 'name': 'ALEXANDRA MENON'}, page_content='Skills: Brand Strategy, Visual Identity, Design Systems, Figma, Adobe Creative Suite, Motion Graphics (After Effects), UI/UX, Typography, Cross-Cultural Design, Client Workshops, AIAssisted Design Tools')]
+2025-11-12 16:57:34 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Resume...
+2025-11-12 16:57:35 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Resume saved to 'C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\data\alexandra_menon_01\vector_store\alexandra_menon_01-d4cf12d63cb04451ac31bbcf8e00f735\faiss_resume_index'.
+2025-11-12 17:34:50 - data_processor - INFO - 
+[Data Processor] --- Processing Job Description from C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\alexandra_menon_011-2890374326aa4bcfbcaa87811f17cdf3\job_description.txt ---
+2025-11-12 17:34:50 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-12 17:34:50 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\alexandra_menon_011-2890374326aa4bcfbcaa87811f17cdf3\job_description.txt...
+2025-11-12 17:34:58 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\alexandra_menon_011-2890374326aa4bcfbcaa87811f17cdf3\job_description.txt.
+2025-11-12 17:34:58 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-12 17:34:58 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 3805 characters
+2025-11-12 17:34:58 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Job Description...
+2025-11-12 17:35:12 - data_processor - INFO - [Data Processor | extract_data] Extraction complete.
+2025-11-12 17:35:12 - data_processor - INFO - [Structred Data Job Description]: 
+ {
+  "job_title": "Graphic Designer",
+  "company": "NovaSynth Labs",
+  "location": "Kollam, Kerala, India (Hybrid/Remote options available)",
+  "company_summary": "At NovaSynth Labs, we believe great ideas deserve beautiful expression. Based in Thiruvalla\u2014a vibrant town blending tradition with emerging tech\u2014we're a dynamic creative studio and product lab building digital experiences that inspire, inform, and engage. From AI-powered content tools to immersive brand ecosystems, our work sits at the intersection of design, storytelling, and innovation.",
+  "responsibilities": [
+    "Conceptualize and create visually striking designs for websites, mobile apps, social media, email campaigns, presentations, brochures, and brand collateral.",
+    "Develop and maintain consistent brand guidelines, including typography, color palettes, and visual tone across all platforms.",
+    "Collaborate with cross-functional teams to translate product requirements and marketing goals into intuitive and aesthetically compelling visuals.",
+    "Design user-centered interfaces and assets that align with UX best practices and accessibility standards.",
+    "Iterate on designs based on feedback, user testing, and performance metrics.",
+    "Stay current with design trends, tools, and emerging visual technologies (including AI-assisted design workflows).",
+    "Prepare production-ready files for print and digital use, ensuring quality and technical accuracy.",
+    "Present and articulate design concepts clearly to both creative and non-creative stakeholders."
+  ],
+  "required_qualifications": [
+    "Bachelor's degree in Graphic Design, Visual Communication, or a related field (or equivalent practical experience).",
+    "2+ years of professional experience in graphic or digital design (agency, in-house, or freelance).",
+    "Proficiency in industry-standard design tools: Adobe Creative Suite (Photoshop, Illustrator, InDesign), Figma, and/or Sketch.",
+    "Strong portfolio showcasing a range of work: branding, UI/UX elements, digital marketing assets, and layout design.",
+    "Solid understanding of typography, color theory, composition, and visual hierarchy.",
+    "Experience designing for both digital (web, mobile, social) and print media.",
+    "Excellent communication skills and ability to accept and integrate feedback constructively.",
+    "Self-motivated, detail-oriented, and able to manage multiple projects under deadlines."
+  ],
+  "preferred_qualifications": [
+    "Basic familiarity with HTML/CSS or design-to-development handoff processes.",
+    "Awareness of generative design tools (e.g., Adobe Firefly, Canva AI, or Figma plugins) is valued but not required."
+  ]
+}
+2025-11-12 17:35:12 - data_processor - INFO - [Data Processor | create_semantic_chunks] Created 4 semantic chunks for the Job Description.
+2025-11-12 17:35:12 - data_processor - DEBUG - [Semantic Chunks Job Description]: 
+ [Document(metadata={'category': 'overview', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content="Job Title: Graphic Designer at NovaSynth Labs. Location: Kollam, Kerala, India (Hybrid/Remote options available). Company Summary: At NovaSynth Labs, we believe great ideas deserve beautiful expression. Based in Thiruvalla—a vibrant town blending tradition with emerging tech—we're a dynamic creative studio and product lab building digital experiences that inspire, inform, and engage. From AI-powered content tools to immersive brand ecosystems, our work sits at the intersection of design, storytelling, and innovation."), Document(metadata={'category': 'responsibilities', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content='Key Responsibilities: Conceptualize and create visually striking designs for websites, mobile apps, social media, email campaigns, presentations, brochures, and brand collateral. Develop and maintain consistent brand guidelines, including typography, color palettes, and visual tone across all platforms. Collaborate with cross-functional teams to translate product requirements and marketing goals into intuitive and aesthetically compelling visuals. Design user-centered interfaces and assets that align with UX best practices and accessibility standards. Iterate on designs based on feedback, user testing, and performance metrics. Stay current with design trends, tools, and emerging visual technologies (including AI-assisted design workflows). Prepare production-ready files for print and digital use, ensuring quality and technical accuracy. Present and articulate design concepts clearly to both creative and non-creative stakeholders.'), Document(metadata={'category': 'required_qualifications', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content="Required Qualifications: Bachelor's degree in Graphic Design, Visual Communication, or a related field (or equivalent practical experience). 2+ years of professional experience in graphic or digital design (agency, in-house, or freelance). Proficiency in industry-standard design tools: Adobe Creative Suite (Photoshop, Illustrator, InDesign), Figma, and/or Sketch. Strong portfolio showcasing a range of work: branding, UI/UX elements, digital marketing assets, and layout design. Solid understanding of typography, color theory, composition, and visual hierarchy. Experience designing for both digital (web, mobile, social) and print media. Excellent communication skills and ability to accept and integrate feedback constructively. Self-motivated, detail-oriented, and able to manage multiple projects under deadlines."), Document(metadata={'category': 'preferred_qualifications', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content='Preferred Qualifications: Basic familiarity with HTML/CSS or design-to-development handoff processes. Awareness of generative design tools (e.g., Adobe Firefly, Canva AI, or Figma plugins) is valued but not required.')]
+2025-11-12 17:35:12 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Job Description...
+2025-11-12 17:35:14 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Job Description saved to 'C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\data\alexandra_menon_011\vector_store\alexandra_menon_011-2890374326aa4bcfbcaa87811f17cdf3\faiss_jd_index'.
+2025-11-12 17:35:14 - data_processor - INFO - 
+[Data Processor] --- Processing Resume from C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\alexandra_menon_011-2890374326aa4bcfbcaa87811f17cdf3\resume.txt ---
+2025-11-12 17:35:14 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-12 17:35:14 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\alexandra_menon_011-2890374326aa4bcfbcaa87811f17cdf3\resume.txt...
+2025-11-12 17:35:18 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\alexandra_menon_011-2890374326aa4bcfbcaa87811f17cdf3\resume.txt.
+2025-11-12 17:35:18 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-12 17:35:18 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 2140 characters
+2025-11-12 17:35:18 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Resume...
+2025-11-12 17:35:31 - data_processor - INFO - [Data Processor | extract_data] Extraction complete.
+2025-11-12 17:35:31 - data_processor - INFO - [Structred Data Resume]: 
+ {
+  "name": "ALEXANDRA MENON",
+  "summary": "Senior Graphic Designer | Brand & Digital Specialist. 15+ years of experience crafting iconic visual identities, digital experiences, and cross-platform brand systems for global tech, cultural, and lifestyle brands.",
+  "work_experience": [
+    {
+      "role": "Senior Graphic Designer",
+      "company": "NovaSynth Labs",
+      "start_date": "2021",
+      "end_date": "Present",
+      "responsibilities": [
+        "Spearheaded end-to-end visual identity for AI-powered content platform, merging Kerala heritage motifs with futuristic design language; adopted by 200K+ users.",
+        "Developed modular design system ensuring brand consistency across web, mobile, SaaS UI, and social-reducing design-dev handoff time by 35%.",
+        "Collaborated with AI research team to visualize model behavior through intuitive, brand-aligned UI components (e.g., 'Creative Spectrum' explainer tool)."
+      ]
+    },
+    {
+      "role": "Senior Designer",
+      "company": "Lumina Creative Studio",
+      "start_date": "2017",
+      "end_date": "2021",
+      "responsibilities": [
+        "Led rebranding for 12+ clients in fintech, wellness, and sustainability sectors; projects featured in Communication Arts and AIGA 365.",
+        "Pioneered motion design integration into static brand guidelines, enhancing digital storytelling for social and web.",
+        "Mentored 5 junior designers; established studio's first design ops workflow using Figma and zeroheight."
+      ]
+    },
+    {
+      "role": "Graphic Designer",
+      "company": "TerraForm Brands",
+      "start_date": "2014",
+      "end_date": "2017",
+      "responsibilities": [
+        "Designed packaging, environmental graphics, and campaign assets for eco-conscious CPG brands.",
+        "Created award-winning label system for organic tea line, driving 28% shelf-impact increase."
+      ]
+    },
+    {
+      "role": "Visual Designer",
+      "company": "Verve Interactive",
+      "start_date": "2010",
+      "end_date": "2014",
+      "responsibilities": [
+        "Built UI/UX and visual language for SaaS and mobile apps in health tech and education.",
+        "Collaborated with developers to implement responsive design systems pre-dating modern frameworks."
+      ]
+    }
+  ],
+  "education": [],
+  "skills": [
+    "Brand Strategy",
+    "Visual Identity",
+    "Design Systems",
+    "Figma",
+    "Adobe Creative Suite",
+    "Motion Graphics (After Effects)",
+    "UI/UX",
+    "Typography",
+    "Cross-Cultural Design",
+    "Client Workshops",
+    "AIAssisted Design Tools"
+  ]
+}
+2025-11-12 17:35:31 - data_processor - INFO - [Data Processor | create_semantic_chunks] Created 6 semantic chunks for the Resume.
+2025-11-12 17:35:31 - data_processor - DEBUG - [Semantic Chunks Resume]: 
+ [Document(metadata={'category': 'summary', 'name': 'ALEXANDRA MENON'}, page_content='Candidate Name: ALEXANDRA MENON. Summary: Senior Graphic Designer | Brand & Digital Specialist. 15+ years of experience crafting iconic visual identities, digital experiences, and cross-platform brand systems for global tech, cultural, and lifestyle brands.'), Document(metadata={'category': 'work_experience', 'company': 'NovaSynth Labs', 'role': 'Senior Graphic Designer', 'name': 'ALEXANDRA MENON'}, page_content="Role: Senior Graphic Designer at NovaSynth Labs (2021 - Present). Responsibilities: Spearheaded end-to-end visual identity for AI-powered content platform, merging Kerala heritage motifs with futuristic design language; adopted by 200K+ users. Developed modular design system ensuring brand consistency across web, mobile, SaaS UI, and social-reducing design-dev handoff time by 35%. Collaborated with AI research team to visualize model behavior through intuitive, brand-aligned UI components (e.g., 'Creative Spectrum' explainer tool)."), Document(metadata={'category': 'work_experience', 'company': 'Lumina Creative Studio', 'role': 'Senior Designer', 'name': 'ALEXANDRA MENON'}, page_content="Role: Senior Designer at Lumina Creative Studio (2017 - 2021). Responsibilities: Led rebranding for 12+ clients in fintech, wellness, and sustainability sectors; projects featured in Communication Arts and AIGA 365. Pioneered motion design integration into static brand guidelines, enhancing digital storytelling for social and web. Mentored 5 junior designers; established studio's first design ops workflow using Figma and zeroheight."), Document(metadata={'category': 'work_experience', 'company': 'TerraForm Brands', 'role': 'Graphic Designer', 'name': 'ALEXANDRA MENON'}, page_content='Role: Graphic Designer at TerraForm Brands (2014 - 2017). Responsibilities: Designed packaging, environmental graphics, and campaign assets for eco-conscious CPG brands. Created award-winning label system for organic tea line, driving 28% shelf-impact increase.'), Document(metadata={'category': 'work_experience', 'company': 'Verve Interactive', 'role': 'Visual Designer', 'name': 'ALEXANDRA MENON'}, page_content='Role: Visual Designer at Verve Interactive (2010 - 2014). Responsibilities: Built UI/UX and visual language for SaaS and mobile apps in health tech and education. Collaborated with developers to implement responsive design systems pre-dating modern frameworks.'), Document(metadata={'category': 'skills', 'name': 'ALEXANDRA MENON'}, page_content='Skills: Brand Strategy, Visual Identity, Design Systems, Figma, Adobe Creative Suite, Motion Graphics (After Effects), UI/UX, Typography, Cross-Cultural Design, Client Workshops, AIAssisted Design Tools')]
+2025-11-12 17:35:31 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Resume...
+2025-11-12 17:35:32 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Resume saved to 'C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\data\alexandra_menon_011\vector_store\alexandra_menon_011-2890374326aa4bcfbcaa87811f17cdf3\faiss_resume_index'.

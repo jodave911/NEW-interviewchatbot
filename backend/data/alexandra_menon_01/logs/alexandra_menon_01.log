@@ -1,0 +1,4 @@
+2025-11-12 16:56:52,744 - candidate.alexandra_menon_01 - INFO - Starting upload for session alexandra_menon_01-d4cf12d63cb04451ac31bbcf8e00f735
+2025-11-12 16:56:52,752 - candidate.alexandra_menon_01 - DEBUG - Metadata for alexandra_menon_01-d4cf12d63cb04451ac31bbcf8e00f735: {'candidate_name': 'Alexandra Menon 01 ', 'interview_duration': 10, 'interview_completed': False, 'report_generated': False, 'report_filename': ''}
+2025-11-12 16:56:52,753 - candidate.alexandra_menon_01 - INFO - 🔹 Starting vectorisation for session alexandra_menon_01-d4cf12d63cb04451ac31bbcf8e00f735 …
+2025-11-12 16:57:35,285 - candidate.alexandra_menon_01 - INFO - ✅ Vectorisation finished for session alexandra_menon_01-d4cf12d63cb04451ac31bbcf8e00f735
