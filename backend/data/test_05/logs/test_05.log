@@ -1,0 +1,4 @@
+2025-11-13 09:32:48,763 - candidate.test_05 - INFO - Starting upload for session test_05-69c9cae8e8e54df8bb743e9cfdc558b1
+2025-11-13 09:32:48,763 - candidate.test_05 - DEBUG - Metadata for test_05-69c9cae8e8e54df8bb743e9cfdc558b1: {'candidate_name': 'Test 05', 'interview_duration': 5, 'interview_completed': False, 'report_generated': False, 'report_filename': ''}
+2025-11-13 09:32:48,763 - candidate.test_05 - INFO - 🔹 Starting vectorisation for session test_05-69c9cae8e8e54df8bb743e9cfdc558b1 …
+2025-11-13 09:33:51,512 - candidate.test_05 - INFO - ✅ Vectorisation finished for session test_05-69c9cae8e8e54df8bb743e9cfdc558b1

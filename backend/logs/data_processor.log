@@ -1065,3 +1065,397 @@ TypeError: get_large_language_model() takes 0 positional arguments but 1 was giv
  [Document(metadata={'category': 'summary', 'name': 'ALEXANDRA MENON'}, page_content='Candidate Name: ALEXANDRA MENON. Summary: Senior Graphic Designer | Brand & Digital Specialist. 15+ years of experience crafting iconic visual identities, digital experiences, and cross-platform brand systems for global tech, cultural, and lifestyle brands.'), Document(metadata={'category': 'work_experience', 'company': 'NovaSynth Labs', 'role': 'Senior Graphic Designer', 'name': 'ALEXANDRA MENON'}, page_content="Role: Senior Graphic Designer at NovaSynth Labs (2021 - Present). Responsibilities: Spearheaded end-to-end visual identity for AI-powered content platform, merging Kerala heritage motifs with futuristic design language; adopted by 200K+ users. Developed modular design system ensuring brand consistency across web, mobile, SaaS UI, and social-reducing design-dev handoff time by 35%. Collaborated with AI research team to visualize model behavior through intuitive, brand-aligned UI components (e.g., 'Creative Spectrum' explainer tool)."), Document(metadata={'category': 'work_experience', 'company': 'Lumina Creative Studio', 'role': 'Senior Designer', 'name': 'ALEXANDRA MENON'}, page_content="Role: Senior Designer at Lumina Creative Studio (2017 - 2021). Responsibilities: Led rebranding for 12+ clients in fintech, wellness, and sustainability sectors; projects featured in Communication Arts and AIGA 365. Pioneered motion design integration into static brand guidelines, enhancing digital storytelling for social and web. Mentored 5 junior designers; established studio's first design ops workflow using Figma and zeroheight."), Document(metadata={'category': 'work_experience', 'company': 'TerraForm Brands', 'role': 'Graphic Designer', 'name': 'ALEXANDRA MENON'}, page_content='Role: Graphic Designer at TerraForm Brands (2014 - 2017). Responsibilities: Designed packaging, environmental graphics, and campaign assets for eco-conscious CPG brands. Created award-winning label system for organic tea line, driving 28% shelf-impact increase.'), Document(metadata={'category': 'work_experience', 'company': 'Verve Interactive', 'role': 'Visual Designer', 'name': 'ALEXANDRA MENON'}, page_content='Role: Visual Designer at Verve Interactive (2010 - 2014). Responsibilities: Built UI/UX and visual language for SaaS and mobile apps in health tech and education. Collaborated with developers to implement responsive design systems pre-dating modern frameworks.'), Document(metadata={'category': 'skills', 'name': 'ALEXANDRA MENON'}, page_content='Skills: Brand Strategy, Visual Identity, Design Systems, Figma, Adobe Creative Suite, Motion Graphics (After Effects), UI/UX, Typography, Cross-Cultural Design, Client Workshops, AIAssisted Design Tools')]
 2025-11-12 17:35:31 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Resume...
 2025-11-12 17:35:32 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Resume saved to 'C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\data\alexandra_menon_011\vector_store\alexandra_menon_011-2890374326aa4bcfbcaa87811f17cdf3\faiss_resume_index'.
+2025-11-13 09:32:48 - data_processor - INFO - 
+[Data Processor] --- Processing Job Description from C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_05-69c9cae8e8e54df8bb743e9cfdc558b1\job_description.txt ---
+2025-11-13 09:32:48 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-13 09:32:48 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_05-69c9cae8e8e54df8bb743e9cfdc558b1\job_description.txt...
+2025-11-13 09:33:10 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_05-69c9cae8e8e54df8bb743e9cfdc558b1\job_description.txt.
+2025-11-13 09:33:10 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-13 09:33:10 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 3805 characters
+2025-11-13 09:33:10 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Job Description...
+2025-11-13 09:33:23 - data_processor - INFO - [Data Processor | extract_data] Extraction complete.
+2025-11-13 09:33:23 - data_processor - INFO - [Structred Data Job Description]: 
+ {
+  "job_title": "Graphic Designer",
+  "company": "NovaSynth Labs",
+  "location": "Kollam, Kerala, India (Hybrid/Remote options available)",
+  "company_summary": "NovaSynth Labs is a dynamic creative studio and product lab based in Thiruvalla, Kerala, building digital experiences that blend design, storytelling, and innovation, including AI-powered content tools and immersive brand ecosystems.",
+  "responsibilities": [
+    "Conceptualize and create visually striking designs for websites, mobile apps, social media, email campaigns, presentations, brochures, and brand collateral.",
+    "Develop and maintain consistent brand guidelines, including typography, color palettes, and visual tone across all platforms.",
+    "Collaborate with cross-functional teams to translate product requirements and marketing goals into intuitive and aesthetically compelling visuals.",
+    "Design user-centered interfaces and assets that align with UX best practices and accessibility standards.",
+    "Iterate on designs based on feedback, user testing, and performance metrics.",
+    "Stay current with design trends, tools, and emerging visual technologies, including AI-assisted design workflows.",
+    "Prepare production-ready files for print and digital use, ensuring quality and technical accuracy.",
+    "Present and articulate design concepts clearly to both creative and non-creative stakeholders."
+  ],
+  "required_qualifications": [
+    "Bachelor's degree in Graphic Design, Visual Communication, or a related field (or equivalent practical experience).",
+    "2+ years of professional experience in graphic or digital design (agency, in-house, or freelance).",
+    "Proficiency in industry-standard design tools: Adobe Creative Suite (Photoshop, Illustrator, InDesign), Figma, and/or Sketch.",
+    "Strong portfolio showcasing a range of work: branding, UI/UX elements, digital marketing assets, and layout design.",
+    "Solid understanding of typography, color theory, composition, and visual hierarchy.",
+    "Experience designing for both digital (web, mobile, social) and print media.",
+    "Excellent communication skills and ability to accept and integrate feedback constructively.",
+    "Self-motivated, detail-oriented, and able to manage multiple projects under deadlines."
+  ],
+  "preferred_qualifications": [
+    "Basic familiarity with HTML/CSS or design-to-development handoff processes.",
+    "Awareness of generative design tools (e.g., Adobe Firefly, Canva AI, or Figma plugins)."
+  ]
+}
+2025-11-13 09:33:23 - data_processor - INFO - [Data Processor | create_semantic_chunks] Created 4 semantic chunks for the Job Description.
+2025-11-13 09:33:23 - data_processor - DEBUG - [Semantic Chunks Job Description]: 
+ [Document(metadata={'category': 'overview', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content='Job Title: Graphic Designer at NovaSynth Labs. Location: Kollam, Kerala, India (Hybrid/Remote options available). Company Summary: NovaSynth Labs is a dynamic creative studio and product lab based in Thiruvalla, Kerala, building digital experiences that blend design, storytelling, and innovation, including AI-powered content tools and immersive brand ecosystems.'), Document(metadata={'category': 'responsibilities', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content='Key Responsibilities: Conceptualize and create visually striking designs for websites, mobile apps, social media, email campaigns, presentations, brochures, and brand collateral. Develop and maintain consistent brand guidelines, including typography, color palettes, and visual tone across all platforms. Collaborate with cross-functional teams to translate product requirements and marketing goals into intuitive and aesthetically compelling visuals. Design user-centered interfaces and assets that align with UX best practices and accessibility standards. Iterate on designs based on feedback, user testing, and performance metrics. Stay current with design trends, tools, and emerging visual technologies, including AI-assisted design workflows. Prepare production-ready files for print and digital use, ensuring quality and technical accuracy. Present and articulate design concepts clearly to both creative and non-creative stakeholders.'), Document(metadata={'category': 'required_qualifications', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content="Required Qualifications: Bachelor's degree in Graphic Design, Visual Communication, or a related field (or equivalent practical experience). 2+ years of professional experience in graphic or digital design (agency, in-house, or freelance). Proficiency in industry-standard design tools: Adobe Creative Suite (Photoshop, Illustrator, InDesign), Figma, and/or Sketch. Strong portfolio showcasing a range of work: branding, UI/UX elements, digital marketing assets, and layout design. Solid understanding of typography, color theory, composition, and visual hierarchy. Experience designing for both digital (web, mobile, social) and print media. Excellent communication skills and ability to accept and integrate feedback constructively. Self-motivated, detail-oriented, and able to manage multiple projects under deadlines."), Document(metadata={'category': 'preferred_qualifications', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content='Preferred Qualifications: Basic familiarity with HTML/CSS or design-to-development handoff processes. Awareness of generative design tools (e.g., Adobe Firefly, Canva AI, or Figma plugins).')]
+2025-11-13 09:33:23 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Job Description...
+2025-11-13 09:33:30 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Job Description saved to 'C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\data\test_05\vector_store\test_05-69c9cae8e8e54df8bb743e9cfdc558b1\faiss_jd_index'.
+2025-11-13 09:33:30 - data_processor - INFO - 
+[Data Processor] --- Processing Resume from C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_05-69c9cae8e8e54df8bb743e9cfdc558b1\resume.txt ---
+2025-11-13 09:33:30 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-13 09:33:30 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_05-69c9cae8e8e54df8bb743e9cfdc558b1\resume.txt...
+2025-11-13 09:33:38 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_05-69c9cae8e8e54df8bb743e9cfdc558b1\resume.txt.
+2025-11-13 09:33:38 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-13 09:33:38 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 2140 characters
+2025-11-13 09:33:38 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Resume...
+2025-11-13 09:33:50 - data_processor - INFO - [Data Processor | extract_data] Extraction complete.
+2025-11-13 09:33:50 - data_processor - INFO - [Structred Data Resume]: 
+ {
+  "name": "Alexandra Menon",
+  "summary": "Senior Graphic Designer | Brand & Digital Specialist with 15+ years of experience crafting iconic visual identities, digital experiences, and cross-platform brand systems for global tech, cultural, and lifestyle brands.",
+  "work_experience": [
+    {
+      "role": "Senior Graphic Designer",
+      "company": "NovaSynth Labs",
+      "start_date": "2021",
+      "end_date": "Present",
+      "responsibilities": [
+        "Spearheaded end-to-end visual identity for AI-powered content platform, merging Kerala heritage motifs with futuristic design language; adopted by 200K+ users.",
+        "Developed modular design system ensuring brand consistency across web, mobile, SaaS UI, and social, reducing design-dev handoff time by 35%.",
+        "Collaborated with AI research team to visualize model behavior through intuitive, brand-aligned UI components (e.g., 'Creative Spectrum' explainer tool)."
+      ]
+    },
+    {
+      "role": "Senior Designer",
+      "company": "Lumina Creative Studio",
+      "start_date": "2017",
+      "end_date": "2021",
+      "responsibilities": [
+        "Led rebranding for 12+ clients in fintech, wellness, and sustainability sectors; projects featured in Communication Arts and AIGA 365.",
+        "Pioneered motion design integration into static brand guidelines, enhancing digital storytelling for social and web.",
+        "Mentored 5 junior designers; established studio's first design ops workflow using Figma and zeroheight."
+      ]
+    },
+    {
+      "role": "Graphic Designer",
+      "company": "TerraForm Brands",
+      "start_date": "2014",
+      "end_date": "2017",
+      "responsibilities": [
+        "Designed packaging, environmental graphics, and campaign assets for eco-conscious CPG brands.",
+        "Created award-winning label system for organic tea line, driving 28% shelf-impact increase."
+      ]
+    },
+    {
+      "role": "Visual Designer",
+      "company": "Verve Interactive",
+      "start_date": "2010",
+      "end_date": "2014",
+      "responsibilities": [
+        "Built UI/UX and visual language for SaaS and mobile apps in health tech and education.",
+        "Collaborated with developers to implement responsive design systems pre-dating modern frameworks."
+      ]
+    }
+  ],
+  "education": [],
+  "skills": [
+    "Brand Strategy",
+    "Visual Identity",
+    "Design Systems",
+    "Figma",
+    "Adobe Creative Suite",
+    "Motion Graphics (After Effects)",
+    "UI/UX",
+    "Typography",
+    "Cross-Cultural Design",
+    "Client Workshops",
+    "AI Assisted Design Tools"
+  ],
+  "extras": []
+}
+2025-11-13 09:33:50 - data_processor - INFO - [Data Processor | create_semantic_chunks] Created 6 semantic chunks for the Resume.
+2025-11-13 09:33:50 - data_processor - DEBUG - [Semantic Chunks Resume]: 
+ [Document(metadata={'category': 'summary', 'name': 'Alexandra Menon'}, page_content='Candidate Name: Alexandra Menon. Summary: Senior Graphic Designer | Brand & Digital Specialist with 15+ years of experience crafting iconic visual identities, digital experiences, and cross-platform brand systems for global tech, cultural, and lifestyle brands.'), Document(metadata={'category': 'work_experience', 'company': 'NovaSynth Labs', 'role': 'Senior Graphic Designer', 'name': 'Alexandra Menon'}, page_content="Role: Senior Graphic Designer at NovaSynth Labs (2021 - Present). Responsibilities: Spearheaded end-to-end visual identity for AI-powered content platform, merging Kerala heritage motifs with futuristic design language; adopted by 200K+ users. Developed modular design system ensuring brand consistency across web, mobile, SaaS UI, and social, reducing design-dev handoff time by 35%. Collaborated with AI research team to visualize model behavior through intuitive, brand-aligned UI components (e.g., 'Creative Spectrum' explainer tool)."), Document(metadata={'category': 'work_experience', 'company': 'Lumina Creative Studio', 'role': 'Senior Designer', 'name': 'Alexandra Menon'}, page_content="Role: Senior Designer at Lumina Creative Studio (2017 - 2021). Responsibilities: Led rebranding for 12+ clients in fintech, wellness, and sustainability sectors; projects featured in Communication Arts and AIGA 365. Pioneered motion design integration into static brand guidelines, enhancing digital storytelling for social and web. Mentored 5 junior designers; established studio's first design ops workflow using Figma and zeroheight."), Document(metadata={'category': 'work_experience', 'company': 'TerraForm Brands', 'role': 'Graphic Designer', 'name': 'Alexandra Menon'}, page_content='Role: Graphic Designer at TerraForm Brands (2014 - 2017). Responsibilities: Designed packaging, environmental graphics, and campaign assets for eco-conscious CPG brands. Created award-winning label system for organic tea line, driving 28% shelf-impact increase.'), Document(metadata={'category': 'work_experience', 'company': 'Verve Interactive', 'role': 'Visual Designer', 'name': 'Alexandra Menon'}, page_content='Role: Visual Designer at Verve Interactive (2010 - 2014). Responsibilities: Built UI/UX and visual language for SaaS and mobile apps in health tech and education. Collaborated with developers to implement responsive design systems pre-dating modern frameworks.'), Document(metadata={'category': 'skills', 'name': 'Alexandra Menon'}, page_content='Skills: Brand Strategy, Visual Identity, Design Systems, Figma, Adobe Creative Suite, Motion Graphics (After Effects), UI/UX, Typography, Cross-Cultural Design, Client Workshops, AI Assisted Design Tools')]
+2025-11-13 09:33:50 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Resume...
+2025-11-13 09:33:51 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Resume saved to 'C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\data\test_05\vector_store\test_05-69c9cae8e8e54df8bb743e9cfdc558b1\faiss_resume_index'.
+2025-11-13 09:38:02 - data_processor - INFO - 
+[Data Processor] --- Processing Job Description from C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_06-b2da4863d6bb44b6be7d62277fccf2eb\job_description.txt ---
+2025-11-13 09:38:02 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-13 09:38:02 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_06-b2da4863d6bb44b6be7d62277fccf2eb\job_description.txt...
+2025-11-13 09:38:08 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_06-b2da4863d6bb44b6be7d62277fccf2eb\job_description.txt.
+2025-11-13 09:38:08 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-13 09:38:08 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 3805 characters
+2025-11-13 09:38:09 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Job Description...
+2025-11-13 09:38:26 - data_processor - INFO - [Data Processor | extract_data] Extraction complete.
+2025-11-13 09:38:26 - data_processor - INFO - [Structred Data Job Description]: 
+ {
+  "job_title": "Graphic Designer",
+  "company": "NovaSynth Labs",
+  "location": "Kollam, Kerala, India (Hybrid/Remote options available)",
+  "company_summary": "At NovaSynth Labs, we believe great ideas deserve beautiful expression. Based in Thiruvalla\u2014a vibrant town blending tradition with emerging tech\u2014we're a dynamic creative studio and product lab building digital experiences that inspire, inform, and engage. From AI-powered content tools to immersive brand ecosystems, our work sits at the intersection of design, storytelling, and innovation.",
+  "responsibilities": [
+    "Conceptualize and create visually striking designs for websites, mobile apps, social media, email campaigns, presentations, brochures, and brand collateral.",
+    "Develop and maintain consistent brand guidelines, including typography, color palettes, and visual tone across all platforms.",
+    "Collaborate with cross-functional teams to translate product requirements and marketing goals into intuitive and aesthetically compelling visuals.",
+    "Design user-centered interfaces and assets that align with UX best practices and accessibility standards.",
+    "Iterate on designs based on feedback, user testing, and performance metrics.",
+    "Stay current with design trends, tools, and emerging visual technologies (including AI-assisted design workflows).",
+    "Prepare production-ready files for print and digital use, ensuring quality and technical accuracy.",
+    "Present and articulate design concepts clearly to both creative and non-creative stakeholders."
+  ],
+  "required_qualifications": [
+    "Bachelor's degree in Graphic Design, Visual Communication, or a related field (or equivalent practical experience).",
+    "2+ years of professional experience in graphic or digital design (agency, in-house, or freelance).",
+    "Proficiency in industry-standard design tools: Adobe Creative Suite (Photoshop, Illustrator, InDesign), Figma, and/or Sketch.",
+    "Strong portfolio showcasing a range of work: branding, UI/UX elements, digital marketing assets, and layout design.",
+    "Solid understanding of typography, color theory, composition, and visual hierarchy.",
+    "Experience designing for both digital (web, mobile, social) and print media.",
+    "Excellent communication skills and ability to accept and integrate feedback constructively.",
+    "Self-motivated, detail-oriented, and able to manage multiple projects under deadlines."
+  ],
+  "preferred_qualifications": [
+    "Basic familiarity with HTML/CSS or design-to-development handoff processes.",
+    "Awareness of generative design tools (e.g., Adobe Firefly, Canva AI, or Figma plugins) is valued but not required."
+  ]
+}
+2025-11-13 09:38:26 - data_processor - INFO - [Data Processor | create_semantic_chunks] Created 4 semantic chunks for the Job Description.
+2025-11-13 09:38:26 - data_processor - DEBUG - [Semantic Chunks Job Description]: 
+ [Document(metadata={'category': 'overview', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content="Job Title: Graphic Designer at NovaSynth Labs. Location: Kollam, Kerala, India (Hybrid/Remote options available). Company Summary: At NovaSynth Labs, we believe great ideas deserve beautiful expression. Based in Thiruvalla—a vibrant town blending tradition with emerging tech—we're a dynamic creative studio and product lab building digital experiences that inspire, inform, and engage. From AI-powered content tools to immersive brand ecosystems, our work sits at the intersection of design, storytelling, and innovation."), Document(metadata={'category': 'responsibilities', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content='Key Responsibilities: Conceptualize and create visually striking designs for websites, mobile apps, social media, email campaigns, presentations, brochures, and brand collateral. Develop and maintain consistent brand guidelines, including typography, color palettes, and visual tone across all platforms. Collaborate with cross-functional teams to translate product requirements and marketing goals into intuitive and aesthetically compelling visuals. Design user-centered interfaces and assets that align with UX best practices and accessibility standards. Iterate on designs based on feedback, user testing, and performance metrics. Stay current with design trends, tools, and emerging visual technologies (including AI-assisted design workflows). Prepare production-ready files for print and digital use, ensuring quality and technical accuracy. Present and articulate design concepts clearly to both creative and non-creative stakeholders.'), Document(metadata={'category': 'required_qualifications', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content="Required Qualifications: Bachelor's degree in Graphic Design, Visual Communication, or a related field (or equivalent practical experience). 2+ years of professional experience in graphic or digital design (agency, in-house, or freelance). Proficiency in industry-standard design tools: Adobe Creative Suite (Photoshop, Illustrator, InDesign), Figma, and/or Sketch. Strong portfolio showcasing a range of work: branding, UI/UX elements, digital marketing assets, and layout design. Solid understanding of typography, color theory, composition, and visual hierarchy. Experience designing for both digital (web, mobile, social) and print media. Excellent communication skills and ability to accept and integrate feedback constructively. Self-motivated, detail-oriented, and able to manage multiple projects under deadlines."), Document(metadata={'category': 'preferred_qualifications', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content='Preferred Qualifications: Basic familiarity with HTML/CSS or design-to-development handoff processes. Awareness of generative design tools (e.g., Adobe Firefly, Canva AI, or Figma plugins) is valued but not required.')]
+2025-11-13 09:38:26 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Job Description...
+2025-11-13 09:38:28 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Job Description saved to 'C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\data\test_06\vector_store\test_06-b2da4863d6bb44b6be7d62277fccf2eb\faiss_jd_index'.
+2025-11-13 09:38:28 - data_processor - INFO - 
+[Data Processor] --- Processing Resume from C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_06-b2da4863d6bb44b6be7d62277fccf2eb\resume.txt ---
+2025-11-13 09:38:28 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-13 09:38:28 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_06-b2da4863d6bb44b6be7d62277fccf2eb\resume.txt...
+2025-11-13 09:38:31 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\test_06-b2da4863d6bb44b6be7d62277fccf2eb\resume.txt.
+2025-11-13 09:38:31 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-13 09:38:31 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 2732 characters
+2025-11-13 09:38:31 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Resume...
+2025-11-13 09:38:49 - data_processor - INFO - [Data Processor | extract_data] Extraction complete.
+2025-11-13 09:38:49 - data_processor - INFO - [Structred Data Resume]: 
+ {
+  "name": "",
+  "summary": "Three-year online Video Production Assistant for commercials and short films. Competent with Premiere Pro for trimming short segments to required lengths. 20% more likes and comments due to re-sequenced scenes to enhance audience satisfaction.",
+  "work_experience": [
+    {
+      "role": "Video Production Assistant",
+      "company": "Blue Penguin Designs, Bar Bigha",
+      "start_date": "February 2021",
+      "end_date": "Present",
+      "responsibilities": [
+        "Responsible for supporting a large scale production team of 100 people, throughout production, including development, pre-production, post-production, principal photography, and distribution.",
+        "Managed the bookings for guests, the green room traffic, and any guest suites.",
+        "Researched story ideas and then compiled footnotes and gathered footage for presentation.",
+        "Completed Video Production-scriptwriting, audio editing, and mixing using the Avid non-linear editing system.",
+        "Maintained and assisted with Production Acquisition."
+      ]
+    },
+    {
+      "role": "Video Production Assistant",
+      "company": "Botle Bob Advertising, Opelousas",
+      "start_date": "January 2019",
+      "end_date": "February 2021",
+      "responsibilities": [
+        "Responsible for organizing and preparing visual and audio equipment to be used on video projects for clients such as Pfizer, Knoll Pharmaceuticals, and Merck.",
+        "Helped edit graphics and video projects from conception to creation.",
+        "Collaborated with the production team to provide content, digital assets, presentations, and other video needs.",
+        "Built, edited, and polished videography proposals for business clients.",
+        "Staged and set up audio and video equipment for studio and on-location shoots.",
+        "Performed minor maintenance on video and audio equipment and managed any required vendor repair."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BA in Film and Television",
+      "institution": "Boston University, Boston",
+      "graduation_date": "Present"
+    },
+    {
+      "degree": "Advanced Course in Digital Video Editing",
+      "institution": "ADMEC Multimedia Institute, Online",
+      "graduation_date": "July 2018"
+    },
+    {
+      "degree": "Advanced Course in Digital Video Editing",
+      "institution": "ADMEC Multimedia Institute, Online",
+      "graduation_date": "2015"
+    },
+    {
+      "degree": "Hootsuite Certified Professional",
+      "institution": "Hootsuite Media, Albany, NY",
+      "graduation_date": "February 2021"
+    },
+    {
+      "degree": "Adobe CS5 Certified",
+      "institution": "University of Delaware, Newark, DE",
+      "graduation_date": "December 2020"
+    }
+  ],
+  "skills": [
+    "Call Sheets & Sides",
+    "Adobe Premiere Pro",
+    "Camera Boom",
+    "Light Boom",
+    "Mic Boom",
+    "DaVinci Resolve"
+  ],
+  "extras": [
+    "Mountainbiking",
+    "Track Athletics",
+    "Choir",
+    "English",
+    "Dutch; Flemish",
+    "Driving License: Full",
+    "Place of Birth: San Antonio"
+  ]
+}
+2025-11-13 09:38:49 - data_processor - INFO - [Data Processor | create_semantic_chunks] Created 9 semantic chunks for the Resume.
+2025-11-13 09:38:49 - data_processor - DEBUG - [Semantic Chunks Resume]: 
+ [Document(metadata={'category': 'summary', 'name': ''}, page_content='Candidate Name: . Summary: Three-year online Video Production Assistant for commercials and short films. Competent with Premiere Pro for trimming short segments to required lengths. 20% more likes and comments due to re-sequenced scenes to enhance audience satisfaction.'), Document(metadata={'category': 'work_experience', 'company': 'Blue Penguin Designs, Bar Bigha', 'role': 'Video Production Assistant', 'name': ''}, page_content='Role: Video Production Assistant at Blue Penguin Designs, Bar Bigha (February 2021 - Present). Responsibilities: Responsible for supporting a large scale production team of 100 people, throughout production, including development, pre-production, post-production, principal photography, and distribution. Managed the bookings for guests, the green room traffic, and any guest suites. Researched story ideas and then compiled footnotes and gathered footage for presentation. Completed Video Production-scriptwriting, audio editing, and mixing using the Avid non-linear editing system. Maintained and assisted with Production Acquisition.'), Document(metadata={'category': 'work_experience', 'company': 'Botle Bob Advertising, Opelousas', 'role': 'Video Production Assistant', 'name': ''}, page_content='Role: Video Production Assistant at Botle Bob Advertising, Opelousas (January 2019 - February 2021). Responsibilities: Responsible for organizing and preparing visual and audio equipment to be used on video projects for clients such as Pfizer, Knoll Pharmaceuticals, and Merck. Helped edit graphics and video projects from conception to creation. Collaborated with the production team to provide content, digital assets, presentations, and other video needs. Built, edited, and polished videography proposals for business clients. Staged and set up audio and video equipment for studio and on-location shoots. Performed minor maintenance on video and audio equipment and managed any required vendor repair.'), Document(metadata={'category': 'education', 'institution': 'Boston University, Boston', 'name': ''}, page_content='Degree: BA in Film and Television from Boston University, Boston (Graduated: Present).'), Document(metadata={'category': 'education', 'institution': 'ADMEC Multimedia Institute, Online', 'name': ''}, page_content='Degree: Advanced Course in Digital Video Editing from ADMEC Multimedia Institute, Online (Graduated: July 2018).'), Document(metadata={'category': 'education', 'institution': 'ADMEC Multimedia Institute, Online', 'name': ''}, page_content='Degree: Advanced Course in Digital Video Editing from ADMEC Multimedia Institute, Online (Graduated: 2015).'), Document(metadata={'category': 'education', 'institution': 'Hootsuite Media, Albany, NY', 'name': ''}, page_content='Degree: Hootsuite Certified Professional from Hootsuite Media, Albany, NY (Graduated: February 2021).'), Document(metadata={'category': 'education', 'institution': 'University of Delaware, Newark, DE', 'name': ''}, page_content='Degree: Adobe CS5 Certified from University of Delaware, Newark, DE (Graduated: December 2020).'), Document(metadata={'category': 'skills', 'name': ''}, page_content='Skills: Call Sheets & Sides, Adobe Premiere Pro, Camera Boom, Light Boom, Mic Boom, DaVinci Resolve')]
+2025-11-13 09:38:49 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Resume...
+2025-11-13 09:38:49 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Resume saved to 'C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\data\test_06\vector_store\test_06-b2da4863d6bb44b6be7d62277fccf2eb\faiss_resume_index'.
+2025-11-13 10:17:47 - data_processor - INFO - 
+[Data Processor] --- Processing Job Description from C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\michelle_smith-8fae722319e447fba75337b3faef5708\job_description.txt ---
+2025-11-13 10:17:47 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-13 10:17:47 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\michelle_smith-8fae722319e447fba75337b3faef5708\job_description.txt...
+2025-11-13 10:17:55 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\michelle_smith-8fae722319e447fba75337b3faef5708\job_description.txt.
+2025-11-13 10:17:55 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-13 10:17:55 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 3805 characters
+2025-11-13 10:17:55 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Job Description...
+2025-11-13 10:18:08 - data_processor - INFO - [Data Processor | extract_data] Extraction complete.
+2025-11-13 10:18:08 - data_processor - INFO - [Structred Data Job Description]: 
+ {
+  "job_title": "Graphic Designer",
+  "company": "NovaSynth Labs",
+  "location": "Kollam, Kerala, India (Hybrid/Remote options available)",
+  "company_summary": "NovaSynth Labs is a dynamic creative studio and product lab based in Thiruvalla, blending tradition with emerging tech to build digital experiences that inspire, inform, and engage.",
+  "responsibilities": [
+    "Conceptualize and create visually striking designs for websites, mobile apps, social media, email campaigns, presentations, brochures, and brand collateral.",
+    "Develop and maintain consistent brand guidelines, including typography, color palettes, and visual tone across all platforms.",
+    "Collaborate with cross-functional teams to translate product requirements and marketing goals into intuitive and aesthetically compelling visuals.",
+    "Design user-centered interfaces and assets that align with UX best practices and accessibility standards.",
+    "Iterate on designs based on feedback, user testing, and performance metrics.",
+    "Stay current with design trends, tools, and emerging visual technologies (including AI-assisted design workflows).",
+    "Prepare production-ready files for print and digital use, ensuring quality and technical accuracy.",
+    "Present and articulate design concepts clearly to both creative and non-creative stakeholders."
+  ],
+  "required_qualifications": [
+    "Bachelor's degree in Graphic Design, Visual Communication, or a related field (or equivalent practical experience).",
+    "2+ years of professional experience in graphic or digital design (agency, in-house, or freelance).",
+    "Proficiency in industry-standard design tools: Adobe Creative Suite (Photoshop, Illustrator, InDesign), Figma, and/or Sketch.",
+    "Strong portfolio showcasing a range of work: branding, UI/UX elements, digital marketing assets, and layout design.",
+    "Solid understanding of typography, color theory, composition, and visual hierarchy.",
+    "Experience designing for both digital (web, mobile, social) and print media.",
+    "Excellent communication skills and ability to accept and integrate feedback constructively.",
+    "Self-motivated, detail-oriented, and able to manage multiple projects under deadlines."
+  ],
+  "preferred_qualifications": [
+    "Basic familiarity with HTML/CSS or design-to-development handoff processes.",
+    "Awareness of generative design tools (e.g., Adobe Firefly, Canva AI, or Figma plugins) is valued but not required."
+  ]
+}
+2025-11-13 10:18:08 - data_processor - INFO - [Data Processor | create_semantic_chunks] Created 4 semantic chunks for the Job Description.
+2025-11-13 10:18:08 - data_processor - DEBUG - [Semantic Chunks Job Description]: 
+ [Document(metadata={'category': 'overview', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content='Job Title: Graphic Designer at NovaSynth Labs. Location: Kollam, Kerala, India (Hybrid/Remote options available). Company Summary: NovaSynth Labs is a dynamic creative studio and product lab based in Thiruvalla, blending tradition with emerging tech to build digital experiences that inspire, inform, and engage.'), Document(metadata={'category': 'responsibilities', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content='Key Responsibilities: Conceptualize and create visually striking designs for websites, mobile apps, social media, email campaigns, presentations, brochures, and brand collateral. Develop and maintain consistent brand guidelines, including typography, color palettes, and visual tone across all platforms. Collaborate with cross-functional teams to translate product requirements and marketing goals into intuitive and aesthetically compelling visuals. Design user-centered interfaces and assets that align with UX best practices and accessibility standards. Iterate on designs based on feedback, user testing, and performance metrics. Stay current with design trends, tools, and emerging visual technologies (including AI-assisted design workflows). Prepare production-ready files for print and digital use, ensuring quality and technical accuracy. Present and articulate design concepts clearly to both creative and non-creative stakeholders.'), Document(metadata={'category': 'required_qualifications', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content="Required Qualifications: Bachelor's degree in Graphic Design, Visual Communication, or a related field (or equivalent practical experience). 2+ years of professional experience in graphic or digital design (agency, in-house, or freelance). Proficiency in industry-standard design tools: Adobe Creative Suite (Photoshop, Illustrator, InDesign), Figma, and/or Sketch. Strong portfolio showcasing a range of work: branding, UI/UX elements, digital marketing assets, and layout design. Solid understanding of typography, color theory, composition, and visual hierarchy. Experience designing for both digital (web, mobile, social) and print media. Excellent communication skills and ability to accept and integrate feedback constructively. Self-motivated, detail-oriented, and able to manage multiple projects under deadlines."), Document(metadata={'category': 'preferred_qualifications', 'company': 'NovaSynth Labs', 'job_title': 'Graphic Designer'}, page_content='Preferred Qualifications: Basic familiarity with HTML/CSS or design-to-development handoff processes. Awareness of generative design tools (e.g., Adobe Firefly, Canva AI, or Figma plugins) is valued but not required.')]
+2025-11-13 10:18:08 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Job Description...
+2025-11-13 10:18:11 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Job Description saved to 'C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\data\michelle_smith\vector_store\michelle_smith-8fae722319e447fba75337b3faef5708\faiss_jd_index'.
+2025-11-13 10:18:11 - data_processor - INFO - 
+[Data Processor] --- Processing Resume from C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\michelle_smith-8fae722319e447fba75337b3faef5708\resume.txt ---
+2025-11-13 10:18:11 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion started...
+2025-11-13 10:18:11 - data_processor - INFO - [Data Processor | safe_convert] Attempting to convert document at C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\michelle_smith-8fae722319e447fba75337b3faef5708\resume.txt...
+2025-11-13 10:18:16 - data_processor - INFO - [Data Processor | safe_convert] Document conversion successful for C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\uploads\michelle_smith-8fae722319e447fba75337b3faef5708\resume.txt.
+2025-11-13 10:18:16 - data_processor - INFO - [Data Processor | process_and_vectorize] Docling document conversion complete.
+2025-11-13 10:18:16 - data_processor - INFO - [Data Processor | process_and_vectorize] File read successfully. Length: 3266 characters
+2025-11-13 10:18:16 - data_processor - INFO - [Data Processor | extract_data] Invoking LLM for agentic extraction of Resume...
+2025-11-13 10:18:34 - data_processor - INFO - [Data Processor | extract_data] Extraction complete.
+2025-11-13 10:18:34 - data_processor - INFO - [Structred Data Resume]: 
+ {
+  "name": "Michelle Smith",
+  "summary": "Experienced Global Key Account Manager with a proven track record in driving revenue growth, managing cross\u2011functional teams, and implementing strategic sales initiatives across multiple industries.",
+  "work_experience": [
+    {
+      "role": "Global Key Account Manager",
+      "company": "Inash Oil & Petroleum",
+      "start_date": "Sep 2022",
+      "end_date": "Apr 2025",
+      "responsibilities": [
+        "Secure global RFP bids for clients totaling ten years and $800 a million in transaction revenue over contract terms",
+        "Manage a national team of five Account Managers and twenty account executives",
+        "Consistently exceeded annual sales goals during work tenure",
+        "Organized committees responsible for pre\u2011sales and after sales service",
+        "Brought significant growth of 16% in after market sales through creation and implementation of strategic sales and marketing plans as well as talent management pipelines",
+        "Conceptualization and implementation of national accounts programs to increase brand visibility",
+        "Responsible for monitoring pre\u2011 and post\u2011sales quality standards to ensure service excellence across the client territories"
+      ]
+    },
+    {
+      "role": "Regional Account Manager",
+      "company": "Asol Lubricants",
+      "start_date": "Dec 2018",
+      "end_date": "Aug 2022",
+      "responsibilities": [
+        "Exceed target growth prospects by 28% via continuous interaction with client stakeholders, to facilitate opportunity surveys",
+        "Post\u2011Sales: Capture intelligence data of client business needs, and competition products used to investigate cross\u2011selling and upselling strategies customized for each client group",
+        "Successfully oversee all projects for current engagement by monitoring commitments concerning quality, effort, cost, and schedule",
+        "Hold a Zero complaint and escalation track record"
+      ]
+    },
+    {
+      "role": "Account Manager",
+      "company": "Presidion Petroleum",
+      "start_date": "Feb 2015",
+      "end_date": "Nov 2017",
+      "responsibilities": [
+        "Increased total revenue an average of 12% annually by upselling activities",
+        "Manage $6 million in annual sales with recurring clients and hold with complete P&L accountability for fourteen counties in Texas",
+        "Drive brand management strategies yielding 12+% annual growth of supplementary products to key accounts",
+        "Recover $1 million in inactive accounts by initiating customer Q&A meetings, demonstrations, and online client education"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor Degree in Advertising and Marketing",
+      "institution": "University of Denver, Denver",
+      "graduation_date": "Jan 2017"
+    },
+    {
+      "degree": "Advanced Diploma in Global Customer Relationship Management",
+      "institution": "Business College of New York, Brooklyn",
+      "graduation_date": "Apr 2019"
+    }
+  ],
+  "skills": [
+    "Languages",
+    "Courses",
+    "Client Relationship Management",
+    "Strategic Planning",
+    "Talent Development",
+    "Team Leadership",
+    "Networking",
+    "Sales Growth",
+    "English",
+    "Spanish"
+  ],
+  "extras": [
+    "Certified Key Accounts Manager (CKAM), Udemy, Online",
+    "Certificate in Project Management, Certified Institute of Project Managers (CIPM)",
+    "training webinars"
+  ]
+}
+2025-11-13 10:18:34 - data_processor - INFO - [Data Processor | create_semantic_chunks] Created 7 semantic chunks for the Resume.
+2025-11-13 10:18:34 - data_processor - DEBUG - [Semantic Chunks Resume]: 
+ [Document(metadata={'category': 'summary', 'name': 'Michelle Smith'}, page_content='Candidate Name: Michelle Smith. Summary: Experienced Global Key Account Manager with a proven track record in driving revenue growth, managing cross‑functional teams, and implementing strategic sales initiatives across multiple industries.'), Document(metadata={'category': 'work_experience', 'company': 'Inash Oil & Petroleum', 'role': 'Global Key Account Manager', 'name': 'Michelle Smith'}, page_content='Role: Global Key Account Manager at Inash Oil & Petroleum (Sep 2022 - Apr 2025). Responsibilities: Secure global RFP bids for clients totaling ten years and $800 a million in transaction revenue over contract terms Manage a national team of five Account Managers and twenty account executives Consistently exceeded annual sales goals during work tenure Organized committees responsible for pre‑sales and after sales service Brought significant growth of 16% in after market sales through creation and implementation of strategic sales and marketing plans as well as talent management pipelines Conceptualization and implementation of national accounts programs to increase brand visibility Responsible for monitoring pre‑ and post‑sales quality standards to ensure service excellence across the client territories'), Document(metadata={'category': 'work_experience', 'company': 'Asol Lubricants', 'role': 'Regional Account Manager', 'name': 'Michelle Smith'}, page_content='Role: Regional Account Manager at Asol Lubricants (Dec 2018 - Aug 2022). Responsibilities: Exceed target growth prospects by 28% via continuous interaction with client stakeholders, to facilitate opportunity surveys Post‑Sales: Capture intelligence data of client business needs, and competition products used to investigate cross‑selling and upselling strategies customized for each client group Successfully oversee all projects for current engagement by monitoring commitments concerning quality, effort, cost, and schedule Hold a Zero complaint and escalation track record'), Document(metadata={'category': 'work_experience', 'company': 'Presidion Petroleum', 'role': 'Account Manager', 'name': 'Michelle Smith'}, page_content='Role: Account Manager at Presidion Petroleum (Feb 2015 - Nov 2017). Responsibilities: Increased total revenue an average of 12% annually by upselling activities Manage $6 million in annual sales with recurring clients and hold with complete P&L accountability for fourteen counties in Texas Drive brand management strategies yielding 12+% annual growth of supplementary products to key accounts Recover $1 million in inactive accounts by initiating customer Q&A meetings, demonstrations, and online client education'), Document(metadata={'category': 'education', 'institution': 'University of Denver, Denver', 'name': 'Michelle Smith'}, page_content='Degree: Bachelor Degree in Advertising and Marketing from University of Denver, Denver (Graduated: Jan 2017).'), Document(metadata={'category': 'education', 'institution': 'Business College of New York, Brooklyn', 'name': 'Michelle Smith'}, page_content='Degree: Advanced Diploma in Global Customer Relationship Management from Business College of New York, Brooklyn (Graduated: Apr 2019).'), Document(metadata={'category': 'skills', 'name': 'Michelle Smith'}, page_content='Skills: Languages, Courses, Client Relationship Management, Strategic Planning, Talent Development, Team Leadership, Networking, Sales Growth, English, Spanish')]
+2025-11-13 10:18:34 - data_processor - INFO - [Data Processor | process_and_vectorize] Initializing embedding model for Resume...
+2025-11-13 10:18:35 - data_processor - INFO - [Data Processor | process_and_vectorize] ✅ FAISS index for Resume saved to 'C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\data\michelle_smith\vector_store\michelle_smith-8fae722319e447fba75337b3faef5708\faiss_resume_index'.

@@ -1,0 +1,119 @@
+{
+    "metadata": {
+        "session_start_time": 1763009319.3187213,
+        "duration_minutes": 5,
+        "target_competencies": [
+            "Proficiency in Adobe Creative Suite (Photoshop, Illustrator, InDesign) and Figma/Sketch",
+            "Strong visual design fundamentals: typography, color theory, composition, and visual hierarchy",
+            "Ability to create cohesive brand guidelines and maintain consistency across digital and print media",
+            "UX\u2011centric design skills with knowledge of accessibility standards and user testing",
+            "Effective communication and presentation of design concepts to both creative and non\u2011creative stakeholders",
+            "Iterative design mindset: incorporating feedback, data, and performance metrics into refinements",
+            "Project management: self\u2011motivation, attention to detail, and meeting multiple deadlines",
+            "Awareness of emerging design technologies (AI\u2011assisted workflows, generative tools) and basic HTML/CSS handoff"
+        ],
+        "completed_competencies": [],
+        "pre_interview_validation": {
+            "state": "completed",
+            "questions": [
+                "Can you walk us through a project where you collaborated with a design team to create a visual campaign, and what was your role in shaping the creative direction?",
+                "Which aspects of graphic design\u2014such as typography, color theory, or UI/UX\u2014have you found most engaging in your past work, and how have you applied them in a marketing context?",
+                "What drew you to NovaSynth Labs and the Graphic Designer position, and how do you see this role aligning with your career goals?"
+            ],
+            "answers": [
+                {
+                    "question": "Can you walk us through a project where you collaborated with a design team to create a visual campaign, and what was your role in shaping the creative direction?",
+                    "answer": "No, I dont want to answer that",
+                    "validation": {
+                        "validation_status": "IRRELEVANT",
+                        "confidence_score": 0.95,
+                        "feedback": "The candidate's response does not address the interview question at all. Instead of providing an example of collaboration with a design team, the candidate simply states a refusal to answer. This does not demonstrate any understanding of the role or the creative process, and it leaves the interviewer without the information they sought.",
+                        "needs_clarification": true,
+                        "suggested_followup": "Could you explain why you prefer not to discuss that project, or would you be willing to share a different example of collaborating with a design team?"
+                    }
+                },
+                {
+                    "question": "Which aspects of graphic design\u2014such as typography, color theory, or UI/UX\u2014have you found most engaging in your past work, and how have you applied them in a marketing context?",
+                    "answer": "no its private infomation",
+                    "validation": {
+                        "validation_status": "IRRELEVANT",
+                        "confidence_score": 0.98,
+                        "feedback": "The response does not address the question at all. It simply states that the information is private, providing no details about graphic design aspects or marketing applications. The candidate should explain which design elements they find engaging (e.g., typography, color theory, UI/UX) and give concrete examples of how they have used those elements in marketing projects.",
+                        "needs_clarification": true,
+                        "suggested_followup": "Could you share which aspects of graphic design you find most engaging and describe how you have applied them in a marketing context?"
+                    }
+                },
+                {
+                    "question": "What drew you to NovaSynth Labs and the Graphic Designer position, and how do you see this role aligning with your career goals?",
+                    "answer": "The ability that i have to be creative in my own field and be more happy in what i do. This helps me connect to the people in marketing as i bring a uniquness to the table to every differemt customers",
+                    "validation": {
+                        "validation_status": "VAGUE",
+                        "confidence_score": 0.85,
+                        "feedback": "The response is generic and does not address the specific question. It mentions creativity and happiness but fails to explain why NovaSynth Labs or the Graphic Designer role is appealing, and it does not connect the position to any concrete career goals. The answer lacks detail, specificity, and relevance to the company and role.",
+                        "needs_clarification": true,
+                        "suggested_followup": "Could you tell me what specifically about NovaSynth Labs and the Graphic Designer position attracted you, and how this role aligns with your short\u2011 and long\u2011term career objectives?"
+                    }
+                }
+            ],
+            "attempts": 0
+        }
+    },
+    "transcript": [
+        {
+            "role": "bot",
+            "content": "Welcome to your interview! \ud83d\udc4b\n\nWe'll start with a few brief questions to better understand your background.\nPlease provide specific, detailed answers based on your experience.\n\nLet's begin when you're ready."
+        },
+        {
+            "role": "bot",
+            "content": "Can you walk us through a project where you collaborated with a design team to create a visual campaign, and what was your role in shaping the creative direction?"
+        },
+        {
+            "role": "user",
+            "content": "No, I dont want to answer that"
+        },
+        {
+            "role": "bot",
+            "content": "Could you explain why you prefer not to discuss that project, or would you be willing to share a different example of collaborating with a design team?"
+        },
+        {
+            "role": "user",
+            "content": "no its private infomation"
+        },
+        {
+            "role": "bot",
+            "content": "Could you share which aspects of graphic design you find most engaging and describe how you have applied them in a marketing context?"
+        },
+        {
+            "role": "user",
+            "content": "The ability that i have to be creative in my own field and be more happy in what i do. This helps me connect to the people in marketing as i bring a uniquness to the table to every differemt customers"
+        },
+        {
+            "role": "bot",
+            "content": "Thank you for those initial answers. Now let's move to the main interview questions.\n\nRemember to provide specific examples from your experience where possible."
+        },
+        {
+            "role": "bot",
+            "content": "Could you walk me through your role at Inash Oil & Petroleum from Sep 2022 to Apr 2025, the team you led and key achievements?"
+        },
+        {
+            "role": "user",
+            "content": "Yes we did that"
+        },
+        {
+            "role": "bot",
+            "content": "What were your main responsibilities and outcomes during your time as Regional Account Manager at Asol Lubricants from Dec 2018 to Aug 2022?"
+        },
+        {
+            "role": "user",
+            "content": "no"
+        },
+        {
+            "role": "bot",
+            "content": "Can you confirm your graduation dates from the University of Denver and Business College of New York, and the degrees earned?"
+        },
+        {
+            "role": "user",
+            "content": "2024"
+        }
+    ]
+}

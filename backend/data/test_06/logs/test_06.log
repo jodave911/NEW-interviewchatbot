@@ -1,0 +1,4 @@
+2025-11-13 09:38:02,895 - candidate.test_06 - INFO - Starting upload for session test_06-b2da4863d6bb44b6be7d62277fccf2eb
+2025-11-13 09:38:02,917 - candidate.test_06 - DEBUG - Metadata for test_06-b2da4863d6bb44b6be7d62277fccf2eb: {'candidate_name': 'Test 06', 'interview_duration': 5, 'interview_completed': False, 'report_generated': False, 'report_filename': ''}
+2025-11-13 09:38:02,917 - candidate.test_06 - INFO - 🔹 Starting vectorisation for session test_06-b2da4863d6bb44b6be7d62277fccf2eb …
+2025-11-13 09:38:49,426 - candidate.test_06 - INFO - ✅ Vectorisation finished for session test_06-b2da4863d6bb44b6be7d62277fccf2eb

@@ -16,10 +16,27 @@ def _gather_comprehensive_context(jd_db: FAISS, resume_db: FAISS, transcript_log
     logger.info("[Report Generator] Aggregating context from all sources...")
 
     transcript_str = "--- INTERVIEW TRANSCRIPT ---\n"
-    for item in transcript_log:
-        role = item.get("role", "unknown").title()
-        content = item.get("content", "")
-        transcript_str += f"{role}: {content}\n"
+    
+
+    if isinstance(transcript_log, dict) and "transcript" in transcript_log:
+        actual_transcript = transcript_log["transcript"]
+        metadata = transcript_log.get("metadata", {})
+        transcript_str += f"Interview Metadata: {json.dumps(metadata, indent=2)}\n\n"
+        
+        for item in actual_transcript:
+            role = item.get("role", "unknown").title()
+            content = item.get("content", "")
+            transcript_str += f"{role}: {content}\n"
+    else:
+        # Old format: direct list of transcript items
+        for item in transcript_log:
+            if isinstance(item, dict):
+                role = item.get("role", "unknown").title()
+                content = item.get("content", "")
+                transcript_str += f"{role}: {content}\n"
+            else:
+                # Fallback for string items
+                transcript_str += f"{str(item)}\n"
 
     jd_context_str = "\n--- KEY JOB DESCRIPTION INFO ---\n"
     if hasattr(jd_db, 'docstore') and hasattr(jd_db.docstore, '_dict'):
@@ -79,11 +96,21 @@ def _setup_environment(jd_index_path: str, resume_index_path: str, transcript_pa
         raise FileNotFoundError(f"Interview transcript not found at '{transcript_path}'.")
 
     with open(transcript_path, "r", encoding='utf-8') as f:
-        transcript_log = json.load(f)
+        transcript_data = json.load(f)
 
-    if not transcript_log:
+    if not transcript_data:
         logger.error("[Report Generator] Interview transcript is empty.")
         raise ValueError("Interview transcript is empty.")
+
+    # Extract the actual transcript from the enhanced log format
+    if isinstance(transcript_data, dict) and "transcript" in transcript_data:
+        transcript_log = transcript_data["transcript"]
+        logger.info(f"[Report Generator] Loaded enhanced transcript format with {len(transcript_log)} messages")
+    else:
+        transcript_log = transcript_data
+        logger.info(f"[Report Generator] Loaded direct transcript format")
+
+    logger.info("[Report Generator] Setup complete. All data sources loaded.")
 
     logger.info("[Report Generator] Setup complete. All data sources loaded.")
     return jd_db, resume_db, transcript_log
