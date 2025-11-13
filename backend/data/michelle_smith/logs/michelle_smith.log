@@ -1,0 +1,4 @@
+2025-11-13 10:17:47,890 - candidate.michelle_smith - INFO - Starting upload for session michelle_smith-8fae722319e447fba75337b3faef5708
+2025-11-13 10:17:47,903 - candidate.michelle_smith - DEBUG - Metadata for michelle_smith-8fae722319e447fba75337b3faef5708: {'candidate_name': 'Michelle Smith', 'interview_duration': 5, 'interview_completed': False, 'report_generated': False, 'report_filename': ''}
+2025-11-13 10:17:47,904 - candidate.michelle_smith - INFO - 🔹 Starting vectorisation for session michelle_smith-8fae722319e447fba75337b3faef5708 …
+2025-11-13 10:18:35,232 - candidate.michelle_smith - INFO - ✅ Vectorisation finished for session michelle_smith-8fae722319e447fba75337b3faef5708

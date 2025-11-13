@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "session_start_time": 1763006827.9339304,
+        "duration_minutes": 5,
+        "target_competencies": [
+            "Visual design proficiency (typography, color theory, composition)",
+            "UI/UX design and accessibility best practices",
+            "Brand strategy and guideline development",
+            "Cross\u2011functional collaboration and stakeholder communication",
+            "Proficiency in Adobe Creative Suite, Figma, and Sketch",
+            "Production\u2011ready file preparation for print and digital",
+            "Adaptability to AI\u2011assisted design tools and emerging visual technologies",
+            "Feedback integration and iterative design process"
+        ],
+        "completed_competencies": [],
+        "pre_interview_validation": {
+            "state": "in_progress",
+            "questions": [
+                "When tasked with developing a visual identity for an AI\u2011powered content platform, how would you ensure consistency across web, mobile, and print assets? What key steps and tools would you prioritize in this process?",
+                "Your portfolio showcases extensive work in branding and UI/UX. Can you describe a project where you integrated motion graphics into a static brand guideline, and what impact it had on the brand's digital storytelling?",
+                "What attracted you to NovaSynth Labs, and how do you see your experience with AI\u2011assisted design tools contributing to our product lab's mission?"
+            ],
+            "answers": [],
+            "attempts": 0
+        }
+    },
+    "transcript": [
+        {
+            "role": "bot",
+            "content": "Welcome to your interview! \ud83d\udc4b\n\nWe'll start with a few brief questions to better understand your background.\nPlease provide specific, detailed answers based on your experience.\n\nLet's begin when you're ready."
+        },
+        {
+            "role": "bot",
+            "content": "When tasked with developing a visual identity for an AI\u2011powered content platform, how would you ensure consistency across web, mobile, and print assets? What key steps and tools would you prioritize in this process?"
+        }
+    ]
+}

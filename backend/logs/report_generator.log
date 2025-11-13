@@ -910,3 +910,524 @@ Alexandra’s extensive senior‑level experience, proven ability to build consi
 2025-11-12 15:53:17 - report_generator - INFO - --- LLM Request End ---
 [Report Generator | _log_and_invoke_llm]
 2025-11-12 15:53:17 - report_generator - INFO - Report has been saved to 'C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\data\alexandra_menon\reports\alexandra_menon_1762942923_report.md'
+2025-11-12 23:40:02 - report_generator - INFO - 
+[Report Generator] --- Generating candidate evaluation report ---
+2025-11-12 23:40:02 - report_generator - INFO - [Report Generator] Initializing models and loading data sources...
+2025-11-12 23:40:03 - report_generator - INFO - [Report Generator] Vector stores loaded successfully.
+2025-11-12 23:40:03 - report_generator - INFO - [Report Generator] Setup complete. All data sources loaded.
+2025-11-12 23:40:03 - report_generator - INFO - [Report Generator] Aggregating context from all sources...
+2025-11-12 23:40:03 - report_generator - INFO - [Report Generator] Context aggregation complete.
+2025-11-12 23:40:03 - report_generator - INFO - [Report Generator] Generating the final report...
+2025-11-12 23:40:03 - report_generator - INFO - [Report Generator | _log_and_invoke_llm]
+--- LLM Request Start ---
+2025-11-12 23:40:03 - report_generator - INFO - Purpose: Generate Full Candidate Report
+2025-11-12 23:40:03 - report_generator - DEBUG - Formatted Prompt for LLM:
+---
+System: You are a seasoned Talent Acquisition Partner and Senior Hiring Manager, renowned for your insightful and objective candidate evaluations. Your task is to critically synthesize the provided information into a comprehensive evaluation report for the hiring in a big corp. Your analysis must be strictly grounded in the provided context (JOB DESCRIPTION, CANDIDATE RESUME, and INTERVIEW TRANSCRIPT). Substantiate all claims with specific evidence or direct quotes from the transcript. Avoid making assumptions or introducing outside information.Proceed only after you have **fully read** the three inputs that the USER will supplyunder the headings **[JOB DESCRIPTION]**, **[CANDIDATE RESUME]**, and **[INTERVIEW TRANSCRIPT]**.
+Human: Please generate a formal candidate evaluation report based on the inputs below. Follow the exact Markdown format specified.
+
+--- INTERVIEW TRANSCRIPT ---
+--- INTERVIEW TRANSCRIPT ---
+Bot: Hello! Thank you for joining me today. Before we begin, please review the following guidelines:
+
+1. This is a secure interview environment designed to assess your skills fairly.
+2. Please ensure you're in a quiet environment with a stable internet connection.
+3. Have your resume and the job description handy for reference.
+4. Answer honestly and provide specific examples from your experience.
+5. If you need clarification on any question, please ask.
+
+Let's begin.
+Bot: Could you walk me through your career timeline from Verve Interactive to your current role at NovaSynth Labs, including dates and titles?
+User: yes 2023-2025
+Bot: What degree did you earn, from which institution, and how does it relate to the graphic design responsibilities listed in this role?
+User: Btech in AI and ML
+Bot: Can you describe the modular design system you built at NovaSynth Labs and how it impacted design‑dev handoff time?
+User: YEs and no
+Bot: How have you incorporated AI‑assisted design tools or generative technologies into your recent projects, especially for the AI‑powered content platform?
+User: no
+Bot: I appreciate your brief response. Could you share a concrete example from a recent project where you personally used AI‑assisted design tools or generative technologies—perhaps on the AI‑powered content platform? Please describe the tool, how you integrated it into your workflow, the challenges you faced, and the impact it had on the final product.
+User: hi
+Bot: Thanks for the brief reply. Could you walk me through a specific recent project where you personally used an AI‑assisted design or generative tool (e.g., Midjourney, DALL·E, Stable Diffusion, Adobe Firefly, etc.) on the AI‑powered content platform? Please describe the tool, how you integrated it into your workflow, the challenges you encountered, and the measurable impact it had on the final product.
+User: Hey im alex
+Bot: Thanks, Alex. Could you walk me through a recent project where you personally used an AI‑assisted design or generative tool (such as Midjourney, DALL·E, Stable Diffusion, Adobe Firefly, etc.) on the AI‑powered content platform? Please describe the specific tool, how you integrated it into your workflow, the challenges you faced, and any measurable impact it had on the final product.
+User: I was a swimer
+Bot: Thanks for your response. Could you share a concrete example of a recent project where you personally used an AI‑assisted design or generative tool (e.g., Midjourney, DALL·E, Stable Diffusion, Adobe Firefly) on our AI‑powered content platform? Please describe the tool, how you integrated it into your workflow, the specific challenges you encountered, and any measurable impact it had on the final product.
+User: hi
+Bot: Thanks for the brief reply. Could you walk me through a specific recent project where you personally used an AI‑assisted design or generative tool (such as Midjourney, DALL·E, Stable Diffusion, or Adobe Firefly) on our AI‑powered content platform? Please describe which tool you chose, how you integrated it into your workflow, the particular challenges you faced during the project, and any measurable impact it had on the final product (e.g., time saved, engagement metrics, quality improvements).
+User: how long is this interview
+Bot: I understand you might be curious about the interview length. To help us move forward, could you walk me through a specific recent project where you personally used an AI‑assisted design or generative tool (e.g., Midjourney, DALL·E, Stable Diffusion, Adobe Firefly) on our platform? Please describe which tool you chose, how you integrated it into your workflow, the challenges you encountered, and any measurable impact it had (time saved, engagement metrics, quality improvements).
+User: im not the candidate, i want you to tell me, how long is this interview
+Bot: I understand you’re curious about the interview length—this interview typically runs about 45 minutes. To help us assess your fit, could you walk me through a recent project where you personally used an AI‑assisted design or generative tool (e.g., Midjourney, DALL·E, Stable Diffusion, Adobe Firefly) on our platform? Please describe which tool you chose, how you integrated it into your workflow, the challenges you faced, and any measurable impact it had (time saved, engagement metrics, quality improvements).
+
+--- END TRANSCRIPT ---
+
+--- JOB DESCRIPTION ---
+
+--- KEY JOB DESCRIPTION INFO ---
+Job Title: Graphic Designer at NovaSynth Labs. Location: Kollam, Kerala, India (Hybrid/Remote options available). Company Summary: At NovaSynth Labs, we believe great ideas deserve beautiful expression. Based in Thiruvalla—a vibrant town blending tradition with emerging tech—we're a dynamic creative studio and product lab building digital experiences that inspire, inform, and engage. From AI-powered content tools to immersive brand ecosystems, our work sits at the intersection of design, storytelling, and innovation.
+Key Responsibilities: Conceptualize and create visually striking designs for websites, mobile apps, social media, email campaigns, presentations, brochures, and brand collateral. Develop and maintain consistent brand guidelines, including typography, color palettes, and visual tone across all platforms. Collaborate with cross-functional teams to translate product requirements and marketing goals into intuitive and aesthetically compelling visuals. Design user-centered interfaces and assets that align with UX best practices and accessibility standards. Iterate on designs based on feedback, user testing, and performance metrics. Stay current with design trends, tools, and emerging visual technologies (including AI-assisted design workflows). Prepare production-ready files for print and digital use, ensuring quality and technical accuracy. Present and articulate design concepts clearly to both creative and non-creative stakeholders.
+Required Qualifications: Bachelor's degree in Graphic Design, Visual Communication, or a related field (or equivalent practical experience). 2+ years of professional experience in graphic or digital design (agency, in-house, or freelance). Proficiency in industry-standard design tools: Adobe Creative Suite (Photoshop, Illustrator, InDesign), Figma, and/or Sketch. Strong portfolio showcasing a range of work: branding, UI/UX elements, digital marketing assets, and layout design. Solid understanding of typography, color theory, composition, and visual hierarchy. Experience designing for both digital (web, mobile, social) and print media. Excellent communication skills and ability to accept and integrate feedback constructively. Self-motivated, detail-oriented, and able to manage multiple projects under deadlines.
+Preferred Qualifications: Basic familiarity with HTML/CSS or design-to-development handoff processes. Awareness of generative design tools (e.g., Adobe Firefly, Canva AI, or Figma plugins) is valued but not required.
+--- END JOB DESCRIPTION ---
+
+--- CANDIDATE RESUME ---
+
+
+--- KEY RESUME INFO ---
+Candidate Name: ALEXANDRA MENON. Summary: Senior Graphic Designer | Brand & Digital Specialist. 15+ years of experience crafting iconic visual identities, digital experiences, and cross-platform brand systems for global tech, cultural, and lifestyle brands.
+Role: Senior Graphic Designer at NovaSynth Labs (2021 - Present). Responsibilities: Spearheaded end-to-end visual identity for AI-powered content platform, merging Kerala heritage motifs with futuristic design language; adopted by 200K+ users. Developed modular design system ensuring brand consistency across web, mobile, SaaS UI, and social-reducing design-dev handoff time by 35%. Collaborated with AI research team to visualize model behavior through intuitive, brand-aligned UI components (e.g., 'Creative Spectrum' explainer tool).
+Role: Senior Designer at Lumina Creative Studio (2017 - 2021). Responsibilities: Led rebranding for 12+ clients in fintech, wellness, and sustainability sectors; projects featured in Communication Arts and AIGA 365. Pioneered motion design integration into static brand guidelines, enhancing digital storytelling for social and web. Mentored 5 junior designers; established studio's first design ops workflow using Figma and zeroheight.
+Role: Graphic Designer at TerraForm Brands (2014 - 2017). Responsibilities: Designed packaging, environmental graphics, and campaign assets for eco-conscious CPG brands. Created award-winning label system for organic tea line, driving 28% shelf-impact increase.
+Role: Visual Designer at Verve Interactive (2010 - 2014). Responsibilities: Built UI/UX and visual language for SaaS and mobile apps in health tech and education. Collaborated with developers to implement responsive design systems pre-dating modern frameworks.
+Skills: Brand Strategy, Visual Identity, Design Systems, Figma, Adobe Creative Suite, Motion Graphics (After Effects), UI/UX, Typography, Cross-Cultural Design, Client Workshops, AIAssisted Design Tools
+--- END RESUME ---
+
+### Report Format (in Markdown):
+# Candidate Evaluation Report
+
+# Candidate Evaluation Report  ## 1. Executive Summary *Begin with: [mention the candidate name mentioned in CANDIDATE_RESUME] is being evaluated for the role of [Role Name].' Provide a concise 3–5 sentence summary of the candidate’s fit. End with a clear bottom-line recommendation on suitability.*  ## 1. Executive Summary
+* **Candidate:** [Candidate Name]
+* **Role:** [Job Title]
+* **Recommendation:** [Recommend / Do Not Recommend / Recommend with Reservations]
+* **Key Rationale:** [One-sentence summary of your recommendation.]
+
+## 2. Alignment with Core Job Requirements *For each requirement listed below, assess alignment using direct evidence from the resume or transcript. Evaluate the candidate's profile against the most critical requirements from the job description*  ### Evidence of Alignment (Strengths) *  **Requirement:** [Insert exact requirement from job description]    **Evidence:** [Cite specific resume content or transcript quote or direct quotes from the interview transcript that demonstrate this skill] *  **Requirement:** [Next requirement]    **Evidence:** [Cite evidence]  ### Potential Gaps or Weaknesses * **Requirement:** [Insert requirement where candidate shows weakness]     **Evidence:** [Explain the gap, referencing a lack of experience on the resume or a weak/evasive answer from the transcript.]  ## 3. Technical and Behavioral Competencies *Based on their interview answers, evaluate the following competencies.*  ### Technical Depth & Problem-Solving *Analyze and assess the candidate's technical knowledge beyond surface-level claims. How the candidate approached technical questions. Was their logic sound? Did they articulate edge cases or fallbacks?*  ### Behavioral Indicators (e.g., Ownership, Collaboration) *Based on situational and behavioral questions, assess work style, initiative, and team dynamics. Use transcript quotes where possible. What can be inferred about their work style? Look for indicators of ownership, proactivity, and how they might collaborate within a team.*  ## 4. Communication and Professionalism *Evaluate clarity, professionalism, structure, and conciseness of the candidate's responses. Assess their professionalism, confidence, and ability to convey complex ideas effectively. Did they communicate ideas effectively? Were responses structured and concise?*  ## 5. Areas for Further Probing / Red Flags *List any inconsistencies, knowledge gaps, or concerning statements. If none, write: 'No significant red flags identified.'*  ## 6. Detailed Interview Performance Analysis [Provide a brief narrative summary of the interview flow. How did the candidate perform on deep-dive questions? Did their answers feel authentic? Were they able to elaborate on their resume experience? How did they handle increasing difficulty levels?]
+
+*Provide a brief, insightful analysis for each key question from the transcript.* *   **Question:** [Exact question from transcript]     **Answer Summary:** [Brief summary the candidate's response.]     **Evaluation:** [Assess the quality of the answer. Was it specific, generic, confident, hesitant? Did it fully address the question?] *   **Question:** [Next question...]     **Answer Summary:** [...]     **Evaluation:** [...]  ## 7. Final Recommendation **Recommendation:** [Choose one: **Strongly Recommend** / **Recommend** / **Recommend with Reservations** / **Do Not Recommend**]  **Justification:** *Synthesize strengths, weaknesses, and role priorities into a final, decisive justification. Weigh the candidate's strengths against their identified gaps in the context of the role's priorities.*  **Proposed Next Steps:** *Suggest a clear next action (e.g., 'Proceed to final round with team lead', 'Schedule a technical deep-dive on X', 'Reject at this stage').*## 8. Competency Coverage Assessment
+[Detail which key competencies were assessed during the interview and the candidate's performance in each area.]
+
+## 9. Security & Integrity Notes
+[Any observations about the candidate's approach to the interview process, adherence to guidelines, or potential integrity concerns.]
+---
+2025-11-12 23:40:04 - report_generator - ERROR - An unexpected error occurred during report generation
+Traceback (most recent call last):
+  File "C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\src\core\report_generator.py", line 99, in create_report
+    report = _generate_evaluation_report(
+  File "C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\src\core\report_generator.py", line 58, in _generate_evaluation_report
+    response = _log_and_invoke_llm(prompt, chain, {
+  File "C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\src\core\report_generator.py", line 45, in _log_and_invoke_llm
+    response = chain.invoke(inputs)
+  File "C:\Users\joshua.david\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\runnables\base.py", line 3090, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "C:\Users\joshua.david\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat_models.py", line 379, in invoke
+    self.generate_prompt(
+  File "C:\Users\joshua.david\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat_models.py", line 1088, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "C:\Users\joshua.david\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat_models.py", line 903, in generate
+    self._generate_with_cache(
+  File "C:\Users\joshua.david\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat_models.py", line 1192, in _generate_with_cache
+    result = self._generate(
+  File "C:\Users\joshua.david\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_ollama\chat_models.py", line 1025, in _generate
+    final_chunk = self._chat_stream_with_aggregation(
+  File "C:\Users\joshua.david\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_ollama\chat_models.py", line 960, in _chat_stream_with_aggregation
+    for chunk in self._iterate_over_stream(messages, stop, **kwargs):
+  File "C:\Users\joshua.david\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_ollama\chat_models.py", line 1049, in _iterate_over_stream
+    for stream_resp in self._create_chat_stream(messages, stop, **kwargs):
+  File "C:\Users\joshua.david\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_ollama\chat_models.py", line 947, in _create_chat_stream
+    yield from self._client.chat(**chat_params)
+  File "C:\Users\joshua.david\AppData\Local\Programs\Python\Python310\lib\site-packages\ollama\_client.py", line 179, in inner
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: you've reached your hourly usage limit, please wait or upgrade to continue (status code: 429)
+2025-11-13 09:43:51 - report_generator - INFO - 
+[Report Generator] --- Generating candidate evaluation report ---
+2025-11-13 09:43:51 - report_generator - INFO - [Report Generator] Initializing models and loading data sources...
+2025-11-13 09:43:51 - report_generator - INFO - [Report Generator] Vector stores loaded successfully.
+2025-11-13 09:43:51 - report_generator - INFO - [Report Generator] Setup complete. All data sources loaded.
+2025-11-13 09:43:51 - report_generator - INFO - [Report Generator] Aggregating context from all sources...
+2025-11-13 09:43:51 - report_generator - ERROR - An unexpected error occurred during report generation
+Traceback (most recent call last):
+  File "C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\src\core\report_generator.py", line 97, in create_report
+    transcript_str, jd_context_str, resume_context_str = _gather_comprehensive_context(jd_db, resume_db, transcript_log)
+  File "C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\src\core\report_generator.py", line 20, in _gather_comprehensive_context
+    role = item.get("role", "unknown").title()
+AttributeError: 'str' object has no attribute 'get'
+2025-11-13 09:44:06 - report_generator - INFO - 
+[Report Generator] --- Generating candidate evaluation report ---
+2025-11-13 09:44:06 - report_generator - INFO - [Report Generator] Initializing models and loading data sources...
+2025-11-13 09:44:06 - report_generator - INFO - [Report Generator] Vector stores loaded successfully.
+2025-11-13 09:44:06 - report_generator - INFO - [Report Generator] Setup complete. All data sources loaded.
+2025-11-13 09:44:06 - report_generator - INFO - [Report Generator] Aggregating context from all sources...
+2025-11-13 09:44:06 - report_generator - ERROR - An unexpected error occurred during report generation
+Traceback (most recent call last):
+  File "C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\src\core\report_generator.py", line 97, in create_report
+    transcript_str, jd_context_str, resume_context_str = _gather_comprehensive_context(jd_db, resume_db, transcript_log)
+  File "C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\src\core\report_generator.py", line 20, in _gather_comprehensive_context
+    role = item.get("role", "unknown").title()
+AttributeError: 'str' object has no attribute 'get'
+2025-11-13 09:54:49 - report_generator - INFO - 
+[Report Generator] --- Generating candidate evaluation report ---
+2025-11-13 09:54:49 - report_generator - INFO - [Report Generator] Initializing models and loading data sources...
+2025-11-13 09:54:49 - report_generator - INFO - [Report Generator] Vector stores loaded successfully.
+2025-11-13 09:54:49 - report_generator - INFO - [Report Generator] Setup complete. All data sources loaded.
+2025-11-13 09:54:49 - report_generator - INFO - [Report Generator] Aggregating context from all sources...
+2025-11-13 09:54:49 - report_generator - ERROR - An unexpected error occurred during report generation
+Traceback (most recent call last):
+  File "C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\src\core\report_generator.py", line 97, in create_report
+    transcript_str, jd_context_str, resume_context_str = _gather_comprehensive_context(jd_db, resume_db, transcript_log)
+  File "C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\src\core\report_generator.py", line 20, in _gather_comprehensive_context
+    role = item.get("role", "unknown").title()
+AttributeError: 'str' object has no attribute 'get'
+2025-11-13 09:59:27 - report_generator - INFO - 
+[Report Generator] --- Generating candidate evaluation report ---
+2025-11-13 09:59:27 - report_generator - INFO - [Report Generator] Initializing models and loading data sources...
+2025-11-13 09:59:27 - report_generator - INFO - [Report Generator] Vector stores loaded successfully.
+2025-11-13 09:59:27 - report_generator - INFO - [Report Generator] Setup complete. All data sources loaded.
+2025-11-13 09:59:27 - report_generator - INFO - [Report Generator] Aggregating context from all sources...
+2025-11-13 09:59:27 - report_generator - ERROR - An unexpected error occurred during report generation
+Traceback (most recent call last):
+  File "C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\src\core\report_generator.py", line 97, in create_report
+    transcript_str, jd_context_str, resume_context_str = _gather_comprehensive_context(jd_db, resume_db, transcript_log)
+  File "C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\src\core\report_generator.py", line 20, in _gather_comprehensive_context
+    role = item.get("role", "unknown").title()
+AttributeError: 'str' object has no attribute 'get'
+2025-11-13 09:59:30 - report_generator - INFO - 
+[Report Generator] --- Generating candidate evaluation report ---
+2025-11-13 09:59:30 - report_generator - INFO - [Report Generator] Initializing models and loading data sources...
+2025-11-13 09:59:31 - report_generator - INFO - [Report Generator] Vector stores loaded successfully.
+2025-11-13 09:59:31 - report_generator - INFO - [Report Generator] Setup complete. All data sources loaded.
+2025-11-13 09:59:31 - report_generator - INFO - [Report Generator] Aggregating context from all sources...
+2025-11-13 09:59:31 - report_generator - ERROR - An unexpected error occurred during report generation
+Traceback (most recent call last):
+  File "C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\src\core\report_generator.py", line 97, in create_report
+    transcript_str, jd_context_str, resume_context_str = _gather_comprehensive_context(jd_db, resume_db, transcript_log)
+  File "C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\src\core\report_generator.py", line 20, in _gather_comprehensive_context
+    role = item.get("role", "unknown").title()
+AttributeError: 'str' object has no attribute 'get'
+2025-11-13 10:13:16 - report_generator - INFO - 
+[Report Generator] --- Generating candidate evaluation report ---
+2025-11-13 10:13:16 - report_generator - INFO - [Report Generator] Initializing models and loading data sources...
+2025-11-13 10:13:17 - report_generator - INFO - [Report Generator] Vector stores loaded successfully.
+2025-11-13 10:13:17 - report_generator - INFO - [Report Generator] Loaded enhanced transcript format with 2 messages
+2025-11-13 10:13:17 - report_generator - INFO - [Report Generator] Setup complete. All data sources loaded.
+2025-11-13 10:13:17 - report_generator - INFO - [Report Generator] Setup complete. All data sources loaded.
+2025-11-13 10:13:17 - report_generator - INFO - [Report Generator] Aggregating context from all sources...
+2025-11-13 10:13:17 - report_generator - INFO - [Report Generator] Context aggregation complete.
+2025-11-13 10:13:17 - report_generator - INFO - [Report Generator] Generating the final report...
+2025-11-13 10:13:17 - report_generator - INFO - [Report Generator | _log_and_invoke_llm]
+--- LLM Request Start ---
+2025-11-13 10:13:17 - report_generator - INFO - Purpose: Generate Full Candidate Report
+2025-11-13 10:13:17 - report_generator - DEBUG - Formatted Prompt for LLM:
+---
+System: You are a seasoned Talent Acquisition Partner and Senior Hiring Manager, renowned for your insightful and objective candidate evaluations. Your task is to critically synthesize the provided information into a comprehensive evaluation report for the hiring in a big corp. Your analysis must be strictly grounded in the provided context (JOB DESCRIPTION, CANDIDATE RESUME, and INTERVIEW TRANSCRIPT). Substantiate all claims with specific evidence or direct quotes from the transcript. Avoid making assumptions or introducing outside information.Proceed only after you have **fully read** the three inputs that the USER will supplyunder the headings **[JOB DESCRIPTION]**, **[CANDIDATE RESUME]**, and **[INTERVIEW TRANSCRIPT]**.
+Human: Please generate a formal candidate evaluation report based on the inputs below. Follow the exact Markdown format specified.
+
+--- INTERVIEW TRANSCRIPT ---
+--- INTERVIEW TRANSCRIPT ---
+Bot: Welcome to your interview! 👋
+
+We'll start with a few brief questions to better understand your background.
+Please provide specific, detailed answers based on your experience.
+
+Let's begin when you're ready.
+Bot: When tasked with developing a visual identity for an AI‑powered content platform, how would you ensure consistency across web, mobile, and print assets? What key steps and tools would you prioritize in this process?
+
+--- END TRANSCRIPT ---
+
+--- JOB DESCRIPTION ---
+
+--- KEY JOB DESCRIPTION INFO ---
+Job Title: Graphic Designer at NovaSynth Labs. Location: Kollam, Kerala, India (Hybrid/Remote options available). Company Summary: NovaSynth Labs is a dynamic creative studio and product lab based in Thiruvalla, Kerala, building digital experiences that blend design, storytelling, and innovation, including AI-powered content tools and immersive brand ecosystems.
+Key Responsibilities: Conceptualize and create visually striking designs for websites, mobile apps, social media, email campaigns, presentations, brochures, and brand collateral. Develop and maintain consistent brand guidelines, including typography, color palettes, and visual tone across all platforms. Collaborate with cross-functional teams to translate product requirements and marketing goals into intuitive and aesthetically compelling visuals. Design user-centered interfaces and assets that align with UX best practices and accessibility standards. Iterate on designs based on feedback, user testing, and performance metrics. Stay current with design trends, tools, and emerging visual technologies, including AI-assisted design workflows. Prepare production-ready files for print and digital use, ensuring quality and technical accuracy. Present and articulate design concepts clearly to both creative and non-creative stakeholders.
+Required Qualifications: Bachelor's degree in Graphic Design, Visual Communication, or a related field (or equivalent practical experience). 2+ years of professional experience in graphic or digital design (agency, in-house, or freelance). Proficiency in industry-standard design tools: Adobe Creative Suite (Photoshop, Illustrator, InDesign), Figma, and/or Sketch. Strong portfolio showcasing a range of work: branding, UI/UX elements, digital marketing assets, and layout design. Solid understanding of typography, color theory, composition, and visual hierarchy. Experience designing for both digital (web, mobile, social) and print media. Excellent communication skills and ability to accept and integrate feedback constructively. Self-motivated, detail-oriented, and able to manage multiple projects under deadlines.
+Preferred Qualifications: Basic familiarity with HTML/CSS or design-to-development handoff processes. Awareness of generative design tools (e.g., Adobe Firefly, Canva AI, or Figma plugins).
+--- END JOB DESCRIPTION ---
+
+--- CANDIDATE RESUME ---
+
+
+--- KEY RESUME INFO ---
+Candidate Name: Alexandra Menon. Summary: Senior Graphic Designer | Brand & Digital Specialist with 15+ years of experience crafting iconic visual identities, digital experiences, and cross-platform brand systems for global tech, cultural, and lifestyle brands.
+Role: Senior Graphic Designer at NovaSynth Labs (2021 - Present). Responsibilities: Spearheaded end-to-end visual identity for AI-powered content platform, merging Kerala heritage motifs with futuristic design language; adopted by 200K+ users. Developed modular design system ensuring brand consistency across web, mobile, SaaS UI, and social, reducing design-dev handoff time by 35%. Collaborated with AI research team to visualize model behavior through intuitive, brand-aligned UI components (e.g., 'Creative Spectrum' explainer tool).
+Role: Senior Designer at Lumina Creative Studio (2017 - 2021). Responsibilities: Led rebranding for 12+ clients in fintech, wellness, and sustainability sectors; projects featured in Communication Arts and AIGA 365. Pioneered motion design integration into static brand guidelines, enhancing digital storytelling for social and web. Mentored 5 junior designers; established studio's first design ops workflow using Figma and zeroheight.
+Role: Graphic Designer at TerraForm Brands (2014 - 2017). Responsibilities: Designed packaging, environmental graphics, and campaign assets for eco-conscious CPG brands. Created award-winning label system for organic tea line, driving 28% shelf-impact increase.
+Role: Visual Designer at Verve Interactive (2010 - 2014). Responsibilities: Built UI/UX and visual language for SaaS and mobile apps in health tech and education. Collaborated with developers to implement responsive design systems pre-dating modern frameworks.
+Skills: Brand Strategy, Visual Identity, Design Systems, Figma, Adobe Creative Suite, Motion Graphics (After Effects), UI/UX, Typography, Cross-Cultural Design, Client Workshops, AI Assisted Design Tools
+--- END RESUME ---
+
+### Report Format (in Markdown):
+# Candidate Evaluation Report
+
+# Candidate Evaluation Report  ## 1. Executive Summary *Begin with: [mention the candidate name mentioned in CANDIDATE_RESUME] is being evaluated for the role of [Role Name].' Provide a concise 3–5 sentence summary of the candidate’s fit. End with a clear bottom-line recommendation on suitability.*  ## 1. Executive Summary
+* **Candidate:** [Candidate Name]
+* **Role:** [Job Title]
+* **Recommendation:** [Recommend / Do Not Recommend / Recommend with Reservations]
+* **Key Rationale:** [One-sentence summary of your recommendation.]
+
+## 2. Alignment with Core Job Requirements *For each requirement listed below, assess alignment using direct evidence from the resume or transcript. Evaluate the candidate's profile against the most critical requirements from the job description*  ### Evidence of Alignment (Strengths) *  **Requirement:** [Insert exact requirement from job description]    **Evidence:** [Cite specific resume content or transcript quote or direct quotes from the interview transcript that demonstrate this skill] *  **Requirement:** [Next requirement]    **Evidence:** [Cite evidence]  ### Potential Gaps or Weaknesses * **Requirement:** [Insert requirement where candidate shows weakness]     **Evidence:** [Explain the gap, referencing a lack of experience on the resume or a weak/evasive answer from the transcript.]  ## 3. Technical and Behavioral Competencies *Based on their interview answers, evaluate the following competencies.*  ### Technical Depth & Problem-Solving *Analyze and assess the candidate's technical knowledge beyond surface-level claims. How the candidate approached technical questions. Was their logic sound? Did they articulate edge cases or fallbacks?*  ### Behavioral Indicators (e.g., Ownership, Collaboration) *Based on situational and behavioral questions, assess work style, initiative, and team dynamics. Use transcript quotes where possible. What can be inferred about their work style? Look for indicators of ownership, proactivity, and how they might collaborate within a team.*  ## 4. Communication and Professionalism *Evaluate clarity, professionalism, structure, and conciseness of the candidate's responses. Assess their professionalism, confidence, and ability to convey complex ideas effectively. Did they communicate ideas effectively? Were responses structured and concise?*  ## 5. Areas for Further Probing / Red Flags *List any inconsistencies, knowledge gaps, or concerning statements. If none, write: 'No significant red flags identified.'*  ## 6. Detailed Interview Performance Analysis [Provide a brief narrative summary of the interview flow. How did the candidate perform on deep-dive questions? Did their answers feel authentic? Were they able to elaborate on their resume experience? How did they handle increasing difficulty levels?]
+
+*Provide a brief, insightful analysis for each key question from the transcript.* *   **Question:** [Exact question from transcript]     **Answer Summary:** [Brief summary the candidate's response.]     **Evaluation:** [Assess the quality of the answer. Was it specific, generic, confident, hesitant? Did it fully address the question?] *   **Question:** [Next question...]     **Answer Summary:** [...]     **Evaluation:** [...]  ## 7. Final Recommendation **Recommendation:** [Choose one: **Strongly Recommend** / **Recommend** / **Recommend with Reservations** / **Do Not Recommend**]  **Justification:** *Synthesize strengths, weaknesses, and role priorities into a final, decisive justification. Weigh the candidate's strengths against their identified gaps in the context of the role's priorities.*  **Proposed Next Steps:** *Suggest a clear next action (e.g., 'Proceed to final round with team lead', 'Schedule a technical deep-dive on X', 'Reject at this stage').*## 8. Competency Coverage Assessment
+[Detail which key competencies were assessed during the interview and the candidate's performance in each area.]
+
+## 9. Security & Integrity Notes
+[Any observations about the candidate's approach to the interview process, adherence to guidelines, or potential integrity concerns.]
+---
+2025-11-13 10:13:48 - report_generator - DEBUG - LLM Raw Output: # Candidate Evaluation Report
+
+## 1. Executive Summary
+Alexandra Menon is being evaluated for the role of **Graphic Designer** at NovaSynth Labs.  
+Alexandra brings 15+ years of senior design experience, a proven track record in building cohesive visual identities for AI‑powered platforms, and a strong portfolio of branding, UI/UX, and print work. While her résumé demonstrates deep expertise in design systems, cross‑platform consistency, and AI‑assisted workflows, the interview transcript provides no substantive evidence of her communication style, technical depth, or problem‑solving approach.  
+**Recommendation:** Recommend with Reservations.  
+**Key Rationale:** Alexandra’s extensive experience aligns well with the core responsibilities, but the absence of interview data necessitates further probing before a definitive hiring decision.
+
+---
+
+## 2. Alignment with Core Job Requirements
+
+### Evidence of Alignment (Strengths)
+
+| **Requirement** | **Evidence** |
+|------------------|--------------|
+| **Bachelor’s degree in Graphic Design, Visual Communication, or equivalent experience** | Resume lists 15+ years of professional experience; while a degree is not explicitly stated, the depth of experience suggests equivalent practical expertise. |
+| **2+ years of professional experience in graphic or digital design** | 15+ years across senior roles (NovaSynth Labs, Lumina Creative Studio, TerraForm Brands, Verve Interactive). |
+| **Proficiency in Adobe Creative Suite (Photoshop, Illustrator, InDesign), Figma, and/or Sketch** | Resume lists Adobe Creative Suite and Figma; Sketch is not mentioned, but Figma proficiency is strong. |
+| **Strong portfolio showcasing branding, UI/UX, digital marketing assets, and layout design** | Descriptions of award‑winning label system, rebranding for 12+ clients, modular design system for AI platform, and motion‑design integration. |
+| **Solid understanding of typography, color theory, composition, and visual hierarchy** | Demonstrated through end‑to‑end visual identity work and brand strategy roles. |
+| **Experience designing for both digital (web, mobile, social) and print media** | Packaging, environmental graphics, print assets, and digital UI/UX across SaaS and mobile apps. |
+| **Excellent communication skills and ability to accept and integrate feedback** | Mentored 5 junior designers, led client workshops, and collaborated with AI research and development teams. |
+| **Self‑motivated, detail‑oriented, and able to manage multiple projects under deadlines** | Reduced design‑dev handoff time by 35%, led modular design system, and managed simultaneous rebranding projects. |
+| **Basic familiarity with HTML/CSS or design‑to‑development handoff processes** | Collaboration with developers to implement responsive design systems; reduced handoff time. |
+| **Awareness of generative design tools (Adobe Firefly, Canva AI, Figma plugins)** | Listed “AI Assisted Design Tools” under skills. |
+
+### Potential Gaps or Weaknesses
+
+| **Requirement** | **Evidence of Gap** |
+|------------------|---------------------|
+| **Explicit degree** | No degree listed in résumé. |
+| **Sketch proficiency** | Not mentioned; may need confirmation. |
+| **Interview evidence of communication and technical depth** | Transcript contains only a single question with no candidate response. |
+
+---
+
+## 3. Technical and Behavioral Competencies
+
+### Technical Depth & Problem‑Solving
+No interview data available to assess technical reasoning, edge‑case handling, or tool‑specific workflows.
+
+### Behavioral Indicators (Ownership, Collaboration)
+No interview data available to evaluate ownership, initiative, or team dynamics.
+
+---
+
+## 4. Communication and Professionalism
+No interview data available to evaluate clarity, structure, confidence, or professionalism.
+
+---
+
+## 5. Areas for Further Probing / Red Flags
+- **Missing interview response**: Need to assess communication skills and technical depth.
+- **Degree not listed**: Verify educational background.
+- **Sketch not mentioned**: Confirm proficiency if required.
+- **Portfolio link absent**: Request portfolio for visual assessment.
+
+---
+
+## 6. Detailed Interview Performance Analysis
+No candidate answers were captured in the transcript; therefore, no performance analysis can be provided.
+
+---
+
+## 7. Final Recommendation
+
+**Recommendation:** Recommend with Reservations  
+**Justification:** Alexandra’s résumé demonstrates strong alignment with the role’s core responsibilities—particularly in design systems, cross‑platform consistency, and AI‑assisted workflows. However, the lack of interview data prevents a full assessment of her communication, problem‑solving, and collaboration skills, which are critical for success in a hybrid/remote environment.  
+**Proposed Next Steps:**  
+1. Conduct a second interview focused on technical depth (design system implementation, AI tool usage) and communication (case study walk‑through).  
+2. Request a portfolio link and verify educational background.  
+3. If the follow‑up interview confirms strong communication and technical fit, proceed to final round with the design lead.
+
+---
+
+## 8. Competency Coverage Assessment
+
+| **Competency** | **Evidence from Resume** | **Interview Coverage** |
+|----------------|--------------------------|------------------------|
+| Design Systems | Modular design system, reduced handoff time | None |
+| Brand Strategy | End‑to‑end visual identity, rebranding | None |
+| UI/UX | SaaS UI, mobile apps, responsive design | None |
+| Print Design | Packaging, environmental graphics | None |
+| AI‑Assisted Design | Collaboration with AI research, AI tools | None |
+| Collaboration | Mentoring, client workshops, dev collaboration | None |
+
+---
+
+## 9. Security & Integrity Notes
+No concerns regarding the candidate’s approach to the interview process or adherence to guidelines were observed. No integrity issues identified.
+2025-11-13 10:13:48 - report_generator - INFO - --- LLM Request End ---
+[Report Generator | _log_and_invoke_llm]
+2025-11-13 10:13:48 - report_generator - INFO - Report has been saved to 'C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\data\test_05\reports\test_05_1763008996_report.md'
+2025-11-13 10:24:29 - report_generator - INFO - 
+[Report Generator] --- Generating candidate evaluation report ---
+2025-11-13 10:24:29 - report_generator - INFO - [Report Generator] Initializing models and loading data sources...
+2025-11-13 10:24:29 - report_generator - INFO - [Report Generator] Vector stores loaded successfully.
+2025-11-13 10:24:29 - report_generator - INFO - [Report Generator] Loaded enhanced transcript format with 14 messages
+2025-11-13 10:24:29 - report_generator - INFO - [Report Generator] Setup complete. All data sources loaded.
+2025-11-13 10:24:29 - report_generator - INFO - [Report Generator] Setup complete. All data sources loaded.
+2025-11-13 10:24:29 - report_generator - INFO - [Report Generator] Aggregating context from all sources...
+2025-11-13 10:24:29 - report_generator - INFO - [Report Generator] Context aggregation complete.
+2025-11-13 10:24:29 - report_generator - INFO - [Report Generator] Generating the final report...
+2025-11-13 10:24:29 - report_generator - INFO - [Report Generator | _log_and_invoke_llm]
+--- LLM Request Start ---
+2025-11-13 10:24:29 - report_generator - INFO - Purpose: Generate Full Candidate Report
+2025-11-13 10:24:29 - report_generator - DEBUG - Formatted Prompt for LLM:
+---
+System: You are a seasoned Talent Acquisition Partner and Senior Hiring Manager, renowned for your insightful and objective candidate evaluations. Your task is to critically synthesize the provided information into a comprehensive evaluation report for the hiring in a big corp. Your analysis must be strictly grounded in the provided context (JOB DESCRIPTION, CANDIDATE RESUME, and INTERVIEW TRANSCRIPT). Substantiate all claims with specific evidence or direct quotes from the transcript. Avoid making assumptions or introducing outside information.Proceed only after you have **fully read** the three inputs that the USER will supplyunder the headings **[JOB DESCRIPTION]**, **[CANDIDATE RESUME]**, and **[INTERVIEW TRANSCRIPT]**.
+Human: Please generate a formal candidate evaluation report based on the inputs below. Follow the exact Markdown format specified.
+
+--- INTERVIEW TRANSCRIPT ---
+--- INTERVIEW TRANSCRIPT ---
+Bot: Welcome to your interview! 👋
+
+We'll start with a few brief questions to better understand your background.
+Please provide specific, detailed answers based on your experience.
+
+Let's begin when you're ready.
+Bot: Can you walk us through a project where you collaborated with a design team to create a visual campaign, and what was your role in shaping the creative direction?
+User: No, I dont want to answer that
+Bot: Could you explain why you prefer not to discuss that project, or would you be willing to share a different example of collaborating with a design team?
+User: no its private infomation
+Bot: Could you share which aspects of graphic design you find most engaging and describe how you have applied them in a marketing context?
+User: The ability that i have to be creative in my own field and be more happy in what i do. This helps me connect to the people in marketing as i bring a uniquness to the table to every differemt customers
+Bot: Thank you for those initial answers. Now let's move to the main interview questions.
+
+Remember to provide specific examples from your experience where possible.
+Bot: Could you walk me through your role at Inash Oil & Petroleum from Sep 2022 to Apr 2025, the team you led and key achievements?
+User: Yes we did that
+Bot: What were your main responsibilities and outcomes during your time as Regional Account Manager at Asol Lubricants from Dec 2018 to Aug 2022?
+User: no
+Bot: Can you confirm your graduation dates from the University of Denver and Business College of New York, and the degrees earned?
+User: 2024
+
+--- END TRANSCRIPT ---
+
+--- JOB DESCRIPTION ---
+
+--- KEY JOB DESCRIPTION INFO ---
+Job Title: Graphic Designer at NovaSynth Labs. Location: Kollam, Kerala, India (Hybrid/Remote options available). Company Summary: NovaSynth Labs is a dynamic creative studio and product lab based in Thiruvalla, blending tradition with emerging tech to build digital experiences that inspire, inform, and engage.
+Key Responsibilities: Conceptualize and create visually striking designs for websites, mobile apps, social media, email campaigns, presentations, brochures, and brand collateral. Develop and maintain consistent brand guidelines, including typography, color palettes, and visual tone across all platforms. Collaborate with cross-functional teams to translate product requirements and marketing goals into intuitive and aesthetically compelling visuals. Design user-centered interfaces and assets that align with UX best practices and accessibility standards. Iterate on designs based on feedback, user testing, and performance metrics. Stay current with design trends, tools, and emerging visual technologies (including AI-assisted design workflows). Prepare production-ready files for print and digital use, ensuring quality and technical accuracy. Present and articulate design concepts clearly to both creative and non-creative stakeholders.
+Required Qualifications: Bachelor's degree in Graphic Design, Visual Communication, or a related field (or equivalent practical experience). 2+ years of professional experience in graphic or digital design (agency, in-house, or freelance). Proficiency in industry-standard design tools: Adobe Creative Suite (Photoshop, Illustrator, InDesign), Figma, and/or Sketch. Strong portfolio showcasing a range of work: branding, UI/UX elements, digital marketing assets, and layout design. Solid understanding of typography, color theory, composition, and visual hierarchy. Experience designing for both digital (web, mobile, social) and print media. Excellent communication skills and ability to accept and integrate feedback constructively. Self-motivated, detail-oriented, and able to manage multiple projects under deadlines.
+Preferred Qualifications: Basic familiarity with HTML/CSS or design-to-development handoff processes. Awareness of generative design tools (e.g., Adobe Firefly, Canva AI, or Figma plugins) is valued but not required.
+--- END JOB DESCRIPTION ---
+
+--- CANDIDATE RESUME ---
+
+
+--- KEY RESUME INFO ---
+Candidate Name: Michelle Smith. Summary: Experienced Global Key Account Manager with a proven track record in driving revenue growth, managing cross‑functional teams, and implementing strategic sales initiatives across multiple industries.
+Role: Global Key Account Manager at Inash Oil & Petroleum (Sep 2022 - Apr 2025). Responsibilities: Secure global RFP bids for clients totaling ten years and $800 a million in transaction revenue over contract terms Manage a national team of five Account Managers and twenty account executives Consistently exceeded annual sales goals during work tenure Organized committees responsible for pre‑sales and after sales service Brought significant growth of 16% in after market sales through creation and implementation of strategic sales and marketing plans as well as talent management pipelines Conceptualization and implementation of national accounts programs to increase brand visibility Responsible for monitoring pre‑ and post‑sales quality standards to ensure service excellence across the client territories
+Role: Regional Account Manager at Asol Lubricants (Dec 2018 - Aug 2022). Responsibilities: Exceed target growth prospects by 28% via continuous interaction with client stakeholders, to facilitate opportunity surveys Post‑Sales: Capture intelligence data of client business needs, and competition products used to investigate cross‑selling and upselling strategies customized for each client group Successfully oversee all projects for current engagement by monitoring commitments concerning quality, effort, cost, and schedule Hold a Zero complaint and escalation track record
+Role: Account Manager at Presidion Petroleum (Feb 2015 - Nov 2017). Responsibilities: Increased total revenue an average of 12% annually by upselling activities Manage $6 million in annual sales with recurring clients and hold with complete P&L accountability for fourteen counties in Texas Drive brand management strategies yielding 12+% annual growth of supplementary products to key accounts Recover $1 million in inactive accounts by initiating customer Q&A meetings, demonstrations, and online client education
+Degree: Bachelor Degree in Advertising and Marketing from University of Denver, Denver (Graduated: Jan 2017).
+Degree: Advanced Diploma in Global Customer Relationship Management from Business College of New York, Brooklyn (Graduated: Apr 2019).
+Skills: Languages, Courses, Client Relationship Management, Strategic Planning, Talent Development, Team Leadership, Networking, Sales Growth, English, Spanish
+--- END RESUME ---
+
+### Report Format (in Markdown):
+# Candidate Evaluation Report
+
+# Candidate Evaluation Report  ## 1. Executive Summary *Begin with: [mention the candidate name mentioned in CANDIDATE_RESUME] is being evaluated for the role of [Role Name].' Provide a concise 3–5 sentence summary of the candidate’s fit. End with a clear bottom-line recommendation on suitability.*  ## 1. Executive Summary
+* **Candidate:** [Candidate Name]
+* **Role:** [Job Title]
+* **Recommendation:** [Recommend / Do Not Recommend / Recommend with Reservations]
+* **Key Rationale:** [One-sentence summary of your recommendation.]
+
+## 2. Alignment with Core Job Requirements *For each requirement listed below, assess alignment using direct evidence from the resume or transcript. Evaluate the candidate's profile against the most critical requirements from the job description*  ### Evidence of Alignment (Strengths) *  **Requirement:** [Insert exact requirement from job description]    **Evidence:** [Cite specific resume content or transcript quote or direct quotes from the interview transcript that demonstrate this skill] *  **Requirement:** [Next requirement]    **Evidence:** [Cite evidence]  ### Potential Gaps or Weaknesses * **Requirement:** [Insert requirement where candidate shows weakness]     **Evidence:** [Explain the gap, referencing a lack of experience on the resume or a weak/evasive answer from the transcript.]  ## 3. Technical and Behavioral Competencies *Based on their interview answers, evaluate the following competencies.*  ### Technical Depth & Problem-Solving *Analyze and assess the candidate's technical knowledge beyond surface-level claims. How the candidate approached technical questions. Was their logic sound? Did they articulate edge cases or fallbacks?*  ### Behavioral Indicators (e.g., Ownership, Collaboration) *Based on situational and behavioral questions, assess work style, initiative, and team dynamics. Use transcript quotes where possible. What can be inferred about their work style? Look for indicators of ownership, proactivity, and how they might collaborate within a team.*  ## 4. Communication and Professionalism *Evaluate clarity, professionalism, structure, and conciseness of the candidate's responses. Assess their professionalism, confidence, and ability to convey complex ideas effectively. Did they communicate ideas effectively? Were responses structured and concise?*  ## 5. Areas for Further Probing / Red Flags *List any inconsistencies, knowledge gaps, or concerning statements. If none, write: 'No significant red flags identified.'*  ## 6. Detailed Interview Performance Analysis [Provide a brief narrative summary of the interview flow. How did the candidate perform on deep-dive questions? Did their answers feel authentic? Were they able to elaborate on their resume experience? How did they handle increasing difficulty levels?]
+
+*Provide a brief, insightful analysis for each key question from the transcript.* *   **Question:** [Exact question from transcript]     **Answer Summary:** [Brief summary the candidate's response.]     **Evaluation:** [Assess the quality of the answer. Was it specific, generic, confident, hesitant? Did it fully address the question?] *   **Question:** [Next question...]     **Answer Summary:** [...]     **Evaluation:** [...]  ## 7. Final Recommendation **Recommendation:** [Choose one: **Strongly Recommend** / **Recommend** / **Recommend with Reservations** / **Do Not Recommend**]  **Justification:** *Synthesize strengths, weaknesses, and role priorities into a final, decisive justification. Weigh the candidate's strengths against their identified gaps in the context of the role's priorities.*  **Proposed Next Steps:** *Suggest a clear next action (e.g., 'Proceed to final round with team lead', 'Schedule a technical deep-dive on X', 'Reject at this stage').*## 8. Competency Coverage Assessment
+[Detail which key competencies were assessed during the interview and the candidate's performance in each area.]
+
+## 9. Security & Integrity Notes
+[Any observations about the candidate's approach to the interview process, adherence to guidelines, or potential integrity concerns.]
+---
+2025-11-13 10:24:51 - report_generator - DEBUG - LLM Raw Output: # Candidate Evaluation Report  
+
+## 1. Executive Summary  
+**Candidate:** Michelle Smith  
+**Role:** Graphic Designer at NovaSynth Labs  
+**Recommendation:** Do Not Recommend  
+**Key Rationale:** Michelle’s professional background and interview responses demonstrate a focus on account management and sales, with no evidence of graphic design skills, experience, or portfolio required for the role.
+
+## 2. Alignment with Core Job Requirements  
+
+### Evidence of Alignment (Strengths)  
+| Requirement | Evidence |
+|-------------|----------|
+| **Bachelor’s degree in Graphic Design, Visual Communication, or related field** | *Resume:* Bachelor Degree in Advertising and Marketing from University of Denver (Jan 2017). This is not a graphic design degree. |
+| **2+ years of professional experience in graphic or digital design** | *No evidence* – all listed roles are account‑management positions. |
+| **Proficiency in Adobe Creative Suite (Photoshop, Illustrator, InDesign), Figma, Sketch** | *No evidence* – resume lists no design tools; interview contains no mention of these tools. |
+| **Strong portfolio showcasing branding, UI/UX, digital marketing assets** | *No evidence* – resume and transcript contain no portfolio references. |
+| **Solid understanding of typography, color theory, composition, visual hierarchy** | *No evidence* – interview responses are generic and unrelated to design principles. |
+| **Experience designing for digital (web, mobile, social) and print media** | *No evidence* – all experience is sales‑centric. |
+| **Excellent communication skills and ability to accept feedback** | *Interview:* “The ability that i have to be creative in my own field and be more happy in what i do.” – vague, no demonstration of communication skill. |
+| **Self‑motivated, detail‑oriented, able to manage multiple projects under deadlines** | *No evidence* – interview lacks detail; resume shows project management but not design projects. |
+
+### Potential Gaps or Weaknesses  
+| Requirement | Evidence of Gap |
+|-------------|-----------------|
+| **Graphic Design Experience** | Resume lists only sales roles; interview shows no design discussion. |
+| **Design Tool Proficiency** | No mention of Adobe, Figma, or Sketch. |
+| **Portfolio** | No portfolio provided or referenced. |
+| **Design‑Specific Education** | Degree in Advertising/Marketing, not Graphic Design. |
+| **Technical Depth in Design** | Interview responses are evasive and lack technical detail. |
+| **Professionalism & Clarity** | Responses are brief, unstructured, and often evasive (“no”, “private information”). |
+
+## 3. Technical and Behavioral Competencies  
+
+### Technical Depth & Problem‑Solving  
+The interview did not present any technical design questions. Michelle’s responses were non‑technical and did not demonstrate knowledge of design processes, tools, or problem‑solving strategies relevant to graphic design.
+
+### Behavioral Indicators (Ownership, Collaboration)  
+- **Ownership:** No evidence of ownership over design projects.  
+- **Collaboration:** Interviewer asked about collaboration with a design team; Michelle declined to answer, citing privacy.  
+- **Proactivity:** No proactive examples provided; responses were reactive and minimal.  
+- **Team Dynamics:** No discussion of working within a creative team or cross‑functional collaboration.
+
+## 4. Communication and Professionalism  
+- **Clarity:** Responses were often single words or short phrases (“no”, “private infomation”).  
+- **Structure:** Lack of structured answers; no use of STAR or similar frameworks.  
+- **Professionalism:** Evasive answers (“no”, “private infomation”) suggest discomfort or lack of relevant experience.  
+- **Confidence:** Low confidence evident in brief, non‑committal answers.  
+- **Complex Idea Conveyance:** No demonstration of conveying complex design concepts.
+
+## 5. Areas for Further Probing / Red Flags  
+- **Lack of Design Experience:** No evidence of any design work.  
+- **Evasive Interview Behavior:** Declining to discuss key questions.  
+- **Misalignment with Role Requirements:** Education and experience are sales‑focused, not design‑focused.  
+
+*No significant red flags identified beyond the above misalignment.*
+
+## 6. Detailed Interview Performance Analysis  
+
+| Question | Answer Summary | Evaluation |
+|----------|----------------|------------|
+| *“Can you walk us through a project where you collaborated with a design team to create a visual campaign, and what was your role in shaping the creative direction?”* | “No, I dont want to answer that.” | **Evasive, no detail.** Fails to address the question. |
+| *“Could you explain why you prefer not to discuss that project, or would you be willing to share a different example of collaborating with a design team?”* | “no its private infomation.” | **Unprofessional refusal.** No alternative example provided. |
+| *“Could you share which aspects of graphic design you find most engaging and describe how you have applied them in a marketing context?”* | “The ability that i have to be creative in my own field and be more happy in what i do. This helps me connect to the people in marketing as i bring a uniquness to the table to every differemt customers.” | **Generic, lacks specificity.** No concrete examples of design application. |
+| *“Could you walk me through your role at Inash Oil & Petroleum from Sep 2022 to Apr 2025, the team you led and key achievements?”* | “Yes we did that.” | **Vague, no elaboration.** |
+| *“What were your main responsibilities and outcomes during your time as Regional Account Manager at Asol Lubricants from Dec 2018 to Aug 2022?”* | “no” | **No answer.** |
+| *“Can you confirm your graduation dates from the University of Denver and Business College of New York, and the degrees earned?”* | “2024” | **Incorrect/ambiguous.** No specific dates or degrees mentioned. |
+
+Overall, the interview flow revealed a pattern of short, evasive answers with no depth or relevance to graphic design.
+
+## 7. Final Recommendation  
+
+**Recommendation:** Do Not Recommend  
+**Justification:** Michelle Smith’s professional history, educational background, and interview performance demonstrate a clear mismatch with the core requirements of the Graphic Designer role at NovaSynth Labs. The absence of design experience, tool proficiency, and a portfolio, combined with evasive interview behavior, indicates that she would not be able to fulfill the responsibilities of this position.  
+**Proposed Next Steps:** Reject at this stage; focus recruitment efforts on candidates with demonstrable graphic design experience and a relevant portfolio.
+
+## 8. Competency Coverage Assessment  
+
+| Competency | Assessment |
+|------------|------------|
+| Design Tool Proficiency | Not assessed (no evidence) |
+| Portfolio Quality | Not assessed (no portfolio) |
+| Design Process Knowledge | Not assessed (no discussion) |
+| Communication Skills | Poor – evasive, unstructured |
+| Professionalism | Low – unprofessional refusals |
+| Ownership & Initiative | Not demonstrated |
+| Collaboration | Not demonstrated |
+
+## 9. Security & Integrity Notes  
+The candidate’s repeated refusal to discuss relevant experiences and the provision of incomplete or incorrect information (e.g., “2024” for graduation dates) raise concerns about transparency and integrity. No evidence of deceptive behavior, but the lack of detail suggests a potential mismatch between claimed experience and actual qualifications.
+2025-11-13 10:24:51 - report_generator - INFO - --- LLM Request End ---
+[Report Generator | _log_and_invoke_llm]
+2025-11-13 10:24:51 - report_generator - INFO - Report has been saved to 'C:\Users\joshua.david\Downloads\downloads\project-interview-chatbot\backend\data\michelle_smith\reports\michelle_smith_1763009669_report.md'

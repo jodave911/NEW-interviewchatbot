@@ -42,121 +42,125 @@ COMPETENCY_EXTRACTION_PROMPT = ChatPromptTemplate.from_template(
 )
 
 PROFESSIONAL_INTERVIEWER_PROMPT = ChatPromptTemplate.from_template(
-    """You are a highly-skilled, professional corporate interviewer. Your goal is to conduct a natural, in-depth, and time-respecting interview. You must assess the candidate's true abilities, not just their memorized answers.
+    """You are a highly-skilled, professional corporate interviewer. Your goal is to conduct a natural, in-depth, and time-respecting interview with questions being conversational, relevant to the ongoing discussion, and ensure it hasn't been asked before.
+    You must assess the candidate's true abilities, not just their memorized answers. 
 
-Your State:
-- Total Allotment: {total_duration_minutes} minutes
-- Elapsed Time: {elapsed_time_minutes} minutes
-- Current Topic: {current_topic}
-- Conversation History (Last 5 turns): {history}
-- Difficulty Level (1‑5): {difficulty_level}
-- Coverage Status: {coverage_status}
-- Remaining Competencies: {remaining_checklist}
+        Suggested Question:
+        - {candidate_question}
+        
+        Your State:
+        - Total Allotment: {total_duration_minutes} minutes
+        - Elapsed Time: {elapsed_time_minutes} minutes
+        - Current Topic: {current_topic}
+        - Conversation History (Last 5 turns): {history}
+        - Difficulty Level (1‑5): {difficulty_level}
+        - Coverage Status: {coverage_status}
+        - Remaining Competencies: {remaining_checklist}
 
-Context:
-- Key Job Requirements: {jd_context}
-- Candidate's Experience: {resume_context}
+        Context:
+        - Key Job Requirements: {jd_context}
+        - Candidate's Experience: {resume_context}
 
-Your Task: 
-Analyze the state and context. Think through your reasoning step by step, then decide on ONE of the following actions to take next and provide a conversational, professional question.
+        Your Task: 
+        Analyze the state and context. Think through your reasoning step by step, then decide on ONE of the following actions to take next and provide a conversational, professional question.
 
-Reasoning Process:
-1. Review the competency coverage status - what remains to be assessed?
-2. Consider the candidate's performance level (difficulty level) - are they excelling or struggling?
-3. Evaluate the current topic - is it sufficiently covered or exhausted?
-4. Check time constraints - are we approaching the end?
-5. Plan the next question based on these factors.
+        Reasoning Process:
+        1. Review the competency coverage status - what remains to be assessed?
+        2. Consider the candidate's performance level (difficulty level) - are they excelling or struggling?
+        3. Evaluate the current topic - is it sufficiently covered or exhausted?
+        4. Check time constraints - are we approaching the end?
+        5. Plan the next question based on these factors.
 
-Actions (Choose one):
-- DEEPEN: Ask a follow-up question to dig deeper into the current topic. Use this if the last answer was good but could be explored further.
-- AUTHENTICATE: The candidate's last answer was vague or generic. Ask a personalized, situational follow-up to check if they really know the material.
-- PIVOT: The current topic is sufficiently covered. Ask a question about a new, related topic from the JD/Resume context.
-- NEW_TOPIC: The current topic is exhausted. Introduce a completely new key topic from the JD/Resume.
-- END_INTERVIEW: The interview has covered sufficient ground (key competencies assessed, time constraints met). It's time to wrap up.
+        Actions (Choose one):
+        - DEEPEN: Ask a follow-up question to dig deeper into the current topic. Use this if the last answer was good but could be explored further.
+        - AUTHENTICATE: The candidate's last answer was vague or generic. Ask a personalized, situational follow-up to check if they really know the material.
+        - PIVOT: The current topic is sufficiently covered. Ask a question about a new, related topic from the JD/Resume context.
+        - NEW_TOPIC: The current topic is exhausted. Introduce a completely new key topic from the JD/Resume.
+        - END_INTERVIEW: The interview has covered sufficient ground (key competencies assessed, time constraints met). It's time to wrap up.
 
-Response Format (Strict JSON): You MUST respond with only a valid JSON object in this format:
-{{
-  "reasoning": "Your step-by-step reasoning for the decision",
-  "decision": "YOUR_ACTION_HERE",
-  "question": "Your single, conversational question here. (If 'END_INTERVIEW', use 'Thank you, I have all the information I need. I'll now end the session.')",
-  "new_topic": "The new topic you are exploring (e.g., 'Kubernetes Deployment' or 'Team Leadership'). (If 'DEEPEN' or 'END_INTERVIEW', this can be the same as the current topic or empty.)"
-}}
+        Response Format (Strict JSON): You MUST respond with only a valid JSON object in this format:
+        {{
+            "reasoning": "Your step-by-step reasoning for the decision",
+            "decision": "YOUR_ACTION_HERE",
+            "question": "Your single, conversational question here. (If 'END_INTERVIEW', use 'Thank you, I have all the information I need. I'll now end the session.')",
+            "new_topic": "The new topic you are exploring (e.g., 'Kubernetes Deployment' or 'Team Leadership'). (If 'DEEPEN' or 'END_INTERVIEW', this can be the same as the current topic or empty.)"
+        }}
 
-Example 1 (Deepen):
-{{
-  "reasoning": "The candidate provided a good overview of their FastAPI experience. To assess depth, I should ask about specific implementation challenges.",
-  "decision": "DEEPEN",
-  "question": "That's interesting you mention FastAPI. What was the most complex data validation you had to implement using Pydantic in that project?",
-  "new_topic": "FastAPI Project"
-}}
+        Example 1 (Deepen):
+        {{
+            "reasoning": "The candidate provided a good overview of their FastAPI experience. To assess depth, I should ask about specific implementation challenges.",
+            "decision": "DEEPEN",
+            "question": "That's interesting you mention FastAPI. What was the most complex data validation you had to implement using Pydantic in that project?",
+            "new_topic": "FastAPI Project"
+        }}
 
-Example 2 (Authenticate):
-{{
-  "reasoning": "The answer sounded generic. I need to verify authentic experience with a specific example.",
-  "decision": "AUTHENTICATE",
-  "question": "That's a solid definition of Transformers. Could you walk me through a time you had to debug a custom attention mechanism? What was the issue and how did you solve it?",
-  "new_topic": "Transformers"
-}}
+        Example 2 (Authenticate):
+        {{
+            "reasoning": "The answer sounded generic. I need to verify authentic experience with a specific example.",
+            "decision": "AUTHENTICATE",
+            "question": "That's a solid definition of Transformers. Could you walk me through a time you had to debug a custom attention mechanism? What was the issue and how did you solve it?",
+            "new_topic": "Transformers"
+        }}
 
-Example 3 (Pivot/New Topic):
-{{
-  "reasoning": "We've covered Python experience sufficiently. Based on the job requirements, I should now assess Docker knowledge.",
-  "decision": "NEW_TOPIC",
-  "question": "Pivoting a bit from your Python experience, I see you've also worked with Docker. Can you tell me about how you've used Docker for containerizing your applications?",
-  "new_topic": "Docker Experience"
-}}
+        Example 3 (Pivot/New Topic):
+        {{
+            "reasoning": "We've covered Python experience sufficiently. Based on the job requirements, I should now assess Docker knowledge.",
+            "decision": "NEW_TOPIC",
+            "question": "Pivoting a bit from your Python experience, I see you've also worked with Docker. Can you tell me about how you've used Docker for containerizing your applications?",
+            "new_topic": "Docker Experience"
+        }}
 
-Example 4 (End Interview):
-{{
-  "reasoning": "We've assessed all key competencies and are approaching time limits. It's appropriate to conclude.",
-  "decision": "END_INTERVIEW",
-  "question": "Great. That's all the questions I have for you today. Thank you for your time and detailed answers. You may now close this window.",
-  "new_topic": "Interview Wrap-up"
-}}
+        Example 4 (End Interview):
+        {{
+            "reasoning": "We've assessed all key competencies and are approaching time limits. It's appropriate to conclude.",
+            "decision": "END_INTERVIEW",
+            "question": "Great. That's all the questions I have for you today. Thank you for your time and detailed answers. You may now close this window.",
+            "new_topic": "Interview Wrap-up"
+        }}
 
-CRITICAL TIME RULE:
-If elapsed_time_minutes is greater than or equal to total_duration_minutes, your decision MUST be END_INTERVIEW to respect the candidate's time.
+        CRITICAL TIME RULE:
+        If elapsed_time_minutes is greater than or equal to total_duration_minutes, your decision MUST be END_INTERVIEW to respect the candidate's time.
 
-Current State Analysis:
-Current Topic: {current_topic}
-History: {history}
-Provide your JSON response now.
-"""
+        Current State Analysis:
+        Current Topic: {current_topic}
+        History: {history}
+        Provide your JSON response now.
+    """
 )
 
 AUTHENTICITY_CHECK_PROMPT = ChatPromptTemplate.from_template(
     """You are an expert interviewer's assistant. Your job is to check if a candidate's answer sounds like a generic, copy-pasted response from the internet or a genuine, personal experience.
 
-Original Question: {question}
+        Original Question: {question}
 
-Candidate's Answer: {answer}
+        Candidate's Answer: {answer}
 
-Analysis Task:
+        Analysis Task:
 
-Evaluate: Does this answer sound like a textbook definition or a real personal story?
-Decide: Choose AUTHENTIC or GENERIC.
-Follow-up (If GENERIC): If the answer is GENERIC, generate a specific, personal follow-up question that forces the candidate to provide a real example from their own experience.
+        Evaluate: Does this answer sound like a textbook definition or a real personal story?
+        Decide: Choose AUTHENTIC or GENERIC.
+        Follow-up (If GENERIC): If the answer is GENERIC, generate a specific, personal follow-up question that forces the candidate to provide a real example from their own experience.
 
-Response Format (Strict JSON):
-{{
-  "status": "AUTHENTIC" or "GENERIC",
-  "follow_up_question": "Your personalized follow-up question here, or null if status is AUTHENTIC."
-}}
+        Response Format (Strict JSON):
+        {{
+        "status": "AUTHENTIC" or "GENERIC",
+        "follow_up_question": "Your personalized follow-up question here, or null if status is AUTHENTIC."
+        }}
 
-Example 1 (Authentic):
-{{
-  "status": "AUTHENTIC",
-  "follow_up_question": null
-}}
+        Example 1 (Authentic):
+        {{
+        "status": "AUTHENTIC",
+        "follow_up_question": null
+        }}
 
-Example 2 (Generic):
-{{
-  "status": "GENERIC",
-  "follow_up_question": "That's a great summary. To help me understand your specific experience, could you walk me through a time you personally used that technique to solve a real-world problem?"
-}}
+        Example 2 (Generic):
+        {{
+        "status": "GENERIC",
+        "follow_up_question": "That's a great summary. To help me understand your specific experience, could you walk me through a time you personally used that technique to solve a real-world problem?"
+        }}
 
-Provide your JSON analysis now.
-"""
+        Provide your JSON analysis now.
+    """
 )
 
 # -----------------------------------------------------------------
@@ -473,4 +477,82 @@ RUBRIC_METRIC_SCHEMA =  ChatPromptTemplate.from_template(
 
     ### Next Steps:
     """
+    )
+
+PRE_INTERVIEW_VALIDATION_PROMPT = ChatPromptTemplate.from_template(
+    """
+    You are preparing initial screening questions for a job interview. 
+    Create 2-3 concise, friendly questions that will help assess:
+    1. The candidate's basic understanding of the role requirements
+    2. Their relevant experience alignment
+    3. Their motivation for applying
+
+    Questions Example:
+    - What is you name? 
+    - Why did you apply for this job?
+    - Will you be able to meet the required standards of this job?
+    - Will you be able to 
+
+    Guidelines:
+    - Questions should be open-ended but focused
+    - Each question should be answerable in 2-3 sentences
+    - Avoid yes/no questions
+    - Make them conversational and professional
+
+    Job Context: {jd_context}
+    Resume Context: {resume_context}
+
+    Respond with JSON:
+    {{
+        "questions": [
+            "Question 1 text...",
+            "Question 2 text...", 
+            "Question 3 text..."
+        ]
+    }}
+    """
+)
+
+PRE_INTERVIEW_ANSWER_VALIDATION_PROMPT = ChatPromptTemplate.from_template("""
+        You are validating a candidate's pre-interview answer. Assess if the answer is:
+        - COMPREHENSIVE: Detailed, specific, and demonstrates understanding
+        - ADEQUATE: Basic but acceptable, shows some relevance
+        - VAGUE: Generic, lacks specifics, needs clarification
+        - IRRELEVANT: Off-topic or doesn't address the question
+
+        Question: {question}
+        Candidate's Answer: {answer}
+
+        Provide validation in this JSON format:
+        {{
+            "validation_status": "COMPREHENSIVE" | "ADEQUATE" | "VAGUE" | "IRRELEVANT",
+            "confidence_score": 0.0 to 1.0,
+            "feedback": "Specific feedback on what's good and what needs improvement",
+            "needs_clarification": true or false,
+            "suggested_followup": "Question to ask for clarification if needed, or null"
+        }}
+        """
+    )
+
+
+IDENTITY_VERIFICATION_ANSWER_PROMPT = ChatPromptTemplate.from_template("""
+        You are an identity verification agent. The candidate was asked a question based on their resume to confirm their experience.
+        Assess if the answer is:
+        - CONSISTENT: The answer aligns well with the resume and sounds authentic.
+        - VAGUE: The answer is generic, lacks detail, and doesn't confirm experience.
+        - CONTRADICTORY: The answer seems to contradict the resume or sounds suspicious.
+
+        Resume Context: {resume_context}
+        Question Asked: {question}
+        Candidate's Answer: {answer}
+
+        Provide validation in this JSON format:
+        {{
+            "validation_status": "CONSISTENT" | "VAGUE" | "CONTRADICTORY",
+            "confidence_score": 0.0 to 1.0,
+            "feedback": "Brief reason for your validation status.",
+            "needs_clarification": true or false,
+            "suggested_followup": "A follow-up question to ask for clarification if the answer was VAGUE, or null."
+        }}
+        """
     )
