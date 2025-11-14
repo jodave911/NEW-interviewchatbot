@@ -4,9 +4,6 @@ npm run dev
 npm install next-themes lucide-react @radix-ui/react-dialog tailwind-merge tailwindcss-animate @tailwindcss/typography mini-svg-data-uri
 
 
-
-To make the "Strategic Interviewer" module more advanced, you need to move from Reactive Logic (responding only to the last answer) to Proactive/Stateful Logic (executing a long-term strategy, tracking coverage, and adapting difficulty).
-
 Here are three concrete ways to upgrade the backend logic to simulate a "Senior Staff Engineer" or "Hiring Manager" persona.
 
 1. Implement "Chain of Thought" (CoT) Decision Making
