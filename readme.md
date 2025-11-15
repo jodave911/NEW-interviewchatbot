@@ -4,8 +4,6 @@ npm run dev
 npm install next-themes lucide-react @radix-ui/react-dialog tailwind-merge tailwindcss-animate @tailwindcss/typography mini-svg-data-uri
 
 
-Here are three concrete ways to upgrade the backend logic to simulate a "Senior Staff Engineer" or "Hiring Manager" persona.
-
 1. Implement "Chain of Thought" (CoT) Decision Making
 Currently, your prompt asks for a JSON decision immediately. LLMs perform significantly better when forced to "think" before they "speak."
 
